@@ -1,0 +1,991 @@
+@prefix : <http://www.example.org/herbmedicine#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@base <http://www.example.org/herbmedicine#> .
+
+<http://www.example.org/herbmedicine> rdf:type owl:Ontology ;
+                                       dc:description "An OWL ontology for traditional herb medicine knowledge representation, covering formulas, dosage guidelines, safety alerts, and patient conditions." ;
+                                       dc:title "Herb Medicine Ontology" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/description
+dc:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+dc:title rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#example
+skos:example rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.example.org/herbmedicine#belongsToGroup
+:belongsToGroup rdf:type owl:ObjectProperty ;
+                owl:inverseOf :containsMedicine ;
+                rdfs:domain :HerbMedicine ;
+                rdfs:range :GroupMedicine ;
+                rdfs:label "belongs To Group"@en ,
+                           "อยู่ในกลุ่มยา"@th .
+
+
+###  http://www.example.org/herbmedicine#containsMedicine
+:containsMedicine rdf:type owl:ObjectProperty ;
+                  rdfs:domain :GroupMedicine ;
+                  rdfs:range :HerbMedicine ;
+                  rdfs:comment "A medicine group contains one or more herb medicines."@en ;
+                  rdfs:label "contains Medicine"@en ,
+                             "มียาสมุนไพร"@th .
+
+
+###  http://www.example.org/herbmedicine#forForm
+:forForm rdf:type owl:ObjectProperty ;
+         rdfs:domain :DosageGuideline ;
+         rdfs:range :DosageForm ;
+         rdfs:comment "Specifies the dosage form for which the guideline applies."@en ;
+         rdfs:label "for Form"@en ,
+                    "สำหรับรูปแบบยา"@th .
+
+
+###  http://www.example.org/herbmedicine#hasComponent
+:hasComponent rdf:type owl:ObjectProperty ;
+              rdfs:domain :HerbMedicine ;
+              rdfs:range :FormulaComponent ;
+              rdfs:comment "Relates a herb medicine to its formula components."@en ;
+              rdfs:label "has Component"@en ,
+                         "มีส่วนประกอบ"@th .
+
+
+###  http://www.example.org/herbmedicine#hasFrequency
+:hasFrequency rdf:type owl:ObjectProperty ;
+              rdfs:domain :DosageGuideline ;
+              rdfs:range :Frequency ;
+              rdfs:label "has Frequency"@en ,
+                         "มีความถี่"@th .
+
+
+###  http://www.example.org/herbmedicine#hasGuideline
+:hasGuideline rdf:type owl:ObjectProperty ;
+              rdfs:domain :HerbMedicine ;
+              rdfs:range :DosageGuideline ;
+              rdfs:comment "Links a herb medicine to its dosage guideline."@en ;
+              rdfs:label "has Guideline"@en ,
+                         "มีแนวทางการใช้ยา"@th .
+
+
+###  http://www.example.org/herbmedicine#hasSafetyAlert
+:hasSafetyAlert rdf:type owl:ObjectProperty ;
+                rdfs:domain :HerbMedicine ;
+                rdfs:range :SafetyAlert ;
+                rdfs:comment "Attaches a safety alert (contraindication or caution) to a herb medicine."@en ;
+                rdfs:label "has Safety Alert"@en ,
+                           "มีการแจ้งเตือนความปลอดภัย"@th .
+
+
+###  http://www.example.org/herbmedicine#hasTiming
+:hasTiming rdf:type owl:ObjectProperty ;
+           rdfs:domain :DosageGuideline ;
+           rdfs:range :Timing ;
+           rdfs:label "has Timing"@en ,
+                      "มีเวลาในการรับประทาน"@th .
+
+
+###  http://www.example.org/herbmedicine#hasUnit
+:hasUnit rdf:type owl:ObjectProperty ;
+         rdfs:domain [ rdf:type owl:Class ;
+                       owl:unionOf ( :DosageGuideline
+                                     :FormulaComponent
+                                   )
+                     ] ;
+         rdfs:range :UnitOfMeasurement ;
+         rdfs:comment "Associates a unit of measurement with a component or dosage guideline."@en ;
+         rdfs:label "has Unit"@en ,
+                    "มีหน่วยวัด"@th .
+
+
+###  http://www.example.org/herbmedicine#treats
+:treats rdf:type owl:ObjectProperty ;
+        rdfs:domain :HerbMedicine ;
+        rdfs:range :MedicalCondition ;
+        rdfs:comment "Indicates which medical conditions a herb medicine is used to treat."@en ;
+        rdfs:label "treats"@en ,
+                   "รักษา"@th .
+
+
+###  http://www.example.org/herbmedicine#triggeredBy
+:triggeredBy rdf:type owl:ObjectProperty ;
+             rdfs:domain :SafetyAlert ;
+             rdfs:range :PatientCondition ;
+             rdfs:comment "A safety alert is triggered by a particular patient condition."@en ;
+             rdfs:label "triggered By"@en ,
+                        "ถูกกระตุ้นโดย"@th .
+
+
+###  http://www.example.org/herbmedicine#usePlantPart
+:usePlantPart rdf:type owl:ObjectProperty ;
+              rdfs:domain :FormulaComponent ;
+              rdfs:range :PlantPart ;
+              rdfs:comment "Specifies which plant part is used in a formula component."@en ;
+              rdfs:label "use Plant Part"@en ,
+                         "ใช้ส่วนของพืช"@th .
+
+
+###  http://www.example.org/herbmedicine#usesHerb
+:usesHerb rdf:type owl:ObjectProperty ;
+          rdfs:domain :FormulaComponent ;
+          rdfs:range :Herb ;
+          rdfs:comment "Identifies which herb is used in a formula component."@en ;
+          rdfs:label "uses Herb"@en ,
+                     "ใช้สมุนไพร"@th .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.example.org/herbmedicine#alertMessage
+:alertMessage rdf:type owl:DatatypeProperty ;
+              rdfs:domain :SafetyAlert ;
+              rdfs:range xsd:string ;
+              rdfs:label "alert Message"@en ,
+                         "ข้อความแจ้งเตือน"@th .
+
+
+###  http://www.example.org/herbmedicine#alertSeverity
+:alertSeverity rdf:type owl:DatatypeProperty ;
+               rdfs:domain :SafetyAlert ;
+               rdfs:range xsd:string ;
+               rdfs:label "alert Severity"@en ,
+                          "ระดับความรุนแรง"@th ;
+               skos:example "HIGH, MEDIUM, LOW" .
+
+
+###  http://www.example.org/herbmedicine#allergenName
+:allergenName rdf:type owl:DatatypeProperty ;
+              rdfs:domain :AllergyCondition ;
+              rdfs:range xsd:string ;
+              rdfs:label "allergen Name"@en ,
+                         "ชื่อสารก่อภูมิแพ้"@th .
+
+
+###  http://www.example.org/herbmedicine#approvedBy
+:approvedBy rdf:type owl:DatatypeProperty ;
+            rdfs:domain :HerbMedicine ;
+            rdfs:range xsd:string ;
+            rdfs:label "approved By"@en ,
+                       "อนุมัติโดย"@th .
+
+
+###  http://www.example.org/herbmedicine#dosageInstruction
+:dosageInstruction rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :DosageGuideline ;
+                   rdfs:range xsd:string ;
+                   rdfs:label "dosage Instruction"@en ,
+                              "คำแนะนำการใช้ยา"@th .
+
+
+###  http://www.example.org/herbmedicine#frequencyDescription
+:frequencyDescription rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :Frequency ;
+                      rdfs:range xsd:string ;
+                      rdfs:label "frequency description"@en ,
+                                 "รายละเอียดความถี่"@th .
+
+
+###  http://www.example.org/herbmedicine#maxAge
+:maxAge rdf:type owl:DatatypeProperty ;
+        rdfs:domain :AgeCondition ;
+        rdfs:range xsd:integer ;
+        rdfs:label "maximum Age"@en ,
+                   "อายุสูงสุด"@th .
+
+
+###  http://www.example.org/herbmedicine#maxDose
+:maxDose rdf:type owl:DatatypeProperty ;
+         rdfs:domain :DosageGuideline ;
+         rdfs:range xsd:decimal ;
+         rdfs:label "maximum Dose"@en ,
+                    "ขนาดยาสูงสุด"@th .
+
+
+###  http://www.example.org/herbmedicine#minAge
+:minAge rdf:type owl:DatatypeProperty ;
+        rdfs:domain :AgeCondition ;
+        rdfs:range xsd:integer ;
+        rdfs:comment "The minimum age (in years) for using the medicine."@en ;
+        rdfs:label "minimum Age"@en ,
+                   "อายุต่ำสุด"@th .
+
+
+###  http://www.example.org/herbmedicine#minDose
+:minDose rdf:type owl:DatatypeProperty ;
+         rdfs:domain :DosageGuideline ;
+         rdfs:range xsd:decimal ;
+         rdfs:label "minimum Dose"@en ,
+                    "ขนาดยาต่ำสุด"@th .
+
+
+###  http://www.example.org/herbmedicine#name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:domain owl:Thing ;
+      rdfs:range xsd:string ;
+      rdfs:label "name"@en ,
+                 "ชื่อ"@th .
+
+
+###  http://www.example.org/herbmedicine#nameThai
+:nameThai rdf:type owl:DatatypeProperty ;
+          rdfs:domain owl:Thing ;
+          rdfs:range xsd:string ;
+          rdfs:label "Thai name"@en ,
+                     "ชื่อภาษาไทย"@th .
+
+
+###  http://www.example.org/herbmedicine#quantity
+:quantity rdf:type owl:DatatypeProperty ;
+          rdfs:domain :FormulaComponent ;
+          rdfs:range xsd:decimal ;
+          rdfs:comment "The numeric amount of the ingredient in the formula."@en ;
+          rdfs:label "quantity"@en ,
+                     "ปริมาณ"@th .
+
+
+###  http://www.example.org/herbmedicine#timesPerDay
+:timesPerDay rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Frequency ;
+             rdfs:range xsd:integer ;
+             rdfs:label "times Per Day"@en ,
+                        "ครั้งต่อวัน"@th .
+
+
+###  http://www.example.org/herbmedicine#timingDescription
+:timingDescription rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Timing ;
+                   rdfs:range xsd:string ;
+                   rdfs:label "timing description"@en ,
+                              "รายละเอียดเวลา"@th ;
+                   skos:example "ก่อนอาหาร, หลังอาหาร, ก่อนนอน" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.example.org/herbmedicine#AgeCondition
+:AgeCondition rdf:type owl:Class ;
+              rdfs:subClassOf :PatientCondition ;
+              rdfs:comment "Age-related constraints for medicine use, defined by minimum and maximum age."@en ;
+              rdfs:label "Age Condition"@en ,
+                         "เงื่อนไขอายุ"@th .
+
+
+###  http://www.example.org/herbmedicine#AllergyCondition
+:AllergyCondition rdf:type owl:Class ;
+                  rdfs:subClassOf :PatientCondition ;
+                  rdfs:comment "An allergic response that contraindicates use of a particular herb or medicine."@en ;
+                  rdfs:label "Allergy Condition"@en ,
+                             "ภาวะแพ้ยา/สมุนไพร"@th .
+
+
+###  http://www.example.org/herbmedicine#Caution
+:Caution rdf:type owl:Class ;
+         rdfs:subClassOf :SafetyAlert ;
+         rdfs:comment "A warning to use the medicine carefully under certain conditions."@en ;
+         rdfs:label "Caution"@en ,
+                    "ข้อควรระวัง"@th .
+
+
+###  http://www.example.org/herbmedicine#Contraindication
+:Contraindication rdf:type owl:Class ;
+                  rdfs:subClassOf :SafetyAlert ;
+                  rdfs:comment "Conditions or factors that serve as absolute reasons to withhold use of the medicine."@en ;
+                  rdfs:label "Contraindication"@en ,
+                             "ข้อห้ามใช้"@th .
+
+
+###  http://www.example.org/herbmedicine#Disease
+:Disease rdf:type owl:Class ;
+         rdfs:subClassOf :MedicalCondition ;
+         rdfs:comment "A specific illness or disease."@en ;
+         rdfs:label "Disease"@en ,
+                    "โรค"@th .
+
+
+###  http://www.example.org/herbmedicine#DosageForm
+:DosageForm rdf:type owl:Class ;
+            rdfs:comment "The physical form in which a medicine is administered (tablet, capsule, decoction, etc.)."@en ;
+            rdfs:label "Dosage Form"@en ,
+                       "รูปแบบยา"@th .
+
+
+###  http://www.example.org/herbmedicine#DosageGuideline
+:DosageGuideline rdf:type owl:Class ;
+                 rdfs:comment "Prescribing information defining how a medicine should be administered."@en ;
+                 rdfs:label "Dosage Guideline"@en ,
+                            "แนวทางการใช้ยา"@th .
+
+
+###  http://www.example.org/herbmedicine#FormulaComponent
+:FormulaComponent rdf:type owl:Class ;
+                  rdfs:comment "An individual ingredient entry in a herbal medicine formula, specifying the herb, plant part used, and quantity."@en ;
+                  rdfs:label "Formula Component"@en ,
+                             "ส่วนประกอบสูตรยา"@th .
+
+
+###  http://www.example.org/herbmedicine#Frequency
+:Frequency rdf:type owl:Class ;
+           rdfs:comment "The number of times medicine should be administered per day or per period."@en ;
+           rdfs:label "Frequency"@en ,
+                      "ความถี่"@th .
+
+
+###  http://www.example.org/herbmedicine#GroupMedicine
+:GroupMedicine rdf:type owl:Class ;
+               rdfs:comment "A category or group that contains one or more herb medicines."@en ;
+               rdfs:label "Group Medicine"@en ,
+                          "กลุ่มยา"@th .
+
+
+###  http://www.example.org/herbmedicine#Herb
+:Herb rdf:type owl:Class ;
+      rdfs:comment "A plant or plant-derived substance used in herbal medicine."@en ;
+      rdfs:label "Herb"@en ,
+                 "สมุนไพร"@th .
+
+
+###  http://www.example.org/herbmedicine#HerbMedicine
+:HerbMedicine rdf:type owl:Class ;
+              rdfs:comment "A medicinal product composed of herbal components used for therapeutic purposes."@en ;
+              rdfs:label "Herb Medicine"@en ,
+                         "ยาสมุนไพร"@th .
+
+
+###  http://www.example.org/herbmedicine#MedicalCondition
+:MedicalCondition rdf:type owl:Class ;
+                  rdfs:comment "A health condition, disease, or symptom that a herb medicine treats."@en ;
+                  rdfs:label "Medical Condition"@en ,
+                             "สภาวะทางการแพทย์"@th .
+
+
+###  http://www.example.org/herbmedicine#PatientCondition
+:PatientCondition rdf:type owl:Class ;
+                  rdfs:comment "A characteristic or state of the patient relevant to drug safety and dosing."@en ;
+                  rdfs:label "Patient Condition"@en ,
+                             "สภาวะของผู้ป่วย"@th .
+
+
+###  http://www.example.org/herbmedicine#PhysiologicalState
+:PhysiologicalState rdf:type owl:Class ;
+                    rdfs:subClassOf :PatientCondition ;
+                    rdfs:comment "A physiological state of the patient such as pregnancy or lactation."@en ;
+                    rdfs:label "Physiological State"@en ,
+                               "สภาวะทางสรีรวิทยา"@th ;
+                    skos:example "ตั้งครรภ์ (Pregnancy), ให้นมบุตร (Lactation), มีประจำเดือน (Menstruation)" .
+
+
+###  http://www.example.org/herbmedicine#PlantPart
+:PlantPart rdf:type owl:Class ;
+           rdfs:comment "The specific part of a plant (root, leaf, bark, seed, etc.) used in a formula."@en ;
+           rdfs:label "Plant Part"@en ,
+                      "ส่วนของพืช"@th .
+
+
+###  http://www.example.org/herbmedicine#SafetyAlert
+:SafetyAlert rdf:type owl:Class ;
+             rdfs:comment "A warning or precaution associated with a herb medicine."@en ;
+             rdfs:label "Safety Alert"@en ,
+                        "การแจ้งเตือนความปลอดภัย"@th .
+
+
+###  http://www.example.org/herbmedicine#Symptom
+:Symptom rdf:type owl:Class ;
+         rdfs:subClassOf :MedicalCondition ;
+         rdfs:comment "A clinical sign or symptom associated with a medical condition."@en ;
+         rdfs:label "Symptom"@en ,
+                    "อาการ"@th .
+
+
+###  http://www.example.org/herbmedicine#Timing
+:Timing rdf:type owl:Class ;
+        rdfs:comment "The timing of medicine administration relative to meals or time of day."@en ;
+        rdfs:label "Timing"@en ,
+                   "เวลาในการรับประทาน"@th .
+
+
+###  http://www.example.org/herbmedicine#UnitOfMeasurement
+:UnitOfMeasurement rdf:type owl:Class ;
+                   rdfs:comment "A unit used to express quantity or dosage (e.g., grams, milligrams, teaspoons)."@en ;
+                   rdfs:label "Unit Of Measurement"@en ,
+                              "หน่วยวัด"@th .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.example.org/herbmedicine#AgeCond_adult
+:AgeCond_adult rdf:type owl:NamedIndividual ,
+                        :AgeCondition ;
+               :maxAge 65 ;
+               :minAge 18 ;
+               :name "Adult" ;
+               :nameThai "ผู้ใหญ่" .
+
+
+###  http://www.example.org/herbmedicine#AgeCond_child
+:AgeCond_child rdf:type owl:NamedIndividual ,
+                        :AgeCondition ;
+               :maxAge 17 ;
+               :minAge 6 ;
+               :name "Child" ;
+               :nameThai "เด็ก" .
+
+
+###  http://www.example.org/herbmedicine#AgeCond_elderly
+:AgeCond_elderly rdf:type owl:NamedIndividual ,
+                          :AgeCondition ;
+                 :minAge 65 ;
+                 :name "Elderly" ;
+                 :nameThai "ผู้สูงอายุ" .
+
+
+###  http://www.example.org/herbmedicine#AgeCond_infant
+:AgeCond_infant rdf:type owl:NamedIndividual ,
+                         :AgeCondition ;
+                :maxAge 5 ;
+                :minAge 0 ;
+                :name "Infant" ;
+                :nameThai "ทารก/เด็กเล็ก" .
+
+
+###  http://www.example.org/herbmedicine#AllergyCond_ginger
+:AllergyCond_ginger rdf:type owl:NamedIndividual ,
+                             :AllergyCondition ;
+                    :allergenName "Ginger (Zingiber officinale)" ;
+                    :name "Ginger Allergy" ;
+                    :nameThai "แพ้ขิง" .
+
+
+###  http://www.example.org/herbmedicine#AllergyCond_turmeric
+:AllergyCond_turmeric rdf:type owl:NamedIndividual ,
+                               :AllergyCondition ;
+                      :allergenName "Turmeric (Curcuma longa)" ;
+                      :name "Turmeric Allergy" ;
+                      :nameThai "แพ้ขมิ้น" .
+
+
+###  http://www.example.org/herbmedicine#CI_infant
+:CI_infant rdf:type owl:NamedIndividual ,
+                    :Contraindication ;
+           :triggeredBy :AgeCond_infant ;
+           :alertMessage "ห้ามใช้ในเด็กอายุต่ำกว่า 1 ปี" ;
+           :alertSeverity "HIGH" ;
+           :name "Contraindication in Infant" ;
+           :nameThai "ห้ามใช้ในทารก" .
+
+
+###  http://www.example.org/herbmedicine#CI_pregnancy
+:CI_pregnancy rdf:type owl:NamedIndividual ,
+                       :Contraindication ;
+              :triggeredBy :PhysState_pregnancy ;
+              :alertMessage "ห้ามใช้ในสตรีมีครรภ์ เนื่องจากอาจก่อให้เกิดการแท้งบุตร" ;
+              :alertSeverity "HIGH" ;
+              :name "Contraindication in Pregnancy" ;
+              :nameThai "ห้ามใช้ในหญิงตั้งครรภ์" .
+
+
+###  http://www.example.org/herbmedicine#Caut_elderly
+:Caut_elderly rdf:type owl:NamedIndividual ,
+                       :Caution ;
+              :triggeredBy :AgeCond_elderly ;
+              :alertMessage "ควรลดขนาดยาและติดตามอาการในผู้สูงอายุ" ;
+              :alertSeverity "MEDIUM" ;
+              :name "Caution in Elderly" ;
+              :nameThai "ควรระวังในผู้สูงอายุ" .
+
+
+###  http://www.example.org/herbmedicine#Caut_gastric
+:Caut_gastric rdf:type owl:NamedIndividual ,
+                       :Caution ;
+              :alertMessage "รับประทานหลังอาหารเพื่อลดการระคายเคืองกระเพาะ" ;
+              :alertSeverity "MEDIUM" ;
+              :name "Caution with Gastric Conditions" ;
+              :nameThai "ควรระวังในผู้ป่วยโรคกระเพาะ" .
+
+
+###  http://www.example.org/herbmedicine#DF_capsule
+:DF_capsule rdf:type owl:NamedIndividual ,
+                     :DosageForm ;
+            :name "Capsule" ;
+            :nameThai "แคปซูล" .
+
+
+###  http://www.example.org/herbmedicine#DF_decoction
+:DF_decoction rdf:type owl:NamedIndividual ,
+                       :DosageForm ;
+              :name "Decoction" ;
+              :nameThai "ยาต้ม" .
+
+
+###  http://www.example.org/herbmedicine#DF_powder
+:DF_powder rdf:type owl:NamedIndividual ,
+                    :DosageForm ;
+           :name "Powder" ;
+           :nameThai "ยาผง" .
+
+
+###  http://www.example.org/herbmedicine#DF_syrup
+:DF_syrup rdf:type owl:NamedIndividual ,
+                   :DosageForm ;
+          :name "Syrup" ;
+          :nameThai "ยาน้ำ" .
+
+
+###  http://www.example.org/herbmedicine#DF_tablet
+:DF_tablet rdf:type owl:NamedIndividual ,
+                    :DosageForm ;
+           :name "Tablet" ;
+           :nameThai "เม็ด" .
+
+
+###  http://www.example.org/herbmedicine#DG_andrographis_std
+:DG_andrographis_std rdf:type owl:NamedIndividual ,
+                              :DosageGuideline ;
+                     :forForm :DF_capsule ;
+                     :hasFrequency :Freq_threeTimesDaily ;
+                     :hasTiming :Timing_afterMeal ;
+                     :hasUnit :UOM_milligram ;
+                     :dosageInstruction "รับประทาน 500-1500 มก. ต่อวัน แบ่ง 3 มื้อหลังอาหาร" ;
+                     :maxDose 1500.0 ;
+                     :minDose 500.0 ;
+                     :name "Andrographis Standard Dosage" ;
+                     :nameThai "แนวทางขนาดยาฟ้าทะลายโจรมาตรฐาน" .
+
+
+###  http://www.example.org/herbmedicine#DG_ginger_decoction
+:DG_ginger_decoction rdf:type owl:NamedIndividual ,
+                              :DosageGuideline ;
+                     :forForm :DF_decoction ;
+                     :hasFrequency :Freq_twoTimesDaily ;
+                     :hasTiming :Timing_beforeMeal ;
+                     :hasUnit :UOM_gram ;
+                     :dosageInstruction "ใช้ขิงสด 5-10 กรัม ต้มกับน้ำ 300 มล. รับประทานก่อนอาหาร" ;
+                     :maxDose 10.0 ;
+                     :minDose 5.0 ;
+                     :name "Ginger Decoction Dosage" ;
+                     :nameThai "แนวทางขนาดยาขิงต้ม" .
+
+
+###  http://www.example.org/herbmedicine#DG_turmeric_std
+:DG_turmeric_std rdf:type owl:NamedIndividual ,
+                          :DosageGuideline ;
+                 :forForm :DF_capsule ;
+                 :hasFrequency :Freq_twoTimesDaily ;
+                 :hasTiming :Timing_afterMeal ;
+                 :hasUnit :UOM_milligram ;
+                 :dosageInstruction "รับประทาน 250-500 มก. ต่อวัน หลังอาหาร" ;
+                 :maxDose 500.0 ;
+                 :minDose 250.0 ;
+                 :name "Turmeric Standard Dosage" ;
+                 :nameThai "แนวทางขนาดยาขมิ้นชันมาตรฐาน" .
+
+
+###  http://www.example.org/herbmedicine#Disease_commonCold
+:Disease_commonCold rdf:type owl:NamedIndividual ,
+                             :Disease ;
+                    :name "Common Cold" ;
+                    :nameThai "หวัด" .
+
+
+###  http://www.example.org/herbmedicine#Disease_diabetes
+:Disease_diabetes rdf:type owl:NamedIndividual ,
+                           :Disease ;
+                  :name "Diabetes" ;
+                  :nameThai "โรคเบาหวาน" .
+
+
+###  http://www.example.org/herbmedicine#Disease_gastritis
+:Disease_gastritis rdf:type owl:NamedIndividual ,
+                            :Disease ;
+                   :name "Gastritis" ;
+                   :nameThai "โรคกระเพาะอาหารอักเสบ" .
+
+
+###  http://www.example.org/herbmedicine#Disease_hypertension
+:Disease_hypertension rdf:type owl:NamedIndividual ,
+                               :Disease ;
+                      :name "Hypertension" ;
+                      :nameThai "ความดันโลหิตสูง" .
+
+
+###  http://www.example.org/herbmedicine#FC_andrographis_leaf
+:FC_andrographis_leaf rdf:type owl:NamedIndividual ,
+                               :FormulaComponent ;
+                      :hasUnit :UOM_milligram ;
+                      :usePlantPart :PP_leaf ;
+                      :usesHerb :Herb_andrographis ;
+                      :name "Andrographis Leaf Component" ;
+                      :quantity 400.0 .
+
+
+###  http://www.example.org/herbmedicine#FC_ginger_rhizome
+:FC_ginger_rhizome rdf:type owl:NamedIndividual ,
+                            :FormulaComponent ;
+                   :hasUnit :UOM_gram ;
+                   :usePlantPart :PP_rhizome ;
+                   :usesHerb :Herb_ginger ;
+                   :name "Ginger Rhizome Component" ;
+                   :quantity 5.0 .
+
+
+###  http://www.example.org/herbmedicine#FC_piper_fruit
+:FC_piper_fruit rdf:type owl:NamedIndividual ,
+                         :FormulaComponent ;
+                :hasUnit :UOM_milligram ;
+                :usePlantPart :PP_fruit ;
+                :usesHerb :Herb_piper ;
+                :name "Long Pepper Fruit Component" ;
+                :quantity 100.0 .
+
+
+###  http://www.example.org/herbmedicine#FC_turmeric_rhizome
+:FC_turmeric_rhizome rdf:type owl:NamedIndividual ,
+                              :FormulaComponent ;
+                     :hasUnit :UOM_milligram ;
+                     :usePlantPart :PP_rhizome ;
+                     :usesHerb :Herb_turmeric ;
+                     :name "Turmeric Rhizome Component" ;
+                     :quantity 300.0 .
+
+
+###  http://www.example.org/herbmedicine#Freq_onceDaily
+:Freq_onceDaily rdf:type owl:NamedIndividual ,
+                         :Frequency ;
+                :frequencyDescription "1 ครั้งต่อวัน" ;
+                :name "Once Daily" ;
+                :timesPerDay 1 .
+
+
+###  http://www.example.org/herbmedicine#Freq_threeTimesDaily
+:Freq_threeTimesDaily rdf:type owl:NamedIndividual ,
+                               :Frequency ;
+                      :frequencyDescription "3 ครั้งต่อวัน" ;
+                      :name "Three Times Daily" ;
+                      :timesPerDay 3 .
+
+
+###  http://www.example.org/herbmedicine#Freq_twoTimesDaily
+:Freq_twoTimesDaily rdf:type owl:NamedIndividual ,
+                             :Frequency ;
+                    :frequencyDescription "2 ครั้งต่อวัน" ;
+                    :name "Two Times Daily" ;
+                    :timesPerDay 2 .
+
+
+###  http://www.example.org/herbmedicine#GrpMed_antiInflammatory
+:GrpMed_antiInflammatory rdf:type owl:NamedIndividual ,
+                                  :GroupMedicine ;
+                         :containsMedicine :HM_andrographis ;
+                         :name "Anti-Inflammatory Herb Group" ;
+                         :nameThai "กลุ่มยาแก้อักเสบ" .
+
+
+###  http://www.example.org/herbmedicine#GrpMed_digestive
+:GrpMed_digestive rdf:type owl:NamedIndividual ,
+                           :GroupMedicine ;
+                  :containsMedicine :HM_gingerDecoction ,
+                                    :HM_turmeric ;
+                  :name "Digestive Herb Group" ;
+                  :nameThai "กลุ่มยาธาตุ" .
+
+
+###  http://www.example.org/herbmedicine#GrpMed_respiratory
+:GrpMed_respiratory rdf:type owl:NamedIndividual ,
+                             :GroupMedicine ;
+                    :name "Respiratory Herb Group" ;
+                    :nameThai "กลุ่มยาแก้ไอ/ระบบทางเดินหายใจ" .
+
+
+###  http://www.example.org/herbmedicine#HM_andrographis
+:HM_andrographis rdf:type owl:NamedIndividual ,
+                          :HerbMedicine ;
+                 :belongsToGroup :GrpMed_antiInflammatory ;
+                 :hasComponent :FC_andrographis_leaf ;
+                 :hasGuideline :DG_andrographis_std ;
+                 :hasSafetyAlert :CI_pregnancy ,
+                                 :Caut_elderly ;
+                 :treats :Disease_commonCold ,
+                         :Symptom_fever ,
+                         :Symptom_soreThroat ;
+                 :approvedBy "กรมการแพทย์แผนไทยและการแพทย์ทางเลือก" ;
+                 :name "Andrographis Capsule" ;
+                 :nameThai "ยาแคปซูลฟ้าทะลายโจร" .
+
+
+###  http://www.example.org/herbmedicine#HM_gingerDecoction
+:HM_gingerDecoction rdf:type owl:NamedIndividual ,
+                             :HerbMedicine ;
+                    :belongsToGroup :GrpMed_digestive ;
+                    :hasComponent :FC_ginger_rhizome ;
+                    :hasGuideline :DG_ginger_decoction ;
+                    :treats :Symptom_bloating ,
+                            :Symptom_nausea ;
+                    :name "Ginger Decoction" ;
+                    :nameThai "ยาต้มขิง" .
+
+
+###  http://www.example.org/herbmedicine#HM_turmeric
+:HM_turmeric rdf:type owl:NamedIndividual ,
+                      :HerbMedicine ;
+             :belongsToGroup :GrpMed_digestive ;
+             :hasComponent :FC_turmeric_rhizome ;
+             :hasGuideline :DG_turmeric_std ;
+             :hasSafetyAlert :Caut_gastric ;
+             :treats :Disease_gastritis ,
+                     :Symptom_bloating ;
+             :approvedBy "กรมการแพทย์แผนไทยและการแพทย์ทางเลือก" ;
+             :name "Turmeric Capsule" ;
+             :nameThai "ยาแคปซูลขมิ้นชัน" .
+
+
+###  http://www.example.org/herbmedicine#Herb_andrographis
+:Herb_andrographis rdf:type owl:NamedIndividual ,
+                            :Herb ;
+                   :name "Andrographis" ;
+                   :nameThai "ฟ้าทะลายโจร" .
+
+
+###  http://www.example.org/herbmedicine#Herb_fingerRoot
+:Herb_fingerRoot rdf:type owl:NamedIndividual ,
+                          :Herb ;
+                 :name "Finger Root" ;
+                 :nameThai "ว่านชักมดลูก" .
+
+
+###  http://www.example.org/herbmedicine#Herb_ginger
+:Herb_ginger rdf:type owl:NamedIndividual ,
+                      :Herb ;
+             :name "Ginger" ;
+             :nameThai "ขิง" .
+
+
+###  http://www.example.org/herbmedicine#Herb_krachai
+:Herb_krachai rdf:type owl:NamedIndividual ,
+                       :Herb ;
+              :name "Krachai" ;
+              :nameThai "กระชาย" .
+
+
+###  http://www.example.org/herbmedicine#Herb_piper
+:Herb_piper rdf:type owl:NamedIndividual ,
+                     :Herb ;
+            :name "Long Pepper" ;
+            :nameThai "ดีปลี" .
+
+
+###  http://www.example.org/herbmedicine#Herb_turmeric
+:Herb_turmeric rdf:type owl:NamedIndividual ,
+                        :Herb ;
+               :name "Turmeric" ;
+               :nameThai "ขมิ้นชัน" .
+
+
+###  http://www.example.org/herbmedicine#PP_bark
+:PP_bark rdf:type owl:NamedIndividual ,
+                  :PlantPart ;
+         :name "Bark" ;
+         :nameThai "เปลือก" .
+
+
+###  http://www.example.org/herbmedicine#PP_flower
+:PP_flower rdf:type owl:NamedIndividual ,
+                    :PlantPart ;
+           :name "Flower" ;
+           :nameThai "ดอก" .
+
+
+###  http://www.example.org/herbmedicine#PP_fruit
+:PP_fruit rdf:type owl:NamedIndividual ,
+                   :PlantPart ;
+          :name "Fruit" ;
+          :nameThai "ผล" .
+
+
+###  http://www.example.org/herbmedicine#PP_leaf
+:PP_leaf rdf:type owl:NamedIndividual ,
+                  :PlantPart ;
+         :name "Leaf" ;
+         :nameThai "ใบ" .
+
+
+###  http://www.example.org/herbmedicine#PP_rhizome
+:PP_rhizome rdf:type owl:NamedIndividual ,
+                     :PlantPart ;
+            :name "Rhizome" ;
+            :nameThai "เหง้า" .
+
+
+###  http://www.example.org/herbmedicine#PP_root
+:PP_root rdf:type owl:NamedIndividual ,
+                  :PlantPart ;
+         :name "Root" ;
+         :nameThai "ราก" .
+
+
+###  http://www.example.org/herbmedicine#PP_seed
+:PP_seed rdf:type owl:NamedIndividual ,
+                  :PlantPart ;
+         :name "Seed" ;
+         :nameThai "เมล็ด" .
+
+
+###  http://www.example.org/herbmedicine#PP_wholePlant
+:PP_wholePlant rdf:type owl:NamedIndividual ,
+                        :PlantPart ;
+               :name "Whole Plant" ;
+               :nameThai "ทั้งต้น" .
+
+
+###  http://www.example.org/herbmedicine#PhysState_lactation
+:PhysState_lactation rdf:type owl:NamedIndividual ,
+                              :PhysiologicalState ;
+                     :name "Lactation" ;
+                     :nameThai "ให้นมบุตร" .
+
+
+###  http://www.example.org/herbmedicine#PhysState_menstruation
+:PhysState_menstruation rdf:type owl:NamedIndividual ,
+                                 :PhysiologicalState ;
+                        :name "Menstruation" ;
+                        :nameThai "มีประจำเดือน" .
+
+
+###  http://www.example.org/herbmedicine#PhysState_pregnancy
+:PhysState_pregnancy rdf:type owl:NamedIndividual ,
+                              :PhysiologicalState ;
+                     :name "Pregnancy" ;
+                     :nameThai "ตั้งครรภ์" .
+
+
+###  http://www.example.org/herbmedicine#Symptom_bloating
+:Symptom_bloating rdf:type owl:NamedIndividual ,
+                           :Symptom ;
+                  :name "Bloating" ;
+                  :nameThai "ท้องอืด" .
+
+
+###  http://www.example.org/herbmedicine#Symptom_fever
+:Symptom_fever rdf:type owl:NamedIndividual ,
+                        :Symptom ;
+               :name "Fever" ;
+               :nameThai "ไข้" .
+
+
+###  http://www.example.org/herbmedicine#Symptom_jointPain
+:Symptom_jointPain rdf:type owl:NamedIndividual ,
+                            :Symptom ;
+                   :name "Joint Pain" ;
+                   :nameThai "ปวดข้อ" .
+
+
+###  http://www.example.org/herbmedicine#Symptom_nausea
+:Symptom_nausea rdf:type owl:NamedIndividual ,
+                         :Symptom ;
+                :name "Nausea" ;
+                :nameThai "คลื่นไส้" .
+
+
+###  http://www.example.org/herbmedicine#Symptom_soreThroat
+:Symptom_soreThroat rdf:type owl:NamedIndividual ,
+                             :Symptom ;
+                    :name "Sore Throat" ;
+                    :nameThai "เจ็บคอ" .
+
+
+###  http://www.example.org/herbmedicine#Timing_afterMeal
+:Timing_afterMeal rdf:type owl:NamedIndividual ,
+                           :Timing ;
+                  :name "After Meal" ;
+                  :timingDescription "รับประทานหลังอาหาร" .
+
+
+###  http://www.example.org/herbmedicine#Timing_bedtime
+:Timing_bedtime rdf:type owl:NamedIndividual ,
+                         :Timing ;
+                :name "Bedtime" ;
+                :timingDescription "รับประทานก่อนนอน" .
+
+
+###  http://www.example.org/herbmedicine#Timing_beforeMeal
+:Timing_beforeMeal rdf:type owl:NamedIndividual ,
+                            :Timing ;
+                   :name "Before Meal" ;
+                   :timingDescription "รับประทานก่อนอาหาร" .
+
+
+###  http://www.example.org/herbmedicine#Timing_morning
+:Timing_morning rdf:type owl:NamedIndividual ,
+                         :Timing ;
+                :name "Morning" ;
+                :timingDescription "รับประทานตอนเช้า" .
+
+
+###  http://www.example.org/herbmedicine#UOM_capsule
+:UOM_capsule rdf:type owl:NamedIndividual ,
+                      :UnitOfMeasurement ;
+             :name "capsule" ;
+             :nameThai "แคปซูล" .
+
+
+###  http://www.example.org/herbmedicine#UOM_gram
+:UOM_gram rdf:type owl:NamedIndividual ,
+                   :UnitOfMeasurement ;
+          :name "gram" ;
+          :nameThai "กรัม" .
+
+
+###  http://www.example.org/herbmedicine#UOM_milligram
+:UOM_milligram rdf:type owl:NamedIndividual ,
+                        :UnitOfMeasurement ;
+               :name "milligram" ;
+               :nameThai "มิลลิกรัม" .
+
+
+###  http://www.example.org/herbmedicine#UOM_ml
+:UOM_ml rdf:type owl:NamedIndividual ,
+                 :UnitOfMeasurement ;
+        :name "milliliter" ;
+        :nameThai "มิลลิลิตร" .
+
+
+###  http://www.example.org/herbmedicine#UOM_tablespoon
+:UOM_tablespoon rdf:type owl:NamedIndividual ,
+                         :UnitOfMeasurement ;
+                :name "tablespoon" ;
+                :nameThai "ช้อนโต๊ะ" .
+
+
+###  http://www.example.org/herbmedicine#UOM_teaspoon
+:UOM_teaspoon rdf:type owl:NamedIndividual ,
+                       :UnitOfMeasurement ;
+              :name "teaspoon" ;
+              :nameThai "ช้อนชา" .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
