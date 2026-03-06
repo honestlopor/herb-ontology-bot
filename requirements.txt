@@ -3,3 +3,5 @@ pydantic
 google-generativeai
 rdflib
 uvicorn
+streamlit
+requests
