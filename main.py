@@ -30,39 +30,189 @@ def clean_sparql_output(raw_text: str) -> str:
 @app.post("/api/chat")
 async def chat_with_ontology(request: ChatRequest):
     user_query = request.question
-    
     prompt = f"""
-    You are an expert in Semantic Web and SPARQL. 
-    Convert the user's question into a valid SPARQL Query to search a Herb Medicine Knowledge Graph.
-    
-    Ontology Schema Information:
-    - Base Prefix: PREFIX hm: <http://www.example.org/herbmedicine#>
-    - Standard Prefixes: PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-    
-    Key Classes:
-    - hm:HerbMedicine (e.g., Andrographis Capsule)
-    - hm:Disease / hm:Symptom (e.g., Common Cold, Fever)
-    - hm:SafetyAlert / hm:Contraindication / hm:Caution
-    - hm:DosageGuideline
-    
-    Key Object Properties (Relationships):
-    - ?medicine hm:treats ?diseaseOrSymptom
-    - ?medicine hm:hasSafetyAlert ?alert
-    - ?medicine hm:hasGuideline ?guideline
-    
-    Key Data Properties (Attributes):
-    - hm:name (English name)
-    - hm:nameThai (Thai name)
-    - hm:alertMessage (Warning text)
-    - hm:dosageInstruction (How to use)
+    You are a SPARQL expert for a Thai Herb Medicine Knowledge Graph (OWL2/RDF).
+    Your ONLY job is to output a single valid SPARQL SELECT query. 
+    No explanation. No markdown. No backticks. Just raw SPARQL.
 
-    User's question: "{user_query}"
-    
-    Instructions for generating SPARQL:
-    1. Reply ONLY with the SPARQL query. No other explanations.
-    2. The query must be executable.
-    3. Use 'FILTER(regex(?variable, "Keyword", "i"))' if the user searches by name, as they might type in Thai or English.
-    4. Select meaningful variables to return, like ?medicineNameThai, ?instruction, or ?alertMessage.
+    ════════════════════════════════════════
+    PREFIXES (always include all of these)
+    ════════════════════════════════════════
+    PREFIX hm: <http://www.example.org/herbmedicine#>
+    PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+    PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+    PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+    ════════════════════════════════════════
+    CLASS HIERARCHY (19 classes)
+    ════════════════════════════════════════
+    hm:HerbMedicine          ← ยาสมุนไพร (116 instances) — CORE CLASS
+    hm:GroupMedicine         ← กลุ่มยา เช่น ยาแก้ลมกองละเอียด (25 instances)
+    hm:Herb                  ← ตัวสมุนไพร เช่น ขมิ้นชัน กานพลู (441 instances)
+    hm:FormulaComponent      ← ส่วนประกอบตำรับ (912 instances)
+    hm:DosageGuideline       ← แนวทางการใช้ยา (244 instances)
+    hm:DosageForm            ← รูปแบบยา เช่น ผง เม็ด แคปซูล (36 instances)
+    hm:Frequency             ← ความถี่ เช่น วันละ 3 ครั้ง (5 instances)
+    hm:Timing                ← เวลาทาน เช่น ก่อนอาหาร หลังอาหาร (7 instances)
+    hm:UnitOfMeasurement     ← หน่วยวัด เช่น กรัม มิลลิกรัม (3 instances)
+    hm:MedicalCondition
+    └── hm:Disease         ← โรค (22 instances)
+    └── hm:Symptom         ← อาการ (42 instances)
+    hm:SafetyAlert
+    └── hm:Contraindication ← ข้อห้ามใช้ (120 instances)
+    └── hm:Caution          ← ข้อควรระวัง (366 instances)
+    hm:PatientCondition
+    └── hm:AgeCondition     ← เงื่อนไขอายุ (6 instances)
+    └── hm:PhysiologicalState ← สภาวะสรีรวิทยา (3 instances)
+    └── hm:AllergyCondition  ← ภาวะแพ้ (14 instances)
+    hm:PlantPart             ← ส่วนของพืช เช่น เหง้า ใบ ดอก ราก (19 instances)
+
+    ════════════════════════════════════════
+    OBJECT PROPERTIES (15 properties)
+    ════════════════════════════════════════
+    hm:treats           HerbMedicine     → Disease / Symptom
+    hm:hasSafetyAlert   HerbMedicine     → Contraindication / Caution
+    hm:hasGuideline     HerbMedicine     → DosageGuideline
+    hm:hasComponent     HerbMedicine     → FormulaComponent
+    hm:belongsToGroup   HerbMedicine     → GroupMedicine
+    hm:containsMedicine GroupMedicine    → HerbMedicine
+    hm:usesHerb         FormulaComponent → Herb
+    hm:usePlantPart     FormulaComponent → PlantPart
+    hm:hasUnit          FormulaComponent → UnitOfMeasurement
+    hm:forForm          DosageGuideline  → DosageForm
+    hm:hasFrequency     DosageGuideline  → Frequency
+    hm:hasTiming        DosageGuideline  → Timing
+    hm:applicableTo     DosageGuideline  → AgeCondition
+    hm:hasAgeCondition  SafetyAlert      → AgeCondition
+    hm:triggeredBy      Contraindication/Caution → PatientCondition
+                        (PatientCondition = AgeCondition | PhysiologicalState | AllergyCondition)
+
+    ════════════════════════════════════════
+    DATA PROPERTIES (14 properties)
+    ════════════════════════════════════════
+    hm:nameThai         → Thai name (xsd:string) — on HerbMedicine, Herb, Disease, Symptom, GroupMedicine
+    hm:name             → English/Latin name (xsd:string)
+    hm:alertMessage     → Warning text in Thai (xsd:string) — on Contraindication / Caution
+    hm:alertSeverity    → "HIGH" | "MEDIUM" | "LOW" (xsd:string) — on SafetyAlert
+    hm:dosageInstruction → Full instruction text in Thai (xsd:string) — on DosageGuideline
+    hm:minDose          → Minimum dose (xsd:decimal)
+    hm:maxDose          → Maximum dose (xsd:decimal)
+    hm:quantity         → Ingredient amount (xsd:decimal) — on FormulaComponent
+    hm:approvedBy       → Approval list reference (xsd:string) — on HerbMedicine
+
+    ════════════════════════════════════════
+    IRI NAMING PATTERNS (critical for FILTER)
+    ════════════════════════════════════════
+    Symptoms/Diseases    : hm:symptom_ท้องอืด, hm:symptom_วิงเวียน, hm:disease_ลมบาดทะจิต
+    PhysiologicalState   : hm:physio_ตั้งครรภ์, hm:physio_มีไข้, hm:physio_ให้นมบุตร
+    AgeCondition         : hm:agecond_child, hm:agecond_under6, hm:agecond_1to5,
+                        hm:agecond_6to12, hm:agecond_1to3months, hm:agecond_4to6months
+    GroupMedicine        : hm:group_ยาแก้ลมกองละเอียด, hm:group_ยาขับลมบรรเทาท้องอืดท้องเฟ้อ,
+                        hm:group_ยาบำรุงธาตุปรับธาตุ
+
+    → IRIs use Thai text directly — always use FILTER(regex(str(?var), "keyword", "i"))
+    when matching Thai IRI values, NOT just ?var
+
+    ════════════════════════════════════════
+    QUERY RULES
+    ════════════════════════════════════════
+    1. Always SELECT ?medicineNameThai plus at least one meaningful result variable
+    2. Use OPTIONAL {{ }} for properties that may not exist on every instance
+    3. Use DISTINCT to avoid duplicate results
+    4. Use FILTER(regex(str(?var), "keyword", "i")) for both IRI and literal matching
+    5. For safety alerts: always fetch both ?alertMessage and ?alertSeverity
+    6. For dosage: always fetch ?dosageInstruction, and use OPTIONAL for ?minDose ?maxDose
+    7. For formula: chain ?medicine → hm:hasComponent → ?comp → hm:usesHerb → ?herb
+    8. Always add LIMIT 20
+
+    ════════════════════════════════════════
+    FEW-SHOT EXAMPLES (6 scopes)
+    ════════════════════════════════════════
+
+    [Scope 1] Q: ยาหอมเทพจิตรรักษาอาการอะไรได้บ้าง?
+    SELECT DISTINCT ?medicineNameThai ?conditionNameThai WHERE {{
+    ?med rdf:type hm:HerbMedicine .
+    ?med hm:nameThai ?medicineNameThai .
+    ?med hm:treats ?condition .
+    ?condition hm:nameThai ?conditionNameThai .
+    FILTER(regex(?medicineNameThai, "เทพจิตร", "i"))
+    }} LIMIT 20
+
+    [Scope 1] Q: ยาอะไรรักษาอาการท้องอืดได้บ้าง?
+    SELECT DISTINCT ?medicineNameThai WHERE {{
+    ?med rdf:type hm:HerbMedicine .
+    ?med hm:nameThai ?medicineNameThai .
+    ?med hm:treats ?condition .
+    FILTER(regex(str(?condition), "ท้องอืด", "i"))
+    }} LIMIT 20
+
+    [Scope 2] Q: ยาหอมเทพจิตรมีส่วนประกอบอะไรบ้าง?
+    SELECT DISTINCT ?medicineNameThai ?herbNameThai ?plantPart ?quantity WHERE {{
+    ?med rdf:type hm:HerbMedicine .
+    ?med hm:nameThai ?medicineNameThai .
+    ?med hm:hasComponent ?comp .
+    ?comp hm:usesHerb ?herb .
+    ?herb hm:nameThai ?herbNameThai .
+    OPTIONAL {{ ?comp hm:usePlantPart ?part . ?part hm:nameThai ?plantPart }}
+    OPTIONAL {{ ?comp hm:quantity ?quantity }}
+    FILTER(regex(?medicineNameThai, "เทพจิตร", "i"))
+    }} LIMIT 20
+
+    [Scope 3] Q: ยาขมิ้นชันรับประทานขนาดเท่าไหร่?
+    SELECT DISTINCT ?medicineNameThai ?dosageInstruction ?minDose ?maxDose ?form WHERE {{
+    ?med rdf:type hm:HerbMedicine .
+    ?med hm:nameThai ?medicineNameThai .
+    ?med hm:hasGuideline ?guide .
+    ?guide hm:dosageInstruction ?dosageInstruction .
+    OPTIONAL {{ ?guide hm:minDose ?minDose }}
+    OPTIONAL {{ ?guide hm:maxDose ?maxDose }}
+    OPTIONAL {{ ?guide hm:forForm ?doseForm . ?doseForm hm:nameThai ?form }}
+    FILTER(regex(?medicineNameThai, "ขมิ้นชัน", "i"))
+    }} LIMIT 20
+
+    [Scope 4] Q: ยาหอมนวโกฐมีข้อห้ามใช้อะไรบ้าง?
+    SELECT DISTINCT ?medicineNameThai ?alertMessage ?alertSeverity WHERE {{
+    ?med rdf:type hm:HerbMedicine .
+    ?med hm:nameThai ?medicineNameThai .
+    ?med hm:hasSafetyAlert ?alert .
+    ?alert hm:alertMessage ?alertMessage .
+    OPTIONAL {{ ?alert hm:alertSeverity ?alertSeverity }}
+    FILTER(regex(?medicineNameThai, "นวโกฐ", "i"))
+    }} LIMIT 20
+
+    [Scope 4] Q: ยาอะไรห้ามใช้ในหญิงตั้งครรภ์?
+    SELECT DISTINCT ?medicineNameThai ?alertMessage WHERE {{
+    ?med rdf:type hm:HerbMedicine .
+    ?med hm:nameThai ?medicineNameThai .
+    ?med hm:hasSafetyAlert ?alert .
+    ?alert hm:alertMessage ?alertMessage .
+    ?alert hm:triggeredBy ?condition .
+    FILTER(regex(str(?condition), "ตั้งครรภ์", "i"))
+    }} LIMIT 20
+
+    [Scope 5] Q: เด็กอายุ 6-12 ปี ใช้ยาอะไรได้บ้าง?
+    SELECT DISTINCT ?medicineNameThai ?dosageInstruction WHERE {{
+    ?med rdf:type hm:HerbMedicine .
+    ?med hm:nameThai ?medicineNameThai .
+    ?med hm:hasGuideline ?guide .
+    ?guide hm:dosageInstruction ?dosageInstruction .
+    ?guide hm:applicableTo ?ageCond .
+    FILTER(regex(str(?ageCond), "6to12", "i"))
+    }} LIMIT 20
+
+    [Scope 6] Q: กลุ่มยาแก้ลมกองละเอียดมียาอะไรบ้าง?
+    SELECT DISTINCT ?medicineNameThai ?groupName WHERE {{
+    ?med rdf:type hm:HerbMedicine .
+    ?med hm:nameThai ?medicineNameThai .
+    ?med hm:belongsToGroup ?group .
+    ?group hm:nameThai ?groupName .
+    FILTER(regex(str(?group), "ลมกองละเอียด", "i"))
+    }} LIMIT 20
+
+    ════════════════════════════════════════
+    USER QUESTION
+    ════════════════════════════════════════
+    "{user_query}"
     """
     
     try:
