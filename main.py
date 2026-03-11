@@ -120,13 +120,18 @@ async def chat_with_ontology(request: ChatRequest):
     2. Use OPTIONAL {{ }} for properties that may not exist on every instance
     3. Use DISTINCT to avoid duplicate results
     4. Use FILTER(regex(str(?var), "keyword", "i")) for both IRI and literal matching
-    5. For safety alerts: always fetch both ?alertMessage and ?alertSeverity
-    6. For dosage: always fetch ?dosageInstruction, and use OPTIONAL for ?minDose ?maxDose
-    7. For formula: chain ?medicine → hm:hasComponent → ?comp → hm:usesHerb → ?herb
-    8. Always add LIMIT 20
+    5. When the user asks about ONE specific medicine by name, use EXACT match:
+       FILTER(regex(?medicineNameThai, "^ยา<exact_name>$", "i"))
+       Example: "ยาขมิ้นชัน" → FILTER(regex(?medicineNameThai, "^ยาขมิ้นชัน$", "i"))
+       This prevents matching "ยาสารสกัดขมิ้นชัน" or "ยาทาขมิ้นชันและกัญชา"
+       Only use substring match when the user wants ALL medicines containing a keyword.
+    6. For safety alerts: always fetch both ?alertMessage and ?alertSeverity
+    7. For dosage: always fetch ?dosageInstruction, and use OPTIONAL for ?minDose ?maxDose
+    8. For formula: chain ?medicine → hm:hasComponent → ?comp → hm:usesHerb → ?herb
+    9. Always add LIMIT 20
 
     ════════════════════════════════════════
-    FEW-SHOT EXAMPLES (6 scopes)
+    FEW-SHOT EXAMPLES (7 scopes)
     ════════════════════════════════════════
 
     [Scope 1] Q: ยาหอมเทพจิตรรักษาอาการอะไรได้บ้าง?
@@ -167,7 +172,7 @@ async def chat_with_ontology(request: ChatRequest):
     OPTIONAL {{ ?guide hm:minDose ?minDose }}
     OPTIONAL {{ ?guide hm:maxDose ?maxDose }}
     OPTIONAL {{ ?guide hm:forForm ?doseForm . ?doseForm hm:nameThai ?form }}
-    FILTER(regex(?medicineNameThai, "ขมิ้นชัน", "i"))
+    FILTER(regex(?medicineNameThai, "^ยาขมิ้นชัน$", "i"))
     }} LIMIT 20
 
     [Scope 4] Q: ยาหอมนวโกฐมีข้อห้ามใช้อะไรบ้าง?
@@ -190,7 +195,19 @@ async def chat_with_ontology(request: ChatRequest):
     FILTER(regex(str(?condition), "ตั้งครรภ์", "i"))
     }} LIMIT 20
 
-    [Scope 5] Q: เด็กอายุ 6-12 ปี ใช้ยาอะไรได้บ้าง?
+    [Scope 5] Q: ยาขมิ้นชันห้ามใช้ในบุคคลกลุ่มใดบ้าง?
+    SELECT DISTINCT ?medicineNameThai ?alertMessage ?alertSeverity ?conditionLabel WHERE {{
+    ?med rdf:type hm:HerbMedicine .
+    ?med hm:nameThai ?medicineNameThai .
+    ?med hm:hasSafetyAlert ?alert .
+    ?alert hm:alertMessage ?alertMessage .
+    OPTIONAL {{ ?alert hm:alertSeverity ?alertSeverity }}
+    ?alert hm:triggeredBy ?condition .
+    OPTIONAL {{ ?condition hm:nameThai ?conditionLabel }}
+    FILTER(regex(?medicineNameThai, "ขมิ้นชัน", "i"))
+    }} LIMIT 20
+
+    [Scope 6] Q: เด็กอายุ 6-12 ปี ใช้ยาอะไรได้บ้าง?
     SELECT DISTINCT ?medicineNameThai ?dosageInstruction WHERE {{
     ?med rdf:type hm:HerbMedicine .
     ?med hm:nameThai ?medicineNameThai .
@@ -200,7 +217,7 @@ async def chat_with_ontology(request: ChatRequest):
     FILTER(regex(str(?ageCond), "6to12", "i"))
     }} LIMIT 20
 
-    [Scope 6] Q: กลุ่มยาแก้ลมกองละเอียดมียาอะไรบ้าง?
+    [Scope 7] Q: กลุ่มยาแก้ลมกองละเอียดมียาอะไรบ้าง?
     SELECT DISTINCT ?medicineNameThai ?groupName WHERE {{
     ?med rdf:type hm:HerbMedicine .
     ?med hm:nameThai ?medicineNameThai .
@@ -220,6 +237,7 @@ async def chat_with_ontology(request: ChatRequest):
         print("AI Raw Response:\n", ai_response.text)
         executable_sparql = clean_sparql_output(ai_response.text)
         print("Generated SPARQL:\n", executable_sparql) 
+        
 
         # Query the Graph
         results = g.query(executable_sparql)

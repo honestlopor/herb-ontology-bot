@@ -460,209 +460,209 @@ skos:example rdf:type owl:AnnotationProperty .
 
 ### GroupMedicine Instances
 :group_ยารักษากลุ่มอาการทางระบบไหลเวียนโลหิต  rdf:type :GroupMedicine ;
-    :name "ยารักษากลุ่มอาการทางระบบไหลเวียนโลหิต"^^xsd:string .
+    :nameThai "ยารักษากลุ่มอาการทางระบบไหลเวียนโลหิต"^^xsd:string .
 
 :group_กลุ่มยาแก้ลมกองละเอียด  rdf:type :GroupMedicine ;
-    :name "กลุ่มยาแก้ลมกองละเอียด"^^xsd:string .
+    :nameThai "กลุ่มยาแก้ลมกองละเอียด"^^xsd:string .
 
 :group_ยารักษากลุ่มอาการทางระบบไหลเวียนโลหิต  :containsMedicine  :group_กลุ่มยาแก้ลมกองละเอียด .
 
 :group_ยารักษากลุ่มอาการทางระบบทางเดินอาหาร  rdf:type :GroupMedicine ;
-    :name "ยารักษากลุ่มอาการทางระบบทางเดินอาหาร"^^xsd:string .
+    :nameThai "ยารักษากลุ่มอาการทางระบบทางเดินอาหาร"^^xsd:string .
 
 :group_กลุ่มยาขับลมบรรเทาอาการท้องอืดท้องเฟ้อ  rdf:type :GroupMedicine ;
-    :name "กลุ่มยาขับลมบรรเทาอาการท้องอืดท้องเฟ้อ"^^xsd:string .
+    :nameThai "กลุ่มยาขับลมบรรเทาอาการท้องอืดท้องเฟ้อ"^^xsd:string .
 
 :group_ยารักษากลุ่มอาการทางระบบทางเดินอาหาร  :containsMedicine  :group_กลุ่มยาขับลมบรรเทาอาการท้องอืดท้องเฟ้อ .
 
 :group_กลุ่มยาบรรเทาอาการท้องผูก  rdf:type :GroupMedicine ;
-    :name "กลุ่มยาบรรเทาอาการท้องผูก"^^xsd:string .
+    :nameThai "กลุ่มยาบรรเทาอาการท้องผูก"^^xsd:string .
 
 :group_ยารักษากลุ่มอาการทางระบบทางเดินอาหาร  :containsMedicine  :group_กลุ่มยาบรรเทาอาการท้องผูก .
 
 :group_กลุ่มยาบรรเทาอาการท้องเสีย  rdf:type :GroupMedicine ;
-    :name "กลุ่มยาบรรเทาอาการท้องเสีย"^^xsd:string .
+    :nameThai "กลุ่มยาบรรเทาอาการท้องเสีย"^^xsd:string .
 
 :group_ยารักษากลุ่มอาการทางระบบทางเดินอาหาร  :containsMedicine  :group_กลุ่มยาบรรเทาอาการท้องเสีย .
 
 :group_กลุ่มยาบรรเทาริดสีดวงทวารหนัก  rdf:type :GroupMedicine ;
-    :name "กลุ่มยาบรรเทาริดสีดวงทวารหนัก"^^xsd:string .
+    :nameThai "กลุ่มยาบรรเทาริดสีดวงทวารหนัก"^^xsd:string .
 
 :group_ยารักษากลุ่มอาการทางระบบทางเดินอาหาร  :containsMedicine  :group_กลุ่มยาบรรเทาริดสีดวงทวารหนัก .
 
 :group_กลุ่มยารักษาโรคในกระเพาะอาหาร  rdf:type :GroupMedicine ;
-    :name "กลุ่มยารักษาโรคในกระเพาะอาหาร"^^xsd:string .
+    :nameThai "กลุ่มยารักษาโรคในกระเพาะอาหาร"^^xsd:string .
 
 :group_ยารักษากลุ่มอาการทางระบบทางเดินอาหาร  :containsMedicine  :group_กลุ่มยารักษาโรคในกระเพาะอาหาร .
 
 :group_กลุ่มยาบรรเทาอาการคลื่นไส้อาเจียน  rdf:type :GroupMedicine ;
-    :name "กลุ่มยาบรรเทาอาการคลื่นไส้อาเจียน"^^xsd:string .
+    :nameThai "กลุ่มยาบรรเทาอาการคลื่นไส้อาเจียน"^^xsd:string .
 
 :group_ยารักษากลุ่มอาการทางระบบทางเดินอาหาร  :containsMedicine  :group_กลุ่มยาบรรเทาอาการคลื่นไส้อาเจียน .
 
 :group_ยารักษากลุ่มอาการสูติศาสตร์นรีเวชวิทยา  rdf:type :GroupMedicine ;
-    :name "ยารักษากลุ่มอาการสูติศาสตร์นรีเวชวิทยา"^^xsd:string .
+    :nameThai "ยารักษากลุ่มอาการสูติศาสตร์นรีเวชวิทยา"^^xsd:string .
 
 :group_ยารักษากลุ่มอาการไข้  rdf:type :GroupMedicine ;
-    :name "ยารักษากลุ่มอาการไข้"^^xsd:string .
+    :nameThai "ยารักษากลุ่มอาการไข้"^^xsd:string .
 
 :group_กลุ่มยาแก้ไข้_แก้ร้อนใน  rdf:type :GroupMedicine ;
-    :name "กลุ่มยาแก้ไข้/ แก้ร้อนใน"^^xsd:string .
+    :nameThai "กลุ่มยาแก้ไข้/ แก้ร้อนใน"^^xsd:string .
 
 :group_ยารักษากลุ่มอาการไข้  :containsMedicine  :group_กลุ่มยาแก้ไข้_แก้ร้อนใน .
 
 :group_ยารักษากลุ่มอาการของระบบทางเดินหายใจ  rdf:type :GroupMedicine ;
-    :name "ยารักษากลุ่มอาการของระบบทางเดินหายใจ"^^xsd:string .
+    :nameThai "ยารักษากลุ่มอาการของระบบทางเดินหายใจ"^^xsd:string .
 
 :group_กลุ่มยาบรรเทาอาการไอ__เสมหะ  rdf:type :GroupMedicine ;
-    :name "กลุ่มยาบรรเทาอาการไอ / เสมหะ"^^xsd:string .
+    :nameThai "กลุ่มยาบรรเทาอาการไอ / เสมหะ"^^xsd:string .
 
 :group_ยารักษากลุ่มอาการของระบบทางเดินหายใจ  :containsMedicine  :group_กลุ่มยาบรรเทาอาการไอ__เสมหะ .
 
 :group_กลุ่มยาบรรเทาอาการหวัด  rdf:type :GroupMedicine ;
-    :name "กลุ่มยาบรรเทาอาการหวัด"^^xsd:string .
+    :nameThai "กลุ่มยาบรรเทาอาการหวัด"^^xsd:string .
 
 :group_ยารักษากลุ่มอาการของระบบทางเดินหายใจ  :containsMedicine  :group_กลุ่มยาบรรเทาอาการหวัด .
 
 :group_ยาบำรุงโลหิต  rdf:type :GroupMedicine ;
-    :name "ยาบำรุงโลหิต"^^xsd:string .
+    :nameThai "ยาบำรุงโลหิต"^^xsd:string .
 
 :group_ยารักษากลุ่มอาการทางกล้ามเนื้อและกระดูก  rdf:type :GroupMedicine ;
-    :name "ยารักษากลุ่มอาการทางกล้ามเนื้อและกระดูก"^^xsd:string .
+    :nameThai "ยารักษากลุ่มอาการทางกล้ามเนื้อและกระดูก"^^xsd:string .
 
 :group_ยาบำรุงธาตุปรับธาตุ  rdf:type :GroupMedicine ;
-    :name "ยาบำรุงธาตุปรับธาตุ"^^xsd:string .
+    :nameThai "ยาบำรุงธาตุปรับธาตุ"^^xsd:string .
 
 :group_ยารักษากลุ่มอาการทางระบบผิวหนัง  rdf:type :GroupMedicine ;
-    :name "ยารักษากลุ่มอาการทางระบบผิวหนัง"^^xsd:string .
+    :nameThai "ยารักษากลุ่มอาการทางระบบผิวหนัง"^^xsd:string .
 
 :group_ยารักษากลุ่มอาการทางระบบทางเดินปัสสาวะ  rdf:type :GroupMedicine ;
-    :name "ยารักษากลุ่มอาการทางระบบทางเดินปัสสาวะ"^^xsd:string .
+    :nameThai "ยารักษากลุ่มอาการทางระบบทางเดินปัสสาวะ"^^xsd:string .
 
 :group_ยาถอนพิษเบื่อเมา  rdf:type :GroupMedicine ;
-    :name "ยาถอนพิษเบื่อเมา"^^xsd:string .
+    :nameThai "ยาถอนพิษเบื่อเมา"^^xsd:string .
 
 :group_ยาลดความอยากบุหรี่  rdf:type :GroupMedicine ;
-    :name "ยาลดความอยากบุหรี่"^^xsd:string .
+    :nameThai "ยาลดความอยากบุหรี่"^^xsd:string .
 
 :group_ยารักษากลุ่มโรคที่เกี่ยวกับกษัย  rdf:type :GroupMedicine ;
-    :name "ยารักษากลุ่มโรคที่เกี่ยวกับกษัย"^^xsd:string .
+    :nameThai "ยารักษากลุ่มโรคที่เกี่ยวกับกษัย"^^xsd:string .
 
 :group_ยารักษากลุ่มอาการสมองและระบบประสาท  rdf:type :GroupMedicine ;
-    :name "ยารักษากลุ่มอาการสมองและระบบประสาท"^^xsd:string .
+    :nameThai "ยารักษากลุ่มอาการสมองและระบบประสาท"^^xsd:string .
 
 :group_ยารักษากลุ่มอาการอื่นๆ  rdf:type :GroupMedicine ;
-    :name "ยารักษากลุ่มอาการอื่นๆ"^^xsd:string .
+    :nameThai "ยารักษากลุ่มอาการอื่นๆ"^^xsd:string .
 
 
 ### DosageForm Instances
 :form_ยาขี้ผึ้ง  rdf:type :DosageForm ;
-    :name "ยาขี้ผึ้ง"^^xsd:string .
+    :nameThai "ยาขี้ผึ้ง"^^xsd:string .
 
 :form_ยาขี้ผึ้ง_รพ  rdf:type :DosageForm ;
-    :name "ยาขี้ผึ้ง (รพ.)"^^xsd:string .
+    :nameThai "ยาขี้ผึ้ง (รพ.)"^^xsd:string .
 
 :form_ยาครีม  rdf:type :DosageForm ;
-    :name "ยาครีม"^^xsd:string .
+    :nameThai "ยาครีม"^^xsd:string .
 
 :form_ยาครีม_รพ  rdf:type :DosageForm ;
-    :name "ยาครีม (รพ.)"^^xsd:string .
+    :nameThai "ยาครีม (รพ.)"^^xsd:string .
 
 :form_ยาชง  rdf:type :DosageForm ;
-    :name "ยาชง"^^xsd:string .
+    :nameThai "ยาชง"^^xsd:string .
 
 :form_ยาชง_รพ  rdf:type :DosageForm ;
-    :name "ยาชง (รพ.)"^^xsd:string .
+    :nameThai "ยาชง (รพ.)"^^xsd:string .
 
 :form_ยาต้ม_รพ  rdf:type :DosageForm ;
-    :name "ยาต้ม (รพ.)"^^xsd:string .
+    :nameThai "ยาต้ม (รพ.)"^^xsd:string .
 
 :form_ยาทิงเจอร์  rdf:type :DosageForm ;
-    :name "ยาทิงเจอร์"^^xsd:string .
+    :nameThai "ยาทิงเจอร์"^^xsd:string .
 
 :form_ยาทิงเจอร์_รพ  rdf:type :DosageForm ;
-    :name "ยาทิงเจอร์ (รพ.)"^^xsd:string .
+    :nameThai "ยาทิงเจอร์ (รพ.)"^^xsd:string .
 
 :form_ยาน้ำ_รพ  rdf:type :DosageForm ;
-    :name "ยาน้ำ (รพ.)"^^xsd:string .
+    :nameThai "ยาน้ำ (รพ.)"^^xsd:string .
 
 :form_ยาน้ำมัน  rdf:type :DosageForm ;
-    :name "ยาน้ำมัน"^^xsd:string .
+    :nameThai "ยาน้ำมัน"^^xsd:string .
 
 :form_ยาน้ำมัน_รพ  rdf:type :DosageForm ;
-    :name "ยาน้ำมัน (รพ.)"^^xsd:string .
+    :nameThai "ยาน้ำมัน (รพ.)"^^xsd:string .
 
 :form_ยาน้ำมันกัญชา  rdf:type :DosageForm ;
-    :name "ยาน้ำมันกัญชา"^^xsd:string .
+    :nameThai "ยาน้ำมันกัญชา"^^xsd:string .
 
 :form_ยาน้ำมันกัญชาทั้งห้า  rdf:type :DosageForm ;
-    :name "ยาน้ำมันกัญชาทั้งห้า"^^xsd:string .
+    :nameThai "ยาน้ำมันกัญชาทั้งห้า"^^xsd:string .
 
 :form_ยาน้ำสำหรับพ่นผิวหนัง  rdf:type :DosageForm ;
-    :name "ยาน้ำสำหรับพ่นผิวหนัง"^^xsd:string .
+    :nameThai "ยาน้ำสำหรับพ่นผิวหนัง"^^xsd:string .
 
 :form_ยาน้ำแขวนตะกอน  rdf:type :DosageForm ;
-    :name "ยาน้ำแขวนตะกอน"^^xsd:string .
+    :nameThai "ยาน้ำแขวนตะกอน"^^xsd:string .
 
 :form_ยาน้ำใส  rdf:type :DosageForm ;
-    :name "ยาน้ำใส"^^xsd:string .
+    :nameThai "ยาน้ำใส"^^xsd:string .
 
 :form_ยาประคบสมุนไพรสด  rdf:type :DosageForm ;
-    :name "ยาประคบสมุนไพรสด"^^xsd:string .
+    :nameThai "ยาประคบสมุนไพรสด"^^xsd:string .
 
 :form_ยาประคบสมุนไพรแห้ง  rdf:type :DosageForm ;
-    :name "ยาประคบสมุนไพรแห้ง"^^xsd:string .
+    :nameThai "ยาประคบสมุนไพรแห้ง"^^xsd:string .
 
 :form_ยาผง  rdf:type :DosageForm ;
-    :name "ยาผง"^^xsd:string .
+    :nameThai "ยาผง"^^xsd:string .
 
 :form_ยาผง_รพ  rdf:type :DosageForm ;
-    :name "ยาผง (รพ.)"^^xsd:string .
+    :nameThai "ยาผง (รพ.)"^^xsd:string .
 
 :form_ยาผงสำหรับผสมในน้ำมัน_รพ  rdf:type :DosageForm ;
-    :name "ยาผงสำหรับผสมในน้ำมัน (รพ.)"^^xsd:string .
+    :nameThai "ยาผงสำหรับผสมในน้ำมัน (รพ.)"^^xsd:string .
 
 :form_ยาลูกกลอน  rdf:type :DosageForm ;
-    :name "ยาลูกกลอน"^^xsd:string .
+    :nameThai "ยาลูกกลอน"^^xsd:string .
 
 :form_ยาลูกกลอน_รพ  rdf:type :DosageForm ;
-    :name "ยาลูกกลอน (รพ.)"^^xsd:string .
+    :nameThai "ยาลูกกลอน (รพ.)"^^xsd:string .
 
 :form_ยาหยดในช่องปาก  rdf:type :DosageForm ;
-    :name "ยาหยดในช่องปาก"^^xsd:string .
+    :nameThai "ยาหยดในช่องปาก"^^xsd:string .
 
 :form_ยาหยดในช่องปากหรือเยื่อบุในช่องปาก  rdf:type :DosageForm ;
-    :name "ยาหยดในช่องปากหรือเยื่อบุในช่องปาก"^^xsd:string .
+    :nameThai "ยาหยดในช่องปากหรือเยื่อบุในช่องปาก"^^xsd:string .
 
 :form_ยาหยดในช่องปากหรือเยื่อบุในช่องปาก_รพ  rdf:type :DosageForm ;
-    :name "ยาหยดในช่องปากหรือเยื่อบุในช่องปาก (รพ.)"^^xsd:string .
+    :nameThai "ยาหยดในช่องปากหรือเยื่อบุในช่องปาก (รพ.)"^^xsd:string .
 
 :form_ยาเจล  rdf:type :DosageForm ;
-    :name "ยาเจล"^^xsd:string .
+    :nameThai "ยาเจล"^^xsd:string .
 
 :form_ยาเม็ด  rdf:type :DosageForm ;
-    :name "ยาเม็ด"^^xsd:string .
+    :nameThai "ยาเม็ด"^^xsd:string .
 
 :form_ยาเม็ด_รพ  rdf:type :DosageForm ;
-    :name "ยาเม็ด (รพ.)"^^xsd:string .
+    :nameThai "ยาเม็ด (รพ.)"^^xsd:string .
 
 :form_ยาแคปซูล  rdf:type :DosageForm ;
-    :name "ยาแคปซูล"^^xsd:string .
+    :nameThai "ยาแคปซูล"^^xsd:string .
 
 :form_ยาแคปซูล_รพ  rdf:type :DosageForm ;
-    :name "ยาแคปซูล (รพ.)"^^xsd:string .
+    :nameThai "ยาแคปซูล (รพ.)"^^xsd:string .
 
 :form_ยาโลชัน  rdf:type :DosageForm ;
-    :name "ยาโลชัน"^^xsd:string .
+    :nameThai "ยาโลชัน"^^xsd:string .
 
 :form_ยาโลชันเตรียมสด  rdf:type :DosageForm ;
-    :name "ยาโลชันเตรียมสด"^^xsd:string .
+    :nameThai "ยาโลชันเตรียมสด"^^xsd:string .
 
 :form_ลูกกลอน_รพ  rdf:type :DosageForm ;
-    :name "ลูกกลอน (รพ.)"^^xsd:string .
+    :nameThai "ลูกกลอน (รพ.)"^^xsd:string .
 
 :form_แคปซูล_รพ  rdf:type :DosageForm ;
-    :name "แคปซูล (รพ.)"^^xsd:string .
+    :nameThai "แคปซูล (รพ.)"^^xsd:string .
 
 
 ### MedicalCondition Instances
@@ -2292,14 +2292,14 @@ skos:example rdf:type owl:AnnotationProperty .
     :hasGuideline :guideline_ยากล้วย ;
     :hasSafetyAlert :caution_ยากล้วย_79 , :caution_ยากล้วย_80 , :caution_ยากล้วย_81 .
 
-:med_ยาธาตุบรรจบ  rdf:type :HerbMedicine ;
+:med_ยาธาตุบรรจบ_v2  rdf:type :HerbMedicine ;
     :nameThai "ยาธาตุบรรจบ"^^xsd:string ;
     :belongsToGroup :group_กลุ่มยาบรรเทาอาการท้องเสีย ;
     :approvedBy "บัญชีรายการยาพื้นฐาน"^^xsd:string ;
     rdfs:comment "บรรเทาอาการอุจจาระธาตุพิการท้องเสียชนิดที่ไม่เกิดจากการติดเชื้อเช่นอุจจาระไม่เป็นมูกหรือมีเลือดปนและท้องเสียชนิดที่ไม่มีไข้"^^xsd:string ;
     :treats :disease_ธาตุพิการ , :symptom_ท้องเสีย ;
     rdfs:comment "สูตรตำรับไม่ระบุ"^^xsd:string ;
-    :hasGuideline :guideline_ยาธาตุบรรจบ_ยาผง , :guideline_ยาธาตุบรรจบ_ยาผง_เด็ก_อายุ6-12ปี , :guideline_ยาธาตุบรรจบ_ยาแคปซูล , :guideline_ยาธาตุบรรจบ_ยาแคปซูล_เด็ก_อายุ6-12ปี , :guideline_ยาธาตุบรรจบ_ยาลูกกลอน , :guideline_ยาธาตุบรรจบ_ยาลูกกลอน_เด็ก_อายุ6-12ปี ;
+    :hasGuideline :guideline_ยาธาตุบรรจบ_ยาผง_v2 , :guideline_ยาธาตุบรรจบ_ยาผง_v2_เด็ก_อายุ6-12ปี , :guideline_ยาธาตุบรรจบ_ยาแคปซูล_v2 , :guideline_ยาธาตุบรรจบ_ยาแคปซูล_v2_เด็ก_อายุ6-12ปี , :guideline_ยาธาตุบรรจบ_ยาลูกกลอน_v2 , :guideline_ยาธาตุบรรจบ_ยาลูกกลอน_v2_เด็ก_อายุ6-12ปี ;
     :hasSafetyAlert :contra_ยาธาตุบรรจบ_82 , :caution_ยาธาตุบรรจบ_83 , :caution_ยาธาตุบรรจบ_84 , :caution_ยาธาตุบรรจบ_85 .
 
 :med_ยาฟ้าทะลายโจร  rdf:type :HerbMedicine ;
@@ -2362,24 +2362,24 @@ skos:example rdf:type owl:AnnotationProperty .
     :hasGuideline :guideline_ยาริดสีดวงมหากาฬ ;
     :hasSafetyAlert :caution_ยาริดสีดวงมหากาฬ_106 , :caution_ยาริดสีดวงมหากาฬ_107 .
 
-:med_ยากล้วย  rdf:type :HerbMedicine ;
+:med_ยากล้วย_v2  rdf:type :HerbMedicine ;
     :nameThai "ยากล้วย"^^xsd:string ;
     :belongsToGroup :group_กลุ่มยารักษาโรคในกระเพาะอาหาร ;
     :approvedBy "บัญชีรายการยาพื้นฐาน"^^xsd:string ;
     rdfs:comment "รักษาแผลในกระเพาะอาหาร"^^xsd:string ;
     :treats :symptom_แผล ;
     :hasComponent :comp_ยากล้วย_ผงจากผลกล้วยน้ำว้าดิบชนิดแก่จัด ;
-    :hasGuideline :guideline_ยากล้วย ;
+    :hasGuideline :guideline_ยากล้วย_v2 ;
     :hasSafetyAlert :caution_ยากล้วย_108 , :caution_ยากล้วย_109 , :caution_ยากล้วย_110 .
 
-:med_ยาขิง  rdf:type :HerbMedicine ;
+:med_ยาขิง_v2  rdf:type :HerbMedicine ;
     :nameThai "ยาขิง"^^xsd:string ;
     :belongsToGroup :group_กลุ่มยาบรรเทาอาการคลื่นไส้อาเจียน ;
     :approvedBy "บัญชีรายการยาเฉพาะ"^^xsd:string ;
     rdfs:comment "1. ป้องกันและบรรเทาอาการคลื่นไส้อาเจียนที่มีสาเหตุจากการเมารถเมาเรือ 2. ป้องกันอาการคลื่นไส้อาเจียนหลังการผ่าตัด"^^xsd:string ;
     :treats :symptom_คลื่นไส้ , :symptom_อาเจียน ;
     rdfs:comment "สูตรตำรับไม่ระบุ"^^xsd:string ;
-    :hasGuideline :guideline_ยาขิง ;
+    :hasGuideline :guideline_ยาขิง_v2 ;
     :hasSafetyAlert :caution_ยาขิง_111 , :caution_ยาขิง_112 , :caution_ยาขิง_113 , :caution_ยาขิง_114 ;
     rdfs:comment "กรณีใช้ป้องกันอาการคลื่นไส้อาเจียนหลังการผ่าตัดให้สั่งใช้ยาโดยผู้ประกอบวิชาชีพเวชกรรม"^^xsd:string .
 
@@ -2634,14 +2634,14 @@ skos:example rdf:type owl:AnnotationProperty .
     :hasGuideline :guideline_ยาปราบชมพูทวีป ;
     :hasSafetyAlert :contra_ยาปราบชมพูทวีป_190 , :contra_ยาปราบชมพูทวีป_191 , :caution_ยาปราบชมพูทวีป_192 , :caution_ยาปราบชมพูทวีป_193 , :caution_ยาปราบชมพูทวีป_194 , :caution_ยาปราบชมพูทวีป_195 .
 
-:med_ยาฟ้าทะลายโจร  rdf:type :HerbMedicine ;
+:med_ยาฟ้าทะลายโจร_v2  rdf:type :HerbMedicine ;
     :nameThai "ยาฟ้าทะลายโจร"^^xsd:string ;
     :belongsToGroup :group_กลุ่มยาบรรเทาอาการหวัด ;
     :approvedBy "บัญชีรายการยาพื้นฐาน"^^xsd:string ;
     rdfs:comment "1. บรรเทาอาการเจ็บคอ 2. บรรเทาอาการของโรคหวัด (common cold) เช่นเจ็บคอปวดเมื่อยกล้ามเนื้อ"^^xsd:string ;
     :treats :symptom_ปวดเมื่อย , :symptom_เจ็บคอ ;
     :hasComponent :comp_ยาฟ้าทะลายโจร_ผงจากส่วนเหนือดินของฟ้าทะลายโจร ;
-    :hasGuideline :guideline_ยาฟ้าทะลายโจร ;
+    :hasGuideline :guideline_ยาฟ้าทะลายโจร_v2 ;
     :hasSafetyAlert :contra_ยาฟ้าทะลายโจร_196 , :contra_ยาฟ้าทะลายโจร_197 , :contra_ยาฟ้าทะลายโจร_198 , :caution_ยาฟ้าทะลายโจร_199 , :caution_ยาฟ้าทะลายโจร_200 , :caution_ยาฟ้าทะลายโจร_201 , :caution_ยาฟ้าทะลายโจร_202 , :caution_ยาฟ้าทะลายโจร_203 , :caution_ยาฟ้าทะลายโจร_204 , :caution_ยาฟ้าทะลายโจร_205 .
 
 :med_ยาฟ้าทะลายโจร_2  rdf:type :HerbMedicine ;
@@ -2747,13 +2747,13 @@ skos:example rdf:type owl:AnnotationProperty .
     :hasSafetyAlert :contra_ยาทำลายพระสุเมรุ_244 , :caution_ยาทำลายพระสุเมรุ_245 , :caution_ยาทำลายพระสุเมรุ_246 , :caution_ยาทำลายพระสุเมรุ_247 , :caution_ยาทำลายพระสุเมรุ_248 , :caution_ยาทำลายพระสุเมรุ_249 ;
     rdfs:comment "ให้สั่งใช้ยาโดยแพทย์แผนไทยหรือแพทย์แผนไทยประยุกต์หรือผู้ที่ได้รับมอบหมายจากผู้อำนวยการของสถานพยาบาลนั้นๆโดยใช้องค์ความรู้การแพทย์แผนไทย"^^xsd:string .
 
-:med_ยาธรณีสันฑะฆาต  rdf:type :HerbMedicine ;
+:med_ยาธรณีสันฑะฆาต_v2  rdf:type :HerbMedicine ;
     :nameThai "ยาธรณีสันฑะฆาต"^^xsd:string ;
     :belongsToGroup :group_ยารักษากลุ่มอาการทางกล้ามเนื้อและกระดูก ;
     :approvedBy "บัญชีรายการยาเฉพาะ"^^xsd:string ;
     rdfs:comment "แก้กษัยเส้น"^^xsd:string ;
     :hasComponent :comp_ยาธรณีสันฑะฆาต_พริกไทยล่อน , :comp_ยาธรณีสันฑะฆาต_ยาดำสะตุ , :comp_ยาธรณีสันฑะฆาต_เนื้อผลสมอไทย , :comp_ยาธรณีสันฑะฆาต_มหาหิงคุ์ , :comp_ยาธรณีสันฑะฆาต_การบูร , :comp_ยาธรณีสันฑะฆาต_รงทอง_ประสะ , :comp_ยาธรณีสันฑะฆาต_ผักแพวแดง_ทั้งต้น , :comp_ยาธรณีสันฑะฆาต_เนื้อผลมะขามป้อม , :comp_ยาธรณีสันฑะฆาต_ลูกจันทน์ , :comp_ยาธรณีสันฑะฆาต_ดอกจันทน์ , :comp_ยาธรณีสันฑะฆาต_ลูกกระวาน , :comp_ยาธรณีสันฑะฆาต_ดอกกานพลู , :comp_ยาธรณีสันฑะฆาต_เทียนดำ , :comp_ยาธรณีสันฑะฆาต_เทียนขาว , :comp_ยาธรณีสันฑะฆาต_หัวดองดึง , :comp_ยาธรณีสันฑะฆาต_หัวบุก , :comp_ยาธรณีสันฑะฆาต_หัวกลอย , :comp_ยาธรณีสันฑะฆาต_หัวกระดาดขาว , :comp_ยาธรณีสันฑะฆาต_หัวกระดาดแดง , :comp_ยาธรณีสันฑะฆาต_ลูกเร่ว , :comp_ยาธรณีสันฑะฆาต_เหง้าขิง , :comp_ยาธรณีสันฑะฆาต_รากชะเอมเทศ , :comp_ยาธรณีสันฑะฆาต_รากเจตมูลเพลิงแดง , :comp_ยาธรณีสันฑะฆาต_โกฐกระดูก , :comp_ยาธรณีสันฑะฆาต_โกฐเขมา , :comp_ยาธรณีสันฑะฆาต_โกฐน้ำเต้า ;
-    :hasGuideline :guideline_ยาธรณีสันฑะฆาต_ยาผง , :guideline_ยาธรณีสันฑะฆาต_ยาแคปซูล , :guideline_ยาธรณีสันฑะฆาต_ยาเม็ด , :guideline_ยาธรณีสันฑะฆาต_ยาลูกกลอน ;
+    :hasGuideline :guideline_ยาธรณีสันฑะฆาต_ยาผง_v2 , :guideline_ยาธรณีสันฑะฆาต_ยาแคปซูล_v2 , :guideline_ยาธรณีสันฑะฆาต_ยาเม็ด_v2 , :guideline_ยาธรณีสันฑะฆาต_ยาลูกกลอน_v2 ;
     :hasSafetyAlert :contra_ยาธรณีสันฑะฆาต_250 , :caution_ยาธรณีสันฑะฆาต_251 , :caution_ยาธรณีสันฑะฆาต_252 , :caution_ยาธรณีสันฑะฆาต_253 , :caution_ยาธรณีสันฑะฆาต_254 ;
     rdfs:comment "ให้สั่งใช้ยาโดยแพทย์แผนไทยแพทย์แผนไทยประยุกต์หรือผู้ประกอบวิชาชีพเวชกรรมที่ผู้อำนวยการหรือหัวหน้าสถานพยาบาลมอบหมาย"^^xsd:string .
 
@@ -2778,13 +2778,13 @@ skos:example rdf:type owl:AnnotationProperty .
     :hasSafetyAlert :contra_ยาน้ำมันกัญชาทั้งห้า_หรือ_257 , :contra_ยาน้ำมันกัญชาทั้งห้า_หรือ_258 , :contra_ยาน้ำมันกัญชาทั้งห้า_หรือ_259 , :contra_ยาน้ำมันกัญชาทั้งห้า_หรือ_260 , :contra_ยาน้ำมันกัญชาทั้งห้า_หรือ_261 , :caution_ยาน้ำมันกัญชาทั้งห้า_หรือ_262 , :caution_ยาน้ำมันกัญชาทั้งห้า_หรือ_263 , :caution_ยาน้ำมันกัญชาทั้งห้า_หรือ_264 , :caution_ยาน้ำมันกัญชาทั้งห้า_หรือ_265 , :caution_ยาน้ำมันกัญชาทั้งห้า_หรือ_266 , :caution_ยาน้ำมันกัญชาทั้งห้า_หรือ_267 , :caution_ยาน้ำมันกัญชาทั้งห้า_หรือ_268 , :caution_ยาน้ำมันกัญชาทั้งห้า_หรือ_269 , :caution_ยาน้ำมันกัญชาทั้งห้า_หรือ_270 ;
     rdfs:comment "ชื่อยาเดิมตามประกาศคณะกรรมการพัฒนาระบบยาแห่งชาติเรื่อง ยาหลักแห่งชาติด้านสมุนไพรพ.ศ. 2564 คือที่ผลิตจากรากลำต้นกิ่งก้านใบดอกและเมล็ดซึ่งเป็นยาใน"^^xsd:string .
 
-:med_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC  rdf:type :HerbMedicine ;
+:med_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_v2  rdf:type :HerbMedicine ;
     :nameThai "ยาน้ำมันสารสกัดกัญชาที่มี delta-9-tetrahydrocannabinol (THC)"^^xsd:string ;
     :belongsToGroup :group_ยารักษากลุ่มอาการทางกล้ามเนื้อและกระดูก ;
     :approvedBy "บัญชีรายการยาเฉพาะ"^^xsd:string ;
     rdfs:comment "ใช้รักษาเสริมในโรคภาวะปลอกประสาทเสื่อมแข็ง (Multiple Sclerosis) ในระยะ Progressive ที่มีภาวะกล้ามเนื้อหดเกร็ง (Spasticity)"^^xsd:string ;
     :hasComponent :comp_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_สารสกัดจากกัญชา_Cannabis , :comp_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_sativa , <http://www.example.org/herbmedicine#comp_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_L.> , :comp_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_ที่มีสารสำคัญ , :comp_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_Delta , :comp_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_-9-Tetrahydrocannabinol_THC , :comp_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_Cannabidiol_CBD ;
-    :hasGuideline :guideline_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC ;
+    :hasGuideline :guideline_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_v2 ;
     :hasSafetyAlert :contra_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_271 , :contra_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_272 , :contra_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_273 , :contra_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_274 , :caution_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_275 , :caution_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_276 , :caution_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_277 , :caution_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_278 , :caution_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_279 , :caution_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_280 , :caution_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_281 , :caution_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_282 , :caution_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_283 ;
     rdfs:comment "ให้สั่งใช้ยาโดยผู้ประกอบวิชาชีพเวชกรรมแผนปัจจุบันที่ผ่านการอบรมหลักสูตรการใช้กัญชาทางการแพทย์ที่กระทรวงสาธารณสุขรับรอง"^^xsd:string .
 
@@ -2908,13 +2908,13 @@ skos:example rdf:type owl:AnnotationProperty .
     :hasGuideline :guideline_ยาอัมฤตย์โอสถ ;
     :hasSafetyAlert :contra_ยาอัมฤตย์โอสถ_321 , :caution_ยาอัมฤตย์โอสถ_322 , :caution_ยาอัมฤตย์โอสถ_323 , :caution_ยาอัมฤตย์โอสถ_324 , :caution_ยาอัมฤตย์โอสถ_325 , :caution_ยาอัมฤตย์โอสถ_326 , :caution_ยาอัมฤตย์โอสถ_327 , :caution_ยาอัมฤตย์โอสถ_328 .
 
-:med_ยาเบญจกูล  rdf:type :HerbMedicine ;
+:med_ยาเบญจกูล_v2  rdf:type :HerbMedicine ;
     :nameThai "ยาเบญจกูล"^^xsd:string ;
     :belongsToGroup :group_ยาบำรุงธาตุปรับธาตุ ;
     :approvedBy "บัญชีรายการยาพื้นฐาน"^^xsd:string ;
     rdfs:comment "บำรุงธาตุแก้ธาตุให้ปกติ"^^xsd:string ;
     :hasComponent :comp_ยาเบญจกูล_ดอกดีปลี , :comp_ยาเบญจกูล_ราก , :comp_ยาเบญจกูล_ช้าพลู , :comp_ยาเบญจกูล_เถาสะค้าน , :comp_ยาเบญจกูล_รากเจตมูลเพลิงแดง , :comp_ยาเบญจกูล_เหง้าขิงแห้ง ;
-    :hasGuideline :guideline_ยาเบญจกูล_ยาชง , :guideline_ยาเบญจกูล_ยาผง , :guideline_ยาเบญจกูล_ยาแคปซูล , :guideline_ยาเบญจกูล_ยาเม็ด , :guideline_ยาเบญจกูล_ยาลูกกลอน ;
+    :hasGuideline :guideline_ยาเบญจกูล_ยาชง_v2 , :guideline_ยาเบญจกูล_ยาผง_v2 , :guideline_ยาเบญจกูล_ยาแคปซูล_v2 , :guideline_ยาเบญจกูล_ยาเม็ด_v2 , :guideline_ยาเบญจกูล_ยาลูกกลอน_v2 ;
     :hasSafetyAlert :contra_ยาเบญจกูล_329 , :caution_ยาเบญจกูล_330 , :caution_ยาเบญจกูล_331 .
 
 :med_ยาตรีเกสรมาส  rdf:type :HerbMedicine ;
@@ -2938,13 +2938,13 @@ skos:example rdf:type owl:AnnotationProperty .
     :hasSafetyAlert :contra_ยาตรีพิกัด_335 , :caution_ยาตรีพิกัด_336 , :caution_ยาตรีพิกัด_337 ;
     rdfs:comment "ให้สั่งใช้ยาโดยแพทย์แผนไทยหรือแพทย์แผนไทยประยุกต์หรือผู้ที่ได้รับมอบหมายจากผู้อำนวยการของสถานพยาบาลนั้นๆโดยใช้องค์ความรู้การแพทย์แผนไทย"^^xsd:string .
 
-:med_ยาปลูกไฟธาตุ  rdf:type :HerbMedicine ;
+:med_ยาปลูกไฟธาตุ_v2  rdf:type :HerbMedicine ;
     :nameThai "ยาปลูกไฟธาตุ"^^xsd:string ;
     :belongsToGroup :group_ยาบำรุงธาตุปรับธาตุ ;
     :approvedBy "บัญชีรายการยาเฉพาะ"^^xsd:string ;
     rdfs:comment "บำรุงไฟธาตุขับโลหิตระดูบำรุงน้ำนม"^^xsd:string ;
     :hasComponent :comp_ยาปลูกไฟธาตุ_พริกไทยล่อน , :comp_ยาปลูกไฟธาตุ_ดอกดีปลี , :comp_ยาปลูกไฟธาตุ_ราก , :comp_ยาปลูกไฟธาตุ_ช้าพลูผักแพวแดง_ทั้งต้น , :comp_ยาปลูกไฟธาตุ_เถาสะค้าน , :comp_ยาปลูกไฟธาตุ_เหง้าขิงแห้ง , :comp_ยาปลูกไฟธาตุ_ลูกผักชีล้อม , :comp_ยาปลูกไฟธาตุ_เหง้าว่านน้ำ , :comp_ยาปลูกไฟธาตุ_หัวแห้วหมู , :comp_ยาปลูกไฟธาตุ_ผิวมะกรูด , :comp_ยาปลูกไฟธาตุ_ลูกพิลังกาสา ;
-    :hasGuideline :guideline_ยาปลูกไฟธาตุ ;
+    :hasGuideline :guideline_ยาปลูกไฟธาตุ_v2 ;
     :hasSafetyAlert :contra_ยาปลูกไฟธาตุ_338 , :caution_ยาปลูกไฟธาตุ_339 , :caution_ยาปลูกไฟธาตุ_340 ;
     rdfs:comment "แพทย์แผนไทยดั้งเดิมใช้เป็นยาแทนการอยู่ไฟของหญิงหลังคลอด - คัมภีร์มหาโชตรัตน์ยาปลูกไฟธาตุใช้สำหรับปลูกไฟธาตุให้โลหิตงามถ้าไม่มีระดูให้ระดูมีมาถ้าแม่ลูกอ่อนกินทำให้น้ำนมมากทั้งหาโทษมิได้เลยดีนักแล"^^xsd:string ;
     rdfs:comment "ให้สั่งใช้ยาโดยแพทย์แผนไทยแพทย์แผนไทยประยุกต์หรือผู้ประกอบวิชาชีพเวชกรรมที่ผู้อำนวยการหรือหัวหน้าสถานพยาบาลมอบหมาย"^^xsd:string .
@@ -3027,13 +3027,13 @@ skos:example rdf:type owl:AnnotationProperty .
     :hasGuideline :guideline_ยาว่านหางจระเข้ ;
     :hasSafetyAlert :caution_ยาว่านหางจระเข้_366 , :caution_ยาว่านหางจระเข้_367 .
 
-:med_ยาหญ้าปักกิ่ง  rdf:type :HerbMedicine ;
+:med_ยาหญ้าปักกิ่ง_v2  rdf:type :HerbMedicine ;
     :nameThai "ยาหญ้าปักกิ่ง"^^xsd:string ;
     :belongsToGroup :group_ยารักษากลุ่มอาการทางระบบผิวหนัง ;
     :approvedBy "บัญชีรายการยาเฉพาะ"^^xsd:string ;
     rdfs:comment "แก้น้ำเหลืองเสีย"^^xsd:string ;
     :hasComponent :comp_ยาหญ้าปักกิ่ง_ผงหญ้าปักกิ่ง ;
-    :hasGuideline :guideline_ยาหญ้าปักกิ่ง_ยาชง , :guideline_ยาหญ้าปักกิ่ง_ยาแคปซูล ;
+    :hasGuideline :guideline_ยาหญ้าปักกิ่ง_ยาชง_v2 , :guideline_ยาหญ้าปักกิ่ง_ยาแคปซูล_v2 ;
     :hasSafetyAlert :caution_ยาหญ้าปักกิ่ง_368 , :caution_ยาหญ้าปักกิ่ง_369 ;
     rdfs:comment "กรณีใช้แก้น้ำเหลืองเสียให้สั่งใช้ยาโดยแพทย์แผนไทยแพทย์แผนไทยประยุกต์หรือผู้ประกอบวิชาชีพเวชกรรมที่ผู้อำนวยการหรือหัวหน้าสถานพยาบาลมอบหมาย"^^xsd:string .
 
@@ -3055,13 +3055,13 @@ skos:example rdf:type owl:AnnotationProperty .
     :hasGuideline :guideline_ยาหญ้าหนวดแมว ;
     :hasSafetyAlert :contra_ยาหญ้าหนวดแมว_375 , :caution_ยาหญ้าหนวดแมว_376 , :caution_ยาหญ้าหนวดแมว_377 .
 
-:med_ยารางจืด  rdf:type :HerbMedicine ;
+:med_ยารางจืด_v2  rdf:type :HerbMedicine ;
     :nameThai "ยารางจืด"^^xsd:string ;
     :belongsToGroup :group_ยาถอนพิษเบื่อเมา ;
     :approvedBy "บัญชีรายการยาพื้นฐาน"^^xsd:string ;
     rdfs:comment "1. ถอนพิษเบื่อเมา 2. บรรเทาพิษยาฆ่าแมลงหรือโลหะหนัก"^^xsd:string ;
     :hasComponent :comp_ยารางจืด_ผงใบรางจืดโตเต็มที่ ;
-    :hasGuideline :guideline_ยารางจืด_ทั่วไป , :guideline_ยารางจืด_ยาชง , :guideline_ยารางจืด_ยาแคปซูล ;
+    :hasGuideline :guideline_ยารางจืด_ทั่วไป , :guideline_ยารางจืด_ยาชง_v2 , :guideline_ยารางจืด_ยาแคปซูล_v2 ;
     :hasSafetyAlert :caution_ยารางจืด_378 , :caution_ยารางจืด_379 , :caution_ยารางจืด_380 , :caution_ยารางจืด_381 .
 
 :med_ยาผสมหญ้าดอกขาว  rdf:type :HerbMedicine ;
@@ -3082,35 +3082,35 @@ skos:example rdf:type owl:AnnotationProperty .
     :hasGuideline :guideline_ยาหญ้าดอกขาว ;
     :hasSafetyAlert :caution_ยาหญ้าดอกขาว_384 , :caution_ยาหญ้าดอกขาว_385 .
 
-:med_ยากษัยเส้น  rdf:type :HerbMedicine ;
+:med_ยากษัยเส้น_v2  rdf:type :HerbMedicine ;
     :nameThai "ยากษัยเส้น"^^xsd:string ;
     :belongsToGroup :group_ยารักษากลุ่มโรคที่เกี่ยวกับกษัย ;
     :approvedBy "บัญชีรายการยาเฉพาะ"^^xsd:string ;
     rdfs:comment "บรรเทาอาการปวดหลังปวดเอวปวดเมื่อยตามร่างกาย"^^xsd:string ;
     :treats :symptom_ปวดเมื่อย , :symptom_ปวดหลัง , :symptom_ปวดเอว ;
     :hasComponent :comp_ยากษัยเส้น_ดอกดีปลี , :comp_ยากษัยเส้น_เหง้าขิง , :comp_ยากษัยเส้น_ราก , :comp_ยากษัยเส้น_ช้าพลู , :comp_ยากษัยเส้น_เถาสะค้าน , :comp_ยากษัยเส้น_รากเจตมูลเพลิงแดง , :comp_ยากษัยเส้น_เถาโคคลานกำลังวัวเถลิง , :comp_ยากษัยเส้น_เถาวัลย์เปรียง , :comp_ยากษัยเส้น_เถา , :comp_ยากษัยเส้น_พริกไทย , :comp_ยากษัยเส้น_เถาม้ากระทืบโรง , :comp_ยากษัยเส้น_หัวกระชาย , :comp_ยากษัยเส้น_แก่นแสมสาร , :comp_ยากษัยเส้น_เหง้าไพล , :comp_ยากษัยเส้น_การบูร , :comp_ยากษัยเส้น_ลูกจันทน์ , :comp_ยากษัยเส้น_ดอกกานพลู , :comp_ยากษัยเส้น_เหง้าว่านน้ำ , :comp_ยากษัยเส้น_เหง้ากระทือ , :comp_ยากษัยเส้น_ลูกกระวาน , :comp_ยากษัยเส้น_พริกไทยล่อน , :comp_ยากษัยเส้น_รากชะเอมเทศ , :comp_ยากษัยเส้น_เปลือกอบเชยเทศ , :comp_ยากษัยเส้น_ดอกจันทน์ , :comp_ยากษัยเส้น_โกฐน้ำเต้า , :comp_ยากษัยเส้น_ดอกมะลิ , :comp_ยากษัยเส้น_ดอกพิกุล , :comp_ยากษัยเส้น_ดอกบุนนาค , :comp_ยากษัยเส้น_ดอกสารภี , :comp_ยากษัยเส้น_เกสรบัวหลวง ;
-    :hasGuideline :guideline_ยากษัยเส้น ;
+    :hasGuideline :guideline_ยากษัยเส้น_v2 ;
     :hasSafetyAlert :contra_ยากษัยเส้น_386 , :caution_ยากษัยเส้น_387 , :caution_ยากษัยเส้น_388 , :caution_ยากษัยเส้น_389 , :caution_ยากษัยเส้น_390 ;
     rdfs:comment "ให้สั่งใช้ยาโดยแพทย์แผนไทยแพทย์แผนไทยประยุกต์หรือผู้ประกอบวิชาชีพเวชกรรมที่ผู้อำนวยการหรือหัวหน้าสถานพยาบาลมอบหมาย"^^xsd:string .
 
-:med_ยาธรณีสันฑะฆาต  rdf:type :HerbMedicine ;
+:med_ยาธรณีสันฑะฆาต_v3  rdf:type :HerbMedicine ;
     :nameThai "ยาธรณีสันฑะฆาต"^^xsd:string ;
     :belongsToGroup :group_ยารักษากลุ่มโรคที่เกี่ยวกับกษัย ;
     :approvedBy "บัญชีรายการยาเฉพาะ"^^xsd:string ;
     rdfs:comment "แก้กษัยเส้น"^^xsd:string ;
     :hasComponent :comp_ยาธรณีสันฑะฆาต_พริกไทยล่อน , :comp_ยาธรณีสันฑะฆาต_ยาดำสะตุ , :comp_ยาธรณีสันฑะฆาต_เนื้อผลสมอไทย , :comp_ยาธรณีสันฑะฆาต_มหาหิงคุ์ , :comp_ยาธรณีสันฑะฆาต_การบูร , :comp_ยาธรณีสันฑะฆาต_รงทอง_ประสะ , :comp_ยาธรณีสันฑะฆาต_ผักแพวแดง_ทั้งต้น , :comp_ยาธรณีสันฑะฆาต_เนื้อผลมะขามป้อม , :comp_ยาธรณีสันฑะฆาต_ลูกจันทน์ , :comp_ยาธรณีสันฑะฆาต_ดอกจันทน์ , :comp_ยาธรณีสันฑะฆาต_ลูกกระวาน , :comp_ยาธรณีสันฑะฆาต_ดอกกานพลู , :comp_ยาธรณีสันฑะฆาต_เทียนดำ , :comp_ยาธรณีสันฑะฆาต_เทียนขาว , :comp_ยาธรณีสันฑะฆาต_หัวดองดึง , :comp_ยาธรณีสันฑะฆาต_หัวบุก , :comp_ยาธรณีสันฑะฆาต_หัวกลอย , :comp_ยาธรณีสันฑะฆาต_หัวกระดาดขาว , :comp_ยาธรณีสันฑะฆาต_หัวกระดาดแดง , :comp_ยาธรณีสันฑะฆาต_ลูกเร่ว , :comp_ยาธรณีสันฑะฆาต_เหง้าขิง , :comp_ยาธรณีสันฑะฆาต_รากชะเอมเทศ , :comp_ยาธรณีสันฑะฆาต_รากเจตมูลเพลิงแดง , :comp_ยาธรณีสันฑะฆาต_โกฐกระดูก , :comp_ยาธรณีสันฑะฆาต_โกฐเขมา , :comp_ยาธรณีสันฑะฆาต_โกฐน้ำเต้า ;
-    :hasGuideline :guideline_ยาธรณีสันฑะฆาต_ยาผง , :guideline_ยาธรณีสันฑะฆาต_ยาแคปซูล , :guideline_ยาธรณีสันฑะฆาต_ยาเม็ด , :guideline_ยาธรณีสันฑะฆาต_ยาลูกกลอน ;
+    :hasGuideline :guideline_ยาธรณีสันฑะฆาต_ยาผง_v3 , :guideline_ยาธรณีสันฑะฆาต_ยาแคปซูล_v3 , :guideline_ยาธรณีสันฑะฆาต_ยาเม็ด_v3 , :guideline_ยาธรณีสันฑะฆาต_ยาลูกกลอน_v3 ;
     :hasSafetyAlert :contra_ยาธรณีสันฑะฆาต_391 , :caution_ยาธรณีสันฑะฆาต_392 , :caution_ยาธรณีสันฑะฆาต_393 , :caution_ยาธรณีสันฑะฆาต_394 , :caution_ยาธรณีสันฑะฆาต_395 ;
     rdfs:comment "ให้สั่งใช้ยาโดยแพทย์แผนไทยแพทย์แผนไทยประยุกต์หรือผู้ประกอบวิชาชีพเวชกรรมที่ผู้อำนวยการหรือหัวหน้าสถานพยาบาลมอบหมาย"^^xsd:string .
 
-:med_ยาอัมฤตย์โอสถ  rdf:type :HerbMedicine ;
+:med_ยาอัมฤตย์โอสถ_v2  rdf:type :HerbMedicine ;
     :nameThai "ยาอัมฤตย์โอสถ"^^xsd:string ;
     :belongsToGroup :group_ยารักษากลุ่มโรคที่เกี่ยวกับกษัย ;
     :approvedBy "บัญชีรายการยาเฉพาะ"^^xsd:string ;
     rdfs:comment "แก้ลมกษัยบรรเทาอาการปวดเมื่อยตึงกล้ามเนื้อที่เป็นเรื้อรัง"^^xsd:string ;
     :treats :symptom_ปวดเมื่อย , :disease_ลมกษ ;
     :hasComponent :comp_ยาอัมฤตย์โอสถ_ยาผงยาแคปซูล , :comp_ยาอัมฤตย์โอสถ_ลำต้นสหัสคุณ , :comp_ยาอัมฤตย์โอสถ_แก่นแสมทะเล , :comp_ยาอัมฤตย์โอสถ_รากส้มกุ้ง , :comp_ยาอัมฤตย์โอสถ_ผลมะตูม , :comp_ยาอัมฤตย์โอสถ_ผลสมอพิเภก , :comp_ยาอัมฤตย์โอสถ_ผลพิลังกาสา , :comp_ยาอัมฤตย์โอสถ_ผลสมอเทศ , :comp_ยาอัมฤตย์โอสถ_ผลสมอไทย , :comp_ยาอัมฤตย์โอสถ_โกฐเขมา , :comp_ยาอัมฤตย์โอสถ_เทียนดำ , :comp_ยาอัมฤตย์โอสถ_เทียนขาว , :comp_ยาอัมฤตย์โอสถ_ลูกจันทน์ , :comp_ยาอัมฤตย์โอสถ_ดอกจันทน์ , :comp_ยาอัมฤตย์โอสถ_ผลกระวานกานพลู , :comp_ยาอัมฤตย์โอสถ_ดอกดีปลีอย่างละ , :comp_ยาอัมฤตย์โอสถ_เปลือกหอยโข่งเผาเปลือกหอยขมเผาเปลือกหอยแครงเผาเบี้ยผู้เผาอย่างละ , :comp_ยาอัมฤตย์โอสถ_เรือนช่อดอกกัญชา , :comp_ยาอัมฤตย์โอสถ_ผลพริกไทย ;
-    :hasGuideline :guideline_ยาอัมฤตย์โอสถ ;
+    :hasGuideline :guideline_ยาอัมฤตย์โอสถ_v2 ;
     :hasSafetyAlert :contra_ยาอัมฤตย์โอสถ_396 , :caution_ยาอัมฤตย์โอสถ_397 , :caution_ยาอัมฤตย์โอสถ_398 , :caution_ยาอัมฤตย์โอสถ_399 , :caution_ยาอัมฤตย์โอสถ_400 , :caution_ยาอัมฤตย์โอสถ_401 , :caution_ยาอัมฤตย์โอสถ_402 , :caution_ยาอัมฤตย์โอสถ_403 .
 
 :med_ยาน้ำมันสารสกัดกัญชาที่มีcannabidiol_CBD_100_มิลลิกรัมมิลลิลิตร  rdf:type :HerbMedicine ;
@@ -3121,14 +3121,14 @@ skos:example rdf:type owl:AnnotationProperty .
     :treats :disease_ลมชัก ;
     rdfs:comment "ใช้ตามโครงการของกรมการแพทย์เท่านั้น"^^xsd:string .
 
-:med_ยาน้ำมันกัญชาทั้งห้า_หรือ  rdf:type :HerbMedicine ;
+:med_ยาน้ำมันกัญชาทั้งห้า_หรือ_v2  rdf:type :HerbMedicine ;
     :nameThai "ยาน้ำมันกัญชาทั้งห้า หรือ"^^xsd:string ;
     :belongsToGroup :group_ยารักษากลุ่มอาการอื่นๆ ;
     :approvedBy "บัญชีรายการยาพื้นฐาน"^^xsd:string ;
     rdfs:comment "ใช้เสริมการรักษาในผู้ป่วยที่มีอาการนอนไม่หลับที่ใช้ยามาตรฐานแล้วไม่ได้ผล"^^xsd:string ;
     :treats :symptom_นอนไม่หลับ ;
     :hasComponent :comp_ยาน้ำมันกัญชาทั้งห้า_หรือ_ในน้ำมัน , :comp_ยาน้ำมันกัญชาทั้งห้า_หรือ_ได้จากการเคี่ยว , :comp_ยาน้ำมันกัญชาทั้งห้า_หรือ_ราก , :comp_ยาน้ำมันกัญชาทั้งห้า_หรือ_ลำต้นรวมกิ่งก้าน , :comp_ยาน้ำมันกัญชาทั้งห้า_หรือ_ใบและช่อ , :comp_ยาน้ำมันกัญชาทั้งห้า_หรือ_ดอกรวม , :comp_ยาน้ำมันกัญชาทั้งห้า_หรือ_เมล็ดของกัญชาอย่างละ , :comp_ยาน้ำมันกัญชาทั้งห้า_หรือ_Delta , :comp_ยาน้ำมันกัญชาทั้งห้า_หรือ_-9-Tetrahydrocannabinol_THC , :comp_ยาน้ำมันกัญชาทั้งห้า_หรือ_0.1 , :comp_ยาน้ำมันกัญชาทั้งห้า_หรือ_Cannabidiol_CBD , :comp_ยาน้ำมันกัญชาทั้งห้า_หรือ_น้อยกว่า ;
-    :hasGuideline :guideline_ยาน้ำมันกัญชาทั้งห้า_หรือ ;
+    :hasGuideline :guideline_ยาน้ำมันกัญชาทั้งห้า_หรือ_v2 ;
     :hasSafetyAlert :contra_ยาน้ำมันกัญชาทั้งห้า_หรือ_404 , :contra_ยาน้ำมันกัญชาทั้งห้า_หรือ_405 , :contra_ยาน้ำมันกัญชาทั้งห้า_หรือ_406 , :contra_ยาน้ำมันกัญชาทั้งห้า_หรือ_407 , :contra_ยาน้ำมันกัญชาทั้งห้า_หรือ_408 , :caution_ยาน้ำมันกัญชาทั้งห้า_หรือ_409 , :caution_ยาน้ำมันกัญชาทั้งห้า_หรือ_410 , :caution_ยาน้ำมันกัญชาทั้งห้า_หรือ_411 , :caution_ยาน้ำมันกัญชาทั้งห้า_หรือ_412 , :caution_ยาน้ำมันกัญชาทั้งห้า_หรือ_413 , :caution_ยาน้ำมันกัญชาทั้งห้า_หรือ_414 , :caution_ยาน้ำมันกัญชาทั้งห้า_หรือ_415 , :caution_ยาน้ำมันกัญชาทั้งห้า_หรือ_416 , :caution_ยาน้ำมันกัญชาทั้งห้า_หรือ_417 ;
     rdfs:comment "ชื่อยาเดิมตามประกาศคณะกรรมการพัฒนาระบบยาแห่งชาติเรื่อง ยาหลักแห่งชาติด้านสมุนไพรพ.ศ. 2564 คือที่ผลิตจากรากลำต้นกิ่งก้านใบดอกและเมล็ดซึ่งเป็นยาใน"^^xsd:string .
 
@@ -3143,14 +3143,14 @@ skos:example rdf:type owl:AnnotationProperty .
     :hasSafetyAlert :contra_ยาน้ำมันกัญชาที่ผลิตจากช่อดอก_418 , :contra_ยาน้ำมันกัญชาที่ผลิตจากช่อดอก_419 , :contra_ยาน้ำมันกัญชาที่ผลิตจากช่อดอก_420 , :contra_ยาน้ำมันกัญชาที่ผลิตจากช่อดอก_421 , :contra_ยาน้ำมันกัญชาที่ผลิตจากช่อดอก_422 , :caution_ยาน้ำมันกัญชาที่ผลิตจากช่อดอก_423 , :caution_ยาน้ำมันกัญชาที่ผลิตจากช่อดอก_424 , :caution_ยาน้ำมันกัญชาที่ผลิตจากช่อดอก_425 , :caution_ยาน้ำมันกัญชาที่ผลิตจากช่อดอก_426 , :caution_ยาน้ำมันกัญชาที่ผลิตจากช่อดอก_427 ;
     rdfs:comment "กรณีแพทย์แผนไทย/แพทย์แผนไทยประยุกต์/แพทย์แผนปัจจุบันพิจารณาปรับขนาดยามากกว่าขนาดสูงสุดที่กำหนดต้องมีการติดตามและเฝ้าระวังผู้ป่วยอย่างใกล้ชิดเนื่องจากยังไม่มีข้อมูลการใช้ยาและความปลอดภัยขนาดที่สูงกว่ากำหนด - แนวทางการจัดการเมื่อพบ"^^xsd:string .
 
-:med_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC  rdf:type :HerbMedicine ;
+:med_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_v3  rdf:type :HerbMedicine ;
     :nameThai "ยาน้ำมันสารสกัดกัญชาที่มี delta-9-tetrahydrocannabinol (THC)"^^xsd:string ;
     :belongsToGroup :group_ยารักษากลุ่มอาการอื่นๆ ;
     :approvedBy "บัญชีรายการยาเฉพาะ"^^xsd:string ;
     rdfs:comment "ใช้รักษาเสริมในผู้ป่วยโรคมะเร็งระยะท้ายที่มีอาการนอนไม่หลับเบื่ออาหารหรือมีอาการปวดในระดับปานกลางถึงรุนแรงที่รักษาด้วยยามาตรฐานไม่ได้หรือไม่ได้ผล"^^xsd:string ;
     :treats :disease_มะเร็ง , :symptom_นอนไม่หลับ , :symptom_เบื่ออาหาร ;
     :hasComponent :comp_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_สารสกัดจากกัญชา_Cannabis , <http://www.example.org/herbmedicine#comp_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_sativaL.> , :comp_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_ที่มีสารสำคัญ , :comp_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_Delta , :comp_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_-9-Tetrahydrocannabinol_THC , :comp_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_Cannabidiol_CBD ;
-    :hasGuideline :guideline_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC ;
+    :hasGuideline :guideline_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_v3 ;
     :hasSafetyAlert :contra_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_428 , :contra_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_429 , :contra_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_430 , :contra_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_431 , :caution_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_432 , :caution_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_433 , :caution_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_434 , :caution_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_435 , :caution_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_436 , :caution_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_437 , :caution_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_438 , :caution_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_439 , :caution_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_440 ;
     rdfs:comment "ให้สั่งใช้ยาโดยผู้ประกอบวิชาชีพเวชกรรมแผนปัจจุบันที่ผ่านการอบรมหลักสูตรการใช้กัญชาทางการแพทย์ที่กระทรวงสาธารณสุขรับรอง"^^xsd:string .
 
@@ -3175,17 +3175,17 @@ skos:example rdf:type owl:AnnotationProperty .
     :hasSafetyAlert :contra_ยาประสะกัญชา_456 , :contra_ยาประสะกัญชา_457 , :contra_ยาประสะกัญชา_458 , :caution_ยาประสะกัญชา_459 , :caution_ยาประสะกัญชา_460 , :caution_ยาประสะกัญชา_461 ;
     rdfs:comment "แนะนำให้ใช้ในผู้ที่รับประทานอาหารไม่ได้นอนไม่หลับ - ตำราอายุรเวทศึกษาของขุนนิทเทศสุขกิจระบุว่า"^^xsd:string .
 
-:med_ยาฟ้าทะลายโจร  rdf:type :HerbMedicine ;
+:med_ยาฟ้าทะลายโจร_v3  rdf:type :HerbMedicine ;
     :nameThai "ยาฟ้าทะลายโจร"^^xsd:string ;
     :belongsToGroup :group_ยารักษากลุ่มอาการอื่นๆ ;
     :approvedBy "บัญชีรายการยาพื้นฐาน"^^xsd:string ;
     rdfs:comment "ใช้กับผู้ป่วยโรคโควิด 19 ที่มีความรุนแรงน้อย"^^xsd:string ;
     :hasComponent :comp_ยาฟ้าทะลายโจร_ผงจากส่วนเหนือดินหรือใบของฟ้าทะลายโจร ;
-    :hasGuideline :guideline_ยาฟ้าทะลายโจร ;
+    :hasGuideline :guideline_ยาฟ้าทะลายโจร_v3 ;
     :hasSafetyAlert :contra_ยาฟ้าทะลายโจร_462 , :contra_ยาฟ้าทะลายโจร_463 , :caution_ยาฟ้าทะลายโจร_464 , :caution_ยาฟ้าทะลายโจร_465 , :caution_ยาฟ้าทะลายโจร_466 , :caution_ยาฟ้าทะลายโจร_467 , :caution_ยาฟ้าทะลายโจร_468 , :caution_ยาฟ้าทะลายโจร_469 , :caution_ยาฟ้าทะลายโจร_470 ;
     rdfs:comment "อาจทำให้เกิดอาการผิดปกติของทางเดินอาหารเช่นปวดท้องท้องเสียคลื่นไส้เบื่ออาหารวิงเวียนศีรษะใจสั่นและอาจเกิดผื่นแพ้ลมพิษได้ยังไม่มีงานวิจัยทางคลินิกในผู้ป่วยโรคโควิด 19 ที่มีอายุต่ำกว่า 12 ปี"^^xsd:string .
 
-:med_ยาฟ้าทะลายโจร_2  rdf:type :HerbMedicine ;
+:med_ยาฟ้าทะลายโจร_2_v2  rdf:type :HerbMedicine ;
     :nameThai "ยาฟ้าทะลายโจร (2)"^^xsd:string ;
     :belongsToGroup :group_ยารักษากลุ่มอาการอื่นๆ ;
     :approvedBy "บัญชีรายการยาพื้นฐาน"^^xsd:string ;
@@ -3194,14 +3194,14 @@ skos:example rdf:type owl:AnnotationProperty .
     :hasSafetyAlert :caution_ยาฟ้าทะลายโจร_2_471 , :caution_ยาฟ้าทะลายโจร_2_472 , :caution_ยาฟ้าทะลายโจร_2_473 , :caution_ยาฟ้าทะลายโจร_2_474 , :caution_ยาฟ้าทะลายโจร_2_475 , :contra_ยาฟ้าทะลายโจร_2_476 , :contra_ยาฟ้าทะลายโจร_2_477 , :caution_ยาฟ้าทะลายโจร_2_478 , :caution_ยาฟ้าทะลายโจร_2_479 ;
     rdfs:comment "อาจทำให้เกิดอาการผิดปกติของทางเดินอาหารเช่นปวดท้องท้องเสียคลื่นไส้เบื่ออาหารวิงเวียนศีรษะใจสั่นและอาจเกิดผื่นแพ้ลมพิษได้ยังไม่มีงานวิจัยทางคลินิกในผู้ป่วยโรคโควิด 19 ที่มีอายุต่ำกว่า 12 ปี"^^xsd:string .
 
-:med_ยามหาจักรใหญ่  rdf:type :HerbMedicine ;
+:med_ยามหาจักรใหญ่_v2  rdf:type :HerbMedicine ;
     :nameThai "ยามหาจักรใหญ่"^^xsd:string ;
     :belongsToGroup :group_ยารักษากลุ่มอาการอื่นๆ ;
     :approvedBy "บัญชีรายการยาเฉพาะ"^^xsd:string ;
     rdfs:comment "แก้ลมซาง"^^xsd:string ;
     :treats :disease_ลมซาง ;
     :hasComponent :comp_ยามหาจักรใหญ่_ใบกระพังโหม , :comp_ยามหาจักรใหญ่_ยาดำสะตุ , :comp_ยามหาจักรใหญ่_โกฐสอ , :comp_ยามหาจักรใหญ่_โกฐเขมา , :comp_ยามหาจักรใหญ่_โกฐพุงปลา , :comp_ยามหาจักรใหญ่_โกฐก้านพร้าว , :comp_ยามหาจักรใหญ่_โกฐกระดูก , :comp_ยามหาจักรใหญ่_เทียนดำ , :comp_ยามหาจักรใหญ่_เทียนแดง , :comp_ยามหาจักรใหญ่_เทียนขาว , :comp_ยามหาจักรใหญ่_เทียนข้าว , :comp_ยามหาจักรใหญ่_เปลือกเทียนเยาวพาณี , :comp_ยามหาจักรใหญ่_เนื้อผลสมอไทย , :comp_ยามหาจักรใหญ่_เนื้อผลสมอพิเภก , :comp_ยามหาจักรใหญ่_เนื้อผลมะขามป้อม , :comp_ยามหาจักรใหญ่_ลูกจันทน์ , :comp_ยามหาจักรใหญ่_ดอกจันทน์ , :comp_ยามหาจักรใหญ่_ลูกกระวาน , :comp_ยามหาจักรใหญ่_ดอกกานพลู , :comp_ยามหาจักรใหญ่_รากชะเอมเทศ , :comp_ยามหาจักรใหญ่_เมล็ดโหระพา , :comp_ยามหาจักรใหญ่_ลูกผักชีลา , :comp_ยามหาจักรใหญ่_สารส้มสะตุ , :comp_ยามหาจักรใหญ่_เหง้าขมิ้นอ้อย , :comp_ยามหาจักรใหญ่_หัวกระเทียม ;
-    :hasGuideline :guideline_ยามหาจักรใหญ่_ยาผง_เด็ก_อายุ1-5ขวบ , :guideline_ยามหาจักรใหญ่_ยาเม็ด_เด็ก_อายุ1-5ขวบ ;
+    :hasGuideline :guideline_ยามหาจักรใหญ่_ยาผง_เด็ก_อายุ1-5ขวบ_v2 , :guideline_ยามหาจักรใหญ่_ยาเม็ด_เด็ก_อายุ1-5ขวบ_v2 ;
     :hasSafetyAlert :caution_ยามหาจักรใหญ่_480 , :caution_ยามหาจักรใหญ่_481 ;
     rdfs:comment "ให้สั่งใช้ยาโดยแพทย์แผนไทยแพทย์แผนไทยประยุกต์หรือผู้ประกอบวิชาชีพเวชกรรมที่ผู้อำนวยการหรือหัวหน้าสถานพยาบาลมอบหมาย"^^xsd:string .
 
@@ -4844,7 +4844,7 @@ skos:example rdf:type owl:AnnotationProperty .
     :quantity "5.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยากล้วย_ผงจากผลกล้วยน้ำว้าดิบชนิดแก่จัด  rdf:type :FormulaComponent ;
+:comp_ยากล้วย_ผงจากผลกล้วยน้ำว้าดิบชนิดแก่จัด_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ผงจากผลกล้วยน้ำว้าดิบชนิดแก่จัด .
 
 :comp_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_สารสกัดจากกัญชา_Cannabis  rdf:type :FormulaComponent ;
@@ -5951,7 +5951,7 @@ skos:example rdf:type owl:AnnotationProperty .
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาฟ้าทะลายโจร_ผงจากส่วนเหนือดินของฟ้าทะลายโจร  rdf:type :FormulaComponent ;
+:comp_ยาฟ้าทะลายโจร_ผงจากส่วนเหนือดินของฟ้าทะลายโจร_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ผงจากส่วนเหนือดินของฟ้าทะลายโจร .
 
 :comp_ยาฟ้าทะลายโจร_2_สารสกัดจากส่วนเหนือดินหรือใบของฟ้าทะลายโจร  rdf:type :FormulaComponent ;
@@ -6523,147 +6523,147 @@ skos:example rdf:type owl:AnnotationProperty .
     :quantity "10.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_พริกไทยล่อน  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_พริกไทยล่อน_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_พริกไทยล่อน ;
     :usePlantPart :plantpart_เครื่องเทศ ;
     :quantity "96.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_ยาดำสะตุ  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_ยาดำสะตุ_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ยาดำสะตุ ;
     :usePlantPart :plantpart_แร่ธาตุ ;
     :quantity "20.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_เนื้อผลสมอไทย  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_เนื้อผลสมอไทย_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_เนื้อผลสมอไทย ;
     :quantity "6.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_มหาหิงคุ์  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_มหาหิงคุ์_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_มหาหิงคุ์ ;
     :quantity "6.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_การบูร  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_การบูร_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_การบูร ;
     :quantity "6.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_รงทอง_ประสะ  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_รงทอง_ประสะ_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_รงทอง_ประสะ ;
     :quantity "4.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_ผักแพวแดง_ทั้งต้น  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_ผักแพวแดง_ทั้งต้น_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ผักแพวแดง_ทั้งต้น ;
     :quantity "2.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_เนื้อผลมะขามป้อม  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_เนื้อผลมะขามป้อม_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_เนื้อผลมะขามป้อม ;
     :quantity "2.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_ลูกจันทน์  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_ลูกจันทน์_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ลูกจันทน์ ;
     :usePlantPart :plantpart_ลูกผล ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_ดอกจันทน์  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_ดอกจันทน์_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ดอกจันทน์ ;
     :usePlantPart :plantpart_ดอกไม้ ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_ลูกกระวาน  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_ลูกกระวาน_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ลูกกระวาน ;
     :usePlantPart :plantpart_ลูกผล ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_ดอกกานพลู  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_ดอกกานพลู_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ดอกกานพลู ;
     :usePlantPart :plantpart_ดอกไม้ ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_เทียนดำ  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_เทียนดำ_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_เทียนดำ ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_เทียนขาว  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_เทียนขาว_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_เทียนขาว ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_หัวดองดึง  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_หัวดองดึง_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_หัวดองดึง ;
     :usePlantPart :plantpart_หัว ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_หัวบุก  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_หัวบุก_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_หัวบุก ;
     :usePlantPart :plantpart_หัว ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_หัวกลอย  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_หัวกลอย_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_หัวกลอย ;
     :usePlantPart :plantpart_หัว ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_หัวกระดาดขาว  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_หัวกระดาดขาว_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_หัวกระดาดขาว ;
     :usePlantPart :plantpart_หัว ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_หัวกระดาดแดง  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_หัวกระดาดแดง_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_หัวกระดาดแดง ;
     :usePlantPart :plantpart_หัว ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_ลูกเร่ว  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_ลูกเร่ว_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ลูกเร่ว ;
     :usePlantPart :plantpart_ลูกผล ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_เหง้าขิง  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_เหง้าขิง_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_เหง้าขิง ;
     :usePlantPart :plantpart_เหง้า ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_รากชะเอมเทศ  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_รากชะเอมเทศ_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_รากชะเอมเทศ ;
     :usePlantPart :plantpart_ราก ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_รากเจตมูลเพลิงแดง  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_รากเจตมูลเพลิงแดง_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_รากเจตมูลเพลิงแดง ;
     :usePlantPart :plantpart_ราก ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_โกฐกระดูก  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_โกฐกระดูก_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_โกฐกระดูก ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_โกฐเขมา  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_โกฐเขมา_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_โกฐเขมา ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_โกฐน้ำเต้า  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_โกฐน้ำเต้า_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_โกฐน้ำเต้า ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
@@ -6735,12 +6735,12 @@ skos:example rdf:type owl:AnnotationProperty .
     :quantity "0.04"^^xsd:decimal ;
     :hasUnit :unit_มิลลิกรัม .
 
-:comp_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_สารสกัดจากกัญชา_Cannabis  rdf:type :FormulaComponent ;
+:comp_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_สารสกัดจากกัญชา_Cannabis_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_สารสกัดจากกัญชา_Cannabis ;
     :quantity "27.0"^^xsd:decimal ;
     :hasUnit :unit_มิลลิกรัม .
 
-:comp_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_sativa  rdf:type :FormulaComponent ;
+:comp_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_sativa_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_sativa ;
     :quantity "27.0"^^xsd:decimal ;
     :hasUnit :unit_มิลลิกรัม .
@@ -6750,12 +6750,12 @@ skos:example rdf:type owl:AnnotationProperty .
     :quantity "27.0"^^xsd:decimal ;
     :hasUnit :unit_มิลลิกรัม .
 
-:comp_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_ที่มีสารสำคัญ  rdf:type :FormulaComponent ;
+:comp_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_ที่มีสารสำคัญ_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ที่มีสารสำคัญ ;
     :quantity "27.0"^^xsd:decimal ;
     :hasUnit :unit_มิลลิกรัม .
 
-:comp_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_Delta  rdf:type :FormulaComponent ;
+:comp_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_Delta_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_Delta ;
     :quantity "27.0"^^xsd:decimal ;
     :hasUnit :unit_มิลลิกรัม .
@@ -7185,36 +7185,36 @@ skos:example rdf:type owl:AnnotationProperty .
     :quantity "38.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาเบญจกูล_ดอกดีปลี  rdf:type :FormulaComponent ;
+:comp_ยาเบญจกูล_ดอกดีปลี_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ดอกดีปลี ;
     :usePlantPart :plantpart_ดอกไม้ ;
     :quantity "20.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาเบญจกูล_ราก  rdf:type :FormulaComponent ;
+:comp_ยาเบญจกูล_ราก_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ราก ;
     :usePlantPart :plantpart_ราก ;
     :quantity "20.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาเบญจกูล_ช้าพลู  rdf:type :FormulaComponent ;
+:comp_ยาเบญจกูล_ช้าพลู_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ช้าพลู ;
     :quantity "20.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาเบญจกูล_เถาสะค้าน  rdf:type :FormulaComponent ;
+:comp_ยาเบญจกูล_เถาสะค้าน_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_เถาสะค้าน ;
     :usePlantPart :plantpart_เถา ;
     :quantity "20.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาเบญจกูล_รากเจตมูลเพลิงแดง  rdf:type :FormulaComponent ;
+:comp_ยาเบญจกูล_รากเจตมูลเพลิงแดง_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_รากเจตมูลเพลิงแดง ;
     :usePlantPart :plantpart_ราก ;
     :quantity "20.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาเบญจกูล_เหง้าขิงแห้ง  rdf:type :FormulaComponent ;
+:comp_ยาเบญจกูล_เหง้าขิงแห้ง_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_เหง้าขิงแห้ง ;
     :usePlantPart :plantpart_เหง้า ;
     :quantity "20.0"^^xsd:decimal ;
@@ -7296,66 +7296,66 @@ skos:example rdf:type owl:AnnotationProperty .
     :quantity "10.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาปลูกไฟธาตุ_พริกไทยล่อน  rdf:type :FormulaComponent ;
+:comp_ยาปลูกไฟธาตุ_พริกไทยล่อน_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_พริกไทยล่อน ;
     :usePlantPart :plantpart_เครื่องเทศ ;
     :quantity "50.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาปลูกไฟธาตุ_ดอกดีปลี  rdf:type :FormulaComponent ;
+:comp_ยาปลูกไฟธาตุ_ดอกดีปลี_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ดอกดีปลี ;
     :usePlantPart :plantpart_ดอกไม้ ;
     :quantity "5.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาปลูกไฟธาตุ_ราก  rdf:type :FormulaComponent ;
+:comp_ยาปลูกไฟธาตุ_ราก_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ราก ;
     :usePlantPart :plantpart_ราก ;
     :quantity "5.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาปลูกไฟธาตุ_ช้าพลูผักแพวแดง_ทั้งต้น  rdf:type :FormulaComponent ;
+:comp_ยาปลูกไฟธาตุ_ช้าพลูผักแพวแดง_ทั้งต้น_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ช้าพลูผักแพวแดง_ทั้งต้น ;
     :quantity "5.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาปลูกไฟธาตุ_เถาสะค้าน  rdf:type :FormulaComponent ;
+:comp_ยาปลูกไฟธาตุ_เถาสะค้าน_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_เถาสะค้าน ;
     :usePlantPart :plantpart_เถา ;
     :quantity "5.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาปลูกไฟธาตุ_เหง้าขิงแห้ง  rdf:type :FormulaComponent ;
+:comp_ยาปลูกไฟธาตุ_เหง้าขิงแห้ง_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_เหง้าขิงแห้ง ;
     :usePlantPart :plantpart_เหง้า ;
     :quantity "5.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาปลูกไฟธาตุ_ลูกผักชีล้อม  rdf:type :FormulaComponent ;
+:comp_ยาปลูกไฟธาตุ_ลูกผักชีล้อม_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ลูกผักชีล้อม ;
     :usePlantPart :plantpart_ลูกผล ;
     :quantity "5.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาปลูกไฟธาตุ_เหง้าว่านน้ำ  rdf:type :FormulaComponent ;
+:comp_ยาปลูกไฟธาตุ_เหง้าว่านน้ำ_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_เหง้าว่านน้ำ ;
     :usePlantPart :plantpart_เหง้า ;
     :quantity "5.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาปลูกไฟธาตุ_หัวแห้วหมู  rdf:type :FormulaComponent ;
+:comp_ยาปลูกไฟธาตุ_หัวแห้วหมู_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_หัวแห้วหมู ;
     :usePlantPart :plantpart_หัว ;
     :quantity "5.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาปลูกไฟธาตุ_ผิวมะกรูด  rdf:type :FormulaComponent ;
+:comp_ยาปลูกไฟธาตุ_ผิวมะกรูด_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ผิวมะกรูด ;
     :usePlantPart :plantpart_ผิวผลไม้ ;
     :quantity "5.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาปลูกไฟธาตุ_ลูกพิลังกาสา  rdf:type :FormulaComponent ;
+:comp_ยาปลูกไฟธาตุ_ลูกพิลังกาสา_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ลูกพิลังกาสา ;
     :usePlantPart :plantpart_ลูกผล ;
     :quantity "5.0"^^xsd:decimal ;
@@ -7417,7 +7417,7 @@ skos:example rdf:type owl:AnnotationProperty .
 :comp_ยาว่านหางจระเข้_ชนิดเจลยาที่มีปริมาณของวุ้นว่านหางจระเข้  rdf:type :FormulaComponent ;
     :usesHerb :herb_ชนิดเจลยาที่มีปริมาณของวุ้นว่านหางจระเข้ .
 
-:comp_ยาหญ้าปักกิ่ง_ผงหญ้าปักกิ่ง  rdf:type :FormulaComponent ;
+:comp_ยาหญ้าปักกิ่ง_ผงหญ้าปักกิ่ง_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ผงหญ้าปักกิ่ง .
 
 :comp_ยากระเจี๊ยบแดง_ผงจากส่วนกลีบเลี้ยงของกระเจี๊ยบแดง  rdf:type :FormulaComponent ;
@@ -7426,7 +7426,7 @@ skos:example rdf:type owl:AnnotationProperty .
 :comp_ยาหญ้าหนวดแมว_ผงจากใบและส่วนยอดของหญ้าหนวดแมว  rdf:type :FormulaComponent ;
     :usesHerb :herb_ผงจากใบและส่วนยอดของหญ้าหนวดแมว .
 
-:comp_ยารางจืด_ผงใบรางจืดโตเต็มที่  rdf:type :FormulaComponent ;
+:comp_ยารางจืด_ผงใบรางจืดโตเต็มที่_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ผงใบรางจืดโตเต็มที่ .
 
 :comp_ยาผสมหญ้าดอกขาว_ผงยา  rdf:type :FormulaComponent ;
@@ -7462,496 +7462,496 @@ skos:example rdf:type owl:AnnotationProperty .
 :comp_ยาหญ้าดอกขาว_ผงหญ้าดอกขาว  rdf:type :FormulaComponent ;
     :usesHerb :herb_ผงหญ้าดอกขาว .
 
-:comp_ยากษัยเส้น_ดอกดีปลี  rdf:type :FormulaComponent ;
+:comp_ยากษัยเส้น_ดอกดีปลี_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ดอกดีปลี ;
     :usePlantPart :plantpart_ดอกไม้ ;
     :quantity "40.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยากษัยเส้น_เหง้าขิง  rdf:type :FormulaComponent ;
+:comp_ยากษัยเส้น_เหง้าขิง_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_เหง้าขิง ;
     :usePlantPart :plantpart_เหง้า ;
     :quantity "20.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยากษัยเส้น_ราก  rdf:type :FormulaComponent ;
+:comp_ยากษัยเส้น_ราก_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ราก ;
     :usePlantPart :plantpart_ราก ;
     :quantity "24.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยากษัยเส้น_ช้าพลู  rdf:type :FormulaComponent ;
+:comp_ยากษัยเส้น_ช้าพลู_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ช้าพลู ;
     :quantity "24.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยากษัยเส้น_เถาสะค้าน  rdf:type :FormulaComponent ;
+:comp_ยากษัยเส้น_เถาสะค้าน_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_เถาสะค้าน ;
     :usePlantPart :plantpart_เถา ;
     :quantity "12.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยากษัยเส้น_รากเจตมูลเพลิงแดง  rdf:type :FormulaComponent ;
+:comp_ยากษัยเส้น_รากเจตมูลเพลิงแดง_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_รากเจตมูลเพลิงแดง ;
     :usePlantPart :plantpart_ราก ;
     :quantity "8.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยากษัยเส้น_เถาโคคลานกำลังวัวเถลิง  rdf:type :FormulaComponent ;
+:comp_ยากษัยเส้น_เถาโคคลานกำลังวัวเถลิง_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_เถาโคคลานกำลังวัวเถลิง ;
     :usePlantPart :plantpart_เถา ;
     :quantity "10.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยากษัยเส้น_เถาวัลย์เปรียง  rdf:type :FormulaComponent ;
+:comp_ยากษัยเส้น_เถาวัลย์เปรียง_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_เถาวัลย์เปรียง ;
     :usePlantPart :plantpart_เถา ;
     :quantity "10.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยากษัยเส้น_เถา  rdf:type :FormulaComponent ;
+:comp_ยากษัยเส้น_เถา_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_เถา ;
     :usePlantPart :plantpart_เถา ;
     :quantity "10.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยากษัยเส้น_พริกไทย  rdf:type :FormulaComponent ;
+:comp_ยากษัยเส้น_พริกไทย_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_พริกไทย ;
     :quantity "10.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยากษัยเส้น_เถาม้ากระทืบโรง  rdf:type :FormulaComponent ;
+:comp_ยากษัยเส้น_เถาม้ากระทืบโรง_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_เถาม้ากระทืบโรง ;
     :usePlantPart :plantpart_เถา ;
     :quantity "10.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยากษัยเส้น_หัวกระชาย  rdf:type :FormulaComponent ;
+:comp_ยากษัยเส้น_หัวกระชาย_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_หัวกระชาย ;
     :usePlantPart :plantpart_หัว ;
     :quantity "10.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยากษัยเส้น_แก่นแสมสาร  rdf:type :FormulaComponent ;
+:comp_ยากษัยเส้น_แก่นแสมสาร_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_แก่นแสมสาร ;
     :usePlantPart :plantpart_แก่น ;
     :quantity "10.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยากษัยเส้น_เหง้าไพล  rdf:type :FormulaComponent ;
+:comp_ยากษัยเส้น_เหง้าไพล_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_เหง้าไพล ;
     :usePlantPart :plantpart_เหง้า ;
     :quantity "10.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยากษัยเส้น_การบูร  rdf:type :FormulaComponent ;
+:comp_ยากษัยเส้น_การบูร_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_การบูร ;
     :usePlantPart :plantpart_เครื่องเทศ ;
     :quantity "6.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยากษัยเส้น_ลูกจันทน์  rdf:type :FormulaComponent ;
+:comp_ยากษัยเส้น_ลูกจันทน์_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ลูกจันทน์ ;
     :usePlantPart :plantpart_ลูกผล ;
     :quantity "4.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยากษัยเส้น_ดอกกานพลู  rdf:type :FormulaComponent ;
+:comp_ยากษัยเส้น_ดอกกานพลู_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ดอกกานพลู ;
     :usePlantPart :plantpart_ดอกไม้ ;
     :quantity "4.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยากษัยเส้น_เหง้าว่านน้ำ  rdf:type :FormulaComponent ;
+:comp_ยากษัยเส้น_เหง้าว่านน้ำ_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_เหง้าว่านน้ำ ;
     :usePlantPart :plantpart_เหง้า ;
     :quantity "4.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยากษัยเส้น_เหง้ากระทือ  rdf:type :FormulaComponent ;
+:comp_ยากษัยเส้น_เหง้ากระทือ_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_เหง้ากระทือ ;
     :usePlantPart :plantpart_เหง้า ;
     :quantity "4.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยากษัยเส้น_ลูกกระวาน  rdf:type :FormulaComponent ;
+:comp_ยากษัยเส้น_ลูกกระวาน_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ลูกกระวาน ;
     :usePlantPart :plantpart_ลูกผล ;
     :quantity "4.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยากษัยเส้น_พริกไทยล่อน  rdf:type :FormulaComponent ;
+:comp_ยากษัยเส้น_พริกไทยล่อน_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_พริกไทยล่อน ;
     :quantity "4.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยากษัยเส้น_รากชะเอมเทศ  rdf:type :FormulaComponent ;
+:comp_ยากษัยเส้น_รากชะเอมเทศ_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_รากชะเอมเทศ ;
     :usePlantPart :plantpart_ราก ;
     :quantity "4.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยากษัยเส้น_เปลือกอบเชยเทศ  rdf:type :FormulaComponent ;
+:comp_ยากษัยเส้น_เปลือกอบเชยเทศ_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_เปลือกอบเชยเทศ ;
     :usePlantPart :plantpart_เปลือก ;
     :quantity "4.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยากษัยเส้น_ดอกจันทน์  rdf:type :FormulaComponent ;
+:comp_ยากษัยเส้น_ดอกจันทน์_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ดอกจันทน์ ;
     :usePlantPart :plantpart_ดอกไม้ ;
     :quantity "2.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยากษัยเส้น_โกฐน้ำเต้า  rdf:type :FormulaComponent ;
+:comp_ยากษัยเส้น_โกฐน้ำเต้า_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_โกฐน้ำเต้า ;
     :usePlantPart :plantpart_ดอกไม้ ;
     :quantity "2.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยากษัยเส้น_ดอกมะลิ  rdf:type :FormulaComponent ;
+:comp_ยากษัยเส้น_ดอกมะลิ_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ดอกมะลิ ;
     :usePlantPart :plantpart_ดอกไม้ ;
     :quantity "2.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยากษัยเส้น_ดอกพิกุล  rdf:type :FormulaComponent ;
+:comp_ยากษัยเส้น_ดอกพิกุล_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ดอกพิกุล ;
     :usePlantPart :plantpart_ดอกไม้ ;
     :quantity "2.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยากษัยเส้น_ดอกบุนนาค  rdf:type :FormulaComponent ;
+:comp_ยากษัยเส้น_ดอกบุนนาค_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ดอกบุนนาค ;
     :usePlantPart :plantpart_ดอกไม้ ;
     :quantity "2.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยากษัยเส้น_ดอกสารภี  rdf:type :FormulaComponent ;
+:comp_ยากษัยเส้น_ดอกสารภี_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ดอกสารภี ;
     :usePlantPart :plantpart_ดอกไม้ ;
     :quantity "2.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยากษัยเส้น_เกสรบัวหลวง  rdf:type :FormulaComponent ;
+:comp_ยากษัยเส้น_เกสรบัวหลวง_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_เกสรบัวหลวง ;
     :usePlantPart :plantpart_ดอกไม้ ;
     :quantity "2.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_พริกไทยล่อน  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_พริกไทยล่อน_v3  rdf:type :FormulaComponent ;
     :usesHerb :herb_พริกไทยล่อน ;
     :usePlantPart :plantpart_เครื่องเทศ ;
     :quantity "96.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_ยาดำสะตุ  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_ยาดำสะตุ_v3  rdf:type :FormulaComponent ;
     :usesHerb :herb_ยาดำสะตุ ;
     :usePlantPart :plantpart_แร่ธาตุ ;
     :quantity "20.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_เนื้อผลสมอไทย  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_เนื้อผลสมอไทย_v3  rdf:type :FormulaComponent ;
     :usesHerb :herb_เนื้อผลสมอไทย ;
     :quantity "6.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_มหาหิงคุ์  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_มหาหิงคุ์_v3  rdf:type :FormulaComponent ;
     :usesHerb :herb_มหาหิงคุ์ ;
     :quantity "6.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_การบูร  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_การบูร_v3  rdf:type :FormulaComponent ;
     :usesHerb :herb_การบูร ;
     :quantity "6.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_รงทอง_ประสะ  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_รงทอง_ประสะ_v3  rdf:type :FormulaComponent ;
     :usesHerb :herb_รงทอง_ประสะ ;
     :quantity "4.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_ผักแพวแดง_ทั้งต้น  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_ผักแพวแดง_ทั้งต้น_v3  rdf:type :FormulaComponent ;
     :usesHerb :herb_ผักแพวแดง_ทั้งต้น ;
     :quantity "2.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_เนื้อผลมะขามป้อม  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_เนื้อผลมะขามป้อม_v3  rdf:type :FormulaComponent ;
     :usesHerb :herb_เนื้อผลมะขามป้อม ;
     :quantity "2.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_ลูกจันทน์  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_ลูกจันทน์_v3  rdf:type :FormulaComponent ;
     :usesHerb :herb_ลูกจันทน์ ;
     :usePlantPart :plantpart_ลูกผล ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_ดอกจันทน์  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_ดอกจันทน์_v3  rdf:type :FormulaComponent ;
     :usesHerb :herb_ดอกจันทน์ ;
     :usePlantPart :plantpart_ดอกไม้ ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_ลูกกระวาน  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_ลูกกระวาน_v3  rdf:type :FormulaComponent ;
     :usesHerb :herb_ลูกกระวาน ;
     :usePlantPart :plantpart_ลูกผล ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_ดอกกานพลู  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_ดอกกานพลู_v3  rdf:type :FormulaComponent ;
     :usesHerb :herb_ดอกกานพลู ;
     :usePlantPart :plantpart_ดอกไม้ ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_เทียนดำ  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_เทียนดำ_v3  rdf:type :FormulaComponent ;
     :usesHerb :herb_เทียนดำ ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_เทียนขาว  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_เทียนขาว_v3  rdf:type :FormulaComponent ;
     :usesHerb :herb_เทียนขาว ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_หัวดองดึง  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_หัวดองดึง_v3  rdf:type :FormulaComponent ;
     :usesHerb :herb_หัวดองดึง ;
     :usePlantPart :plantpart_หัว ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_หัวบุก  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_หัวบุก_v3  rdf:type :FormulaComponent ;
     :usesHerb :herb_หัวบุก ;
     :usePlantPart :plantpart_หัว ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_หัวกลอย  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_หัวกลอย_v3  rdf:type :FormulaComponent ;
     :usesHerb :herb_หัวกลอย ;
     :usePlantPart :plantpart_หัว ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_หัวกระดาดขาว  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_หัวกระดาดขาว_v3  rdf:type :FormulaComponent ;
     :usesHerb :herb_หัวกระดาดขาว ;
     :usePlantPart :plantpart_หัว ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_หัวกระดาดแดง  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_หัวกระดาดแดง_v3  rdf:type :FormulaComponent ;
     :usesHerb :herb_หัวกระดาดแดง ;
     :usePlantPart :plantpart_หัว ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_ลูกเร่ว  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_ลูกเร่ว_v3  rdf:type :FormulaComponent ;
     :usesHerb :herb_ลูกเร่ว ;
     :usePlantPart :plantpart_ลูกผล ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_เหง้าขิง  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_เหง้าขิง_v3  rdf:type :FormulaComponent ;
     :usesHerb :herb_เหง้าขิง ;
     :usePlantPart :plantpart_เหง้า ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_รากชะเอมเทศ  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_รากชะเอมเทศ_v3  rdf:type :FormulaComponent ;
     :usesHerb :herb_รากชะเอมเทศ ;
     :usePlantPart :plantpart_ราก ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_รากเจตมูลเพลิงแดง  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_รากเจตมูลเพลิงแดง_v3  rdf:type :FormulaComponent ;
     :usesHerb :herb_รากเจตมูลเพลิงแดง ;
     :usePlantPart :plantpart_ราก ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_โกฐกระดูก  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_โกฐกระดูก_v3  rdf:type :FormulaComponent ;
     :usesHerb :herb_โกฐกระดูก ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_โกฐเขมา  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_โกฐเขมา_v3  rdf:type :FormulaComponent ;
     :usesHerb :herb_โกฐเขมา ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาธรณีสันฑะฆาต_โกฐน้ำเต้า  rdf:type :FormulaComponent ;
+:comp_ยาธรณีสันฑะฆาต_โกฐน้ำเต้า_v3  rdf:type :FormulaComponent ;
     :usesHerb :herb_โกฐน้ำเต้า ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาอัมฤตย์โอสถ_ยาผงยาแคปซูล  rdf:type :FormulaComponent ;
+:comp_ยาอัมฤตย์โอสถ_ยาผงยาแคปซูล_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ยาผงยาแคปซูล ;
     :quantity "76.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาอัมฤตย์โอสถ_ลำต้นสหัสคุณ  rdf:type :FormulaComponent ;
+:comp_ยาอัมฤตย์โอสถ_ลำต้นสหัสคุณ_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ลำต้นสหัสคุณ ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาอัมฤตย์โอสถ_แก่นแสมทะเล  rdf:type :FormulaComponent ;
+:comp_ยาอัมฤตย์โอสถ_แก่นแสมทะเล_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_แก่นแสมทะเล ;
     :usePlantPart :plantpart_แก่น ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาอัมฤตย์โอสถ_รากส้มกุ้ง  rdf:type :FormulaComponent ;
+:comp_ยาอัมฤตย์โอสถ_รากส้มกุ้ง_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_รากส้มกุ้ง ;
     :usePlantPart :plantpart_ราก ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาอัมฤตย์โอสถ_ผลมะตูม  rdf:type :FormulaComponent ;
+:comp_ยาอัมฤตย์โอสถ_ผลมะตูม_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ผลมะตูม ;
     :usePlantPart :plantpart_ลูกผล ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาอัมฤตย์โอสถ_ผลสมอพิเภก  rdf:type :FormulaComponent ;
+:comp_ยาอัมฤตย์โอสถ_ผลสมอพิเภก_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ผลสมอพิเภก ;
     :usePlantPart :plantpart_ลูกผล ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาอัมฤตย์โอสถ_ผลพิลังกาสา  rdf:type :FormulaComponent ;
+:comp_ยาอัมฤตย์โอสถ_ผลพิลังกาสา_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ผลพิลังกาสา ;
     :usePlantPart :plantpart_ลูกผล ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาอัมฤตย์โอสถ_ผลสมอเทศ  rdf:type :FormulaComponent ;
+:comp_ยาอัมฤตย์โอสถ_ผลสมอเทศ_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ผลสมอเทศ ;
     :usePlantPart :plantpart_ลูกผล ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาอัมฤตย์โอสถ_ผลสมอไทย  rdf:type :FormulaComponent ;
+:comp_ยาอัมฤตย์โอสถ_ผลสมอไทย_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ผลสมอไทย ;
     :usePlantPart :plantpart_ลูกผล ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาอัมฤตย์โอสถ_โกฐเขมา  rdf:type :FormulaComponent ;
+:comp_ยาอัมฤตย์โอสถ_โกฐเขมา_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_โกฐเขมา ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาอัมฤตย์โอสถ_เทียนดำ  rdf:type :FormulaComponent ;
+:comp_ยาอัมฤตย์โอสถ_เทียนดำ_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_เทียนดำ ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาอัมฤตย์โอสถ_เทียนขาว  rdf:type :FormulaComponent ;
+:comp_ยาอัมฤตย์โอสถ_เทียนขาว_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_เทียนขาว ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาอัมฤตย์โอสถ_ลูกจันทน์  rdf:type :FormulaComponent ;
+:comp_ยาอัมฤตย์โอสถ_ลูกจันทน์_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ลูกจันทน์ ;
     :usePlantPart :plantpart_ลูกผล ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาอัมฤตย์โอสถ_ดอกจันทน์  rdf:type :FormulaComponent ;
+:comp_ยาอัมฤตย์โอสถ_ดอกจันทน์_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ดอกจันทน์ ;
     :usePlantPart :plantpart_ดอกไม้ ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาอัมฤตย์โอสถ_ผลกระวานกานพลู  rdf:type :FormulaComponent ;
+:comp_ยาอัมฤตย์โอสถ_ผลกระวานกานพลู_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ผลกระวานกานพลู ;
     :usePlantPart :plantpart_ลูกผล ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาอัมฤตย์โอสถ_ดอกดีปลีอย่างละ  rdf:type :FormulaComponent ;
+:comp_ยาอัมฤตย์โอสถ_ดอกดีปลีอย่างละ_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ดอกดีปลีอย่างละ ;
     :usePlantPart :plantpart_ดอกไม้ ;
     :quantity "1.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาอัมฤตย์โอสถ_เปลือกหอยโข่งเผาเปลือกหอยขมเผาเปลือกหอยแครงเผาเบี้ยผู้เผาอย่างละ  rdf:type :FormulaComponent ;
+:comp_ยาอัมฤตย์โอสถ_เปลือกหอยโข่งเผาเปลือกหอยขมเผาเปลือกหอยแครงเผาเบี้ยผู้เผาอย่างละ_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_เปลือกหอยโข่งเผาเปลือกหอยขมเผาเปลือกหอยแครงเผาเบี้ยผู้เผาอย่างละ ;
     :usePlantPart :plantpart_เปลือก ;
     :quantity "3.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาอัมฤตย์โอสถ_เรือนช่อดอกกัญชา  rdf:type :FormulaComponent ;
+:comp_ยาอัมฤตย์โอสถ_เรือนช่อดอกกัญชา_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_เรือนช่อดอกกัญชา ;
     :quantity "10.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาอัมฤตย์โอสถ_ผลพริกไทย  rdf:type :FormulaComponent ;
+:comp_ยาอัมฤตย์โอสถ_ผลพริกไทย_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ผลพริกไทย ;
     :usePlantPart :plantpart_ลูกผล ;
     :quantity "38.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยาน้ำมันกัญชาทั้งห้า_หรือ_ในน้ำมัน  rdf:type :FormulaComponent ;
+:comp_ยาน้ำมันกัญชาทั้งห้า_หรือ_ในน้ำมัน_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ในน้ำมัน ;
     :quantity "5.0"^^xsd:decimal ;
     :hasUnit :unit_มิลลิลิตร .
 
-:comp_ยาน้ำมันกัญชาทั้งห้า_หรือ_ได้จากการเคี่ยว  rdf:type :FormulaComponent ;
+:comp_ยาน้ำมันกัญชาทั้งห้า_หรือ_ได้จากการเคี่ยว_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ได้จากการเคี่ยว ;
     :quantity "312.5"^^xsd:decimal ;
     :hasUnit :unit_มิลลิกรัม .
 
-:comp_ยาน้ำมันกัญชาทั้งห้า_หรือ_ราก  rdf:type :FormulaComponent ;
+:comp_ยาน้ำมันกัญชาทั้งห้า_หรือ_ราก_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ราก ;
     :usePlantPart :plantpart_ราก ;
     :quantity "312.5"^^xsd:decimal ;
     :hasUnit :unit_มิลลิกรัม .
 
-:comp_ยาน้ำมันกัญชาทั้งห้า_หรือ_ลำต้นรวมกิ่งก้าน  rdf:type :FormulaComponent ;
+:comp_ยาน้ำมันกัญชาทั้งห้า_หรือ_ลำต้นรวมกิ่งก้าน_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ลำต้นรวมกิ่งก้าน ;
     :quantity "312.5"^^xsd:decimal ;
     :hasUnit :unit_มิลลิกรัม .
 
-:comp_ยาน้ำมันกัญชาทั้งห้า_หรือ_ใบและช่อ  rdf:type :FormulaComponent ;
+:comp_ยาน้ำมันกัญชาทั้งห้า_หรือ_ใบและช่อ_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ใบและช่อ ;
     :usePlantPart :plantpart_ใบ ;
     :quantity "312.5"^^xsd:decimal ;
     :hasUnit :unit_มิลลิกรัม .
 
-:comp_ยาน้ำมันกัญชาทั้งห้า_หรือ_ดอกรวม  rdf:type :FormulaComponent ;
+:comp_ยาน้ำมันกัญชาทั้งห้า_หรือ_ดอกรวม_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ดอกรวม ;
     :usePlantPart :plantpart_ดอกไม้ ;
     :quantity "312.5"^^xsd:decimal ;
     :hasUnit :unit_มิลลิกรัม .
 
-:comp_ยาน้ำมันกัญชาทั้งห้า_หรือ_เมล็ดของกัญชาอย่างละ  rdf:type :FormulaComponent ;
+:comp_ยาน้ำมันกัญชาทั้งห้า_หรือ_เมล็ดของกัญชาอย่างละ_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_เมล็ดของกัญชาอย่างละ ;
     :usePlantPart :plantpart_เมล็ด ;
     :quantity "312.5"^^xsd:decimal ;
     :hasUnit :unit_มิลลิกรัม .
 
-:comp_ยาน้ำมันกัญชาทั้งห้า_หรือ_Delta  rdf:type :FormulaComponent ;
+:comp_ยาน้ำมันกัญชาทั้งห้า_หรือ_Delta_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_Delta ;
     :quantity "0.4"^^xsd:decimal ;
     :hasUnit :unit_มิลลิกรัม .
 
-:comp_ยาน้ำมันกัญชาทั้งห้า_หรือ_-9-Tetrahydrocannabinol_THC  rdf:type :FormulaComponent ;
+:comp_ยาน้ำมันกัญชาทั้งห้า_หรือ_-9-Tetrahydrocannabinol_THC_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_-9-Tetrahydrocannabinol_THC ;
     :quantity "0.4"^^xsd:decimal ;
     :hasUnit :unit_มิลลิกรัม .
 
-:comp_ยาน้ำมันกัญชาทั้งห้า_หรือ_0.1  rdf:type :FormulaComponent ;
+:comp_ยาน้ำมันกัญชาทั้งห้า_หรือ_0.1_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_0.1 ;
     :quantity "0.4"^^xsd:decimal ;
     :hasUnit :unit_มิลลิกรัม .
 
-:comp_ยาน้ำมันกัญชาทั้งห้า_หรือ_Cannabidiol_CBD  rdf:type :FormulaComponent ;
+:comp_ยาน้ำมันกัญชาทั้งห้า_หรือ_Cannabidiol_CBD_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_Cannabidiol_CBD ;
     :quantity "0.04"^^xsd:decimal ;
     :hasUnit :unit_มิลลิกรัม .
 
-:comp_ยาน้ำมันกัญชาทั้งห้า_หรือ_น้อยกว่า  rdf:type :FormulaComponent ;
+:comp_ยาน้ำมันกัญชาทั้งห้า_หรือ_น้อยกว่า_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_น้อยกว่า ;
     :quantity "0.04"^^xsd:decimal ;
     :hasUnit :unit_มิลลิกรัม .
@@ -7976,7 +7976,7 @@ skos:example rdf:type owl:AnnotationProperty .
     :quantity "2.0"^^xsd:decimal ;
     :hasUnit :unit_มิลลิกรัม .
 
-:comp_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_สารสกัดจากกัญชา_Cannabis  rdf:type :FormulaComponent ;
+:comp_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_สารสกัดจากกัญชา_Cannabis_v3  rdf:type :FormulaComponent ;
     :usesHerb :herb_สารสกัดจากกัญชา_Cannabis ;
     :quantity "27.0"^^xsd:decimal ;
     :hasUnit :unit_มิลลิกรัม .
@@ -7986,22 +7986,22 @@ skos:example rdf:type owl:AnnotationProperty .
     :quantity "27.0"^^xsd:decimal ;
     :hasUnit :unit_มิลลิกรัม .
 
-:comp_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_ที่มีสารสำคัญ  rdf:type :FormulaComponent ;
+:comp_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_ที่มีสารสำคัญ_v3  rdf:type :FormulaComponent ;
     :usesHerb :herb_ที่มีสารสำคัญ ;
     :quantity "27.0"^^xsd:decimal ;
     :hasUnit :unit_มิลลิกรัม .
 
-:comp_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_Delta  rdf:type :FormulaComponent ;
+:comp_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_Delta_v3  rdf:type :FormulaComponent ;
     :usesHerb :herb_Delta ;
     :quantity "27.0"^^xsd:decimal ;
     :hasUnit :unit_มิลลิกรัม .
 
-:comp_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_-9-Tetrahydrocannabinol_THC  rdf:type :FormulaComponent ;
+:comp_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_-9-Tetrahydrocannabinol_THC_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_-9-Tetrahydrocannabinol_THC ;
     :quantity "27.0"^^xsd:decimal ;
     :hasUnit :unit_มิลลิกรัม .
 
-:comp_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_Cannabidiol_CBD  rdf:type :FormulaComponent ;
+:comp_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_Cannabidiol_CBD_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_Cannabidiol_CBD ;
     :quantity "25.0"^^xsd:decimal ;
     :hasUnit :unit_มิลลิกรัม .
@@ -8102,141 +8102,141 @@ skos:example rdf:type owl:AnnotationProperty .
 :comp_ยาฟ้าทะลายโจร_ผงจากส่วนเหนือดินหรือใบของฟ้าทะลายโจร  rdf:type :FormulaComponent ;
     :usesHerb :herb_ผงจากส่วนเหนือดินหรือใบของฟ้าทะลายโจร .
 
-:comp_ยาฟ้าทะลายโจร_2_สารสกัดจากส่วนเหนือดินหรือใบของฟ้าทะลายโจร  rdf:type :FormulaComponent ;
+:comp_ยาฟ้าทะลายโจร_2_สารสกัดจากส่วนเหนือดินหรือใบของฟ้าทะลายโจร_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_สารสกัดจากส่วนเหนือดินหรือใบของฟ้าทะลายโจร .
 
-:comp_ยามหาจักรใหญ่_ใบกระพังโหม  rdf:type :FormulaComponent ;
+:comp_ยามหาจักรใหญ่_ใบกระพังโหม_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ใบกระพังโหม ;
     :usePlantPart :plantpart_ใบ ;
     :quantity "60.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยามหาจักรใหญ่_ยาดำสะตุ  rdf:type :FormulaComponent ;
+:comp_ยามหาจักรใหญ่_ยาดำสะตุ_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ยาดำสะตุ ;
     :usePlantPart :plantpart_แร่ธาตุ ;
     :quantity "8.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยามหาจักรใหญ่_โกฐสอ  rdf:type :FormulaComponent ;
+:comp_ยามหาจักรใหญ่_โกฐสอ_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_โกฐสอ ;
     :quantity "2.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยามหาจักรใหญ่_โกฐเขมา  rdf:type :FormulaComponent ;
+:comp_ยามหาจักรใหญ่_โกฐเขมา_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_โกฐเขมา ;
     :quantity "2.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยามหาจักรใหญ่_โกฐพุงปลา  rdf:type :FormulaComponent ;
+:comp_ยามหาจักรใหญ่_โกฐพุงปลา_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_โกฐพุงปลา ;
     :quantity "2.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยามหาจักรใหญ่_โกฐก้านพร้าว  rdf:type :FormulaComponent ;
+:comp_ยามหาจักรใหญ่_โกฐก้านพร้าว_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_โกฐก้านพร้าว ;
     :quantity "2.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยามหาจักรใหญ่_โกฐกระดูก  rdf:type :FormulaComponent ;
+:comp_ยามหาจักรใหญ่_โกฐกระดูก_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_โกฐกระดูก ;
     :quantity "2.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยามหาจักรใหญ่_เทียนดำ  rdf:type :FormulaComponent ;
+:comp_ยามหาจักรใหญ่_เทียนดำ_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_เทียนดำ ;
     :quantity "2.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยามหาจักรใหญ่_เทียนแดง  rdf:type :FormulaComponent ;
+:comp_ยามหาจักรใหญ่_เทียนแดง_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_เทียนแดง ;
     :quantity "2.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยามหาจักรใหญ่_เทียนขาว  rdf:type :FormulaComponent ;
+:comp_ยามหาจักรใหญ่_เทียนขาว_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_เทียนขาว ;
     :quantity "2.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยามหาจักรใหญ่_เทียนข้าว  rdf:type :FormulaComponent ;
+:comp_ยามหาจักรใหญ่_เทียนข้าว_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_เทียนข้าว ;
     :quantity "2.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยามหาจักรใหญ่_เปลือกเทียนเยาวพาณี  rdf:type :FormulaComponent ;
+:comp_ยามหาจักรใหญ่_เปลือกเทียนเยาวพาณี_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_เปลือกเทียนเยาวพาณี ;
     :usePlantPart :plantpart_เปลือก ;
     :quantity "2.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยามหาจักรใหญ่_เนื้อผลสมอไทย  rdf:type :FormulaComponent ;
+:comp_ยามหาจักรใหญ่_เนื้อผลสมอไทย_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_เนื้อผลสมอไทย ;
     :quantity "2.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยามหาจักรใหญ่_เนื้อผลสมอพิเภก  rdf:type :FormulaComponent ;
+:comp_ยามหาจักรใหญ่_เนื้อผลสมอพิเภก_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_เนื้อผลสมอพิเภก ;
     :quantity "2.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยามหาจักรใหญ่_เนื้อผลมะขามป้อม  rdf:type :FormulaComponent ;
+:comp_ยามหาจักรใหญ่_เนื้อผลมะขามป้อม_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_เนื้อผลมะขามป้อม ;
     :quantity "2.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยามหาจักรใหญ่_ลูกจันทน์  rdf:type :FormulaComponent ;
+:comp_ยามหาจักรใหญ่_ลูกจันทน์_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ลูกจันทน์ ;
     :usePlantPart :plantpart_ลูกผล ;
     :quantity "2.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยามหาจักรใหญ่_ดอกจันทน์  rdf:type :FormulaComponent ;
+:comp_ยามหาจักรใหญ่_ดอกจันทน์_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ดอกจันทน์ ;
     :usePlantPart :plantpart_ดอกไม้ ;
     :quantity "2.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยามหาจักรใหญ่_ลูกกระวาน  rdf:type :FormulaComponent ;
+:comp_ยามหาจักรใหญ่_ลูกกระวาน_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ลูกกระวาน ;
     :usePlantPart :plantpart_ลูกผล ;
     :quantity "2.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยามหาจักรใหญ่_ดอกกานพลู  rdf:type :FormulaComponent ;
+:comp_ยามหาจักรใหญ่_ดอกกานพลู_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ดอกกานพลู ;
     :usePlantPart :plantpart_ดอกไม้ ;
     :quantity "2.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยามหาจักรใหญ่_รากชะเอมเทศ  rdf:type :FormulaComponent ;
+:comp_ยามหาจักรใหญ่_รากชะเอมเทศ_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_รากชะเอมเทศ ;
     :usePlantPart :plantpart_ราก ;
     :quantity "2.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยามหาจักรใหญ่_เมล็ดโหระพา  rdf:type :FormulaComponent ;
+:comp_ยามหาจักรใหญ่_เมล็ดโหระพา_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_เมล็ดโหระพา ;
     :usePlantPart :plantpart_เมล็ด ;
     :quantity "2.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยามหาจักรใหญ่_ลูกผักชีลา  rdf:type :FormulaComponent ;
+:comp_ยามหาจักรใหญ่_ลูกผักชีลา_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_ลูกผักชีลา ;
     :usePlantPart :plantpart_ลูกผล ;
     :quantity "2.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยามหาจักรใหญ่_สารส้มสะตุ  rdf:type :FormulaComponent ;
+:comp_ยามหาจักรใหญ่_สารส้มสะตุ_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_สารส้มสะตุ ;
     :quantity "2.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยามหาจักรใหญ่_เหง้าขมิ้นอ้อย  rdf:type :FormulaComponent ;
+:comp_ยามหาจักรใหญ่_เหง้าขมิ้นอ้อย_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_เหง้าขมิ้นอ้อย ;
     :usePlantPart :plantpart_เหง้า ;
     :quantity "2.0"^^xsd:decimal ;
     :hasUnit :unit_กรัม .
 
-:comp_ยามหาจักรใหญ่_หัวกระเทียม  rdf:type :FormulaComponent ;
+:comp_ยามหาจักรใหญ่_หัวกระเทียม_v2  rdf:type :FormulaComponent ;
     :usesHerb :herb_หัวกระเทียม ;
     :usePlantPart :plantpart_หัว ;
     :quantity "2.0"^^xsd:decimal ;
@@ -9021,7 +9021,7 @@ skos:example rdf:type owl:AnnotationProperty .
     :hasFrequency :freq_3ครั้งต่อวัน ;
     :hasTiming :timing_ก่อนอาหาร .
 
-:guideline_ยาธาตุบรรจบ_ยาผง  rdf:type :DosageGuideline ;
+:guideline_ยาธาตุบรรจบ_ยาผง_v2  rdf:type :DosageGuideline ;
     :dosageInstruction "รับประทานครั้งละ 1 กรัมละลายน้ำกระสายยาควรดื่มขณะยังอุ่นอยู่หรือละลายน้ำต้มสุกที่ยังอุ่นอยู่วันละ 3ครั้งก่อนอาหารเช้ากลางวันเย็นเมื่อมีอาการ"^^xsd:string ;
     :forForm :form_ยาผง_รพ ;
     :minDose "1.0"^^xsd:decimal ;
@@ -9030,7 +9030,7 @@ skos:example rdf:type owl:AnnotationProperty .
     :hasFrequency :freq_3ครั้งต่อวัน ;
     :hasTiming :timing_ก่อนอาหาร .
 
-:guideline_ยาธาตุบรรจบ_ยาผง_เด็ก_อายุ6-12ปี  rdf:type :DosageGuideline ;
+:guideline_ยาธาตุบรรจบ_ยาผง_เด็ก_อายุ6-12ปี_v2  rdf:type :DosageGuideline ;
     :dosageInstruction "รับประทานครั้งละ 500 มิลลิกรัมละลายน้ำกระสายยาควรดื่มขณะยังอุ่นอยู่หรือละลายน้ำต้มสุกที่ยังอุ่นอยู่วันละ 3ครั้งก่อนอาหารเช้ากลางวันเย็นเมื่อมีอาการน้ำกระสายยาที่ใช้ - กรณีแก้ท้องอืดท้องเฟ้อใช้กระเทียม 3 กลีบทุบชงน้ำร้อนหรือใช้ใบกะเพราต้มเป็นน้ำกระสาย - กรณีบรรเทาอาการอุจจาระธาตุพิการท้องเสียชนิดที่ไม่เกิดจากการติดเชื้อใช้เปลือกแคหรือเปลือกสะเดาหรือเปลือกลูกทับทิมต้มแทรกกับน้ำปูนใสเป็นน้ำกระสายยา"^^xsd:string ;
     :forForm :form_ยาผง_รพ ;
     :minDose "0.5"^^xsd:decimal ;
@@ -9040,7 +9040,7 @@ skos:example rdf:type owl:AnnotationProperty .
     :hasTiming :timing_ก่อนอาหาร ;
     :hasAgeCondition :agecond_6to12 .
 
-:guideline_ยาธาตุบรรจบ_ยาแคปซูล  rdf:type :DosageGuideline ;
+:guideline_ยาธาตุบรรจบ_ยาแคปซูล_v2  rdf:type :DosageGuideline ;
     :dosageInstruction "รับประทานครั้งละ 1 กรัมวันละ 3ครั้งก่อนอาหารเช้ากลางวันเย็นเมื่อมีอาการ"^^xsd:string ;
     :forForm :form_ยาแคปซูล_รพ ;
     :minDose "1.0"^^xsd:decimal ;
@@ -9049,7 +9049,7 @@ skos:example rdf:type owl:AnnotationProperty .
     :hasFrequency :freq_3ครั้งต่อวัน ;
     :hasTiming :timing_ก่อนอาหาร .
 
-:guideline_ยาธาตุบรรจบ_ยาแคปซูล_เด็ก_อายุ6-12ปี  rdf:type :DosageGuideline ;
+:guideline_ยาธาตุบรรจบ_ยาแคปซูล_เด็ก_อายุ6-12ปี_v2  rdf:type :DosageGuideline ;
     :dosageInstruction "รับประทานครั้งละ 500 มิลลิกรัมวันละ 3ครั้งก่อนอาหารเช้ากลางวันเย็นเมื่อมีอาการ"^^xsd:string ;
     :forForm :form_ยาแคปซูล_รพ ;
     :minDose "0.5"^^xsd:decimal ;
@@ -9059,7 +9059,7 @@ skos:example rdf:type owl:AnnotationProperty .
     :hasTiming :timing_ก่อนอาหาร ;
     :hasAgeCondition :agecond_6to12 .
 
-:guideline_ยาธาตุบรรจบ_ยาลูกกลอน  rdf:type :DosageGuideline ;
+:guideline_ยาธาตุบรรจบ_ยาลูกกลอน_v2  rdf:type :DosageGuideline ;
     :dosageInstruction "รับประทานครั้งละ 1 กรัมวันละ 3ครั้งก่อนอาหารเช้ากลางวันเย็นเมื่อมีอาการ"^^xsd:string ;
     :forForm :form_ยาลูกกลอน ;
     :minDose "1.0"^^xsd:decimal ;
@@ -9068,7 +9068,7 @@ skos:example rdf:type owl:AnnotationProperty .
     :hasFrequency :freq_3ครั้งต่อวัน ;
     :hasTiming :timing_ก่อนอาหาร .
 
-:guideline_ยาธาตุบรรจบ_ยาลูกกลอน_เด็ก_อายุ6-12ปี  rdf:type :DosageGuideline ;
+:guideline_ยาธาตุบรรจบ_ยาลูกกลอน_เด็ก_อายุ6-12ปี_v2  rdf:type :DosageGuideline ;
     :dosageInstruction "รับประทานครั้งละ 500 มิลลิกรัมวันละ 3ครั้งก่อนอาหารเช้ากลางวันเย็นเมื่อมีอาการ"^^xsd:string ;
     :forForm :form_ยาลูกกลอน ;
     :minDose "0.5"^^xsd:decimal ;
@@ -9127,7 +9127,7 @@ skos:example rdf:type owl:AnnotationProperty .
     :hasFrequency :freq_3ครั้งต่อวัน ;
     :hasTiming :timing_ก่อนอาหาร .
 
-:guideline_ยากล้วย  rdf:type :DosageGuideline ;
+:guideline_ยากล้วย_v2  rdf:type :DosageGuideline ;
     :dosageInstruction "รับประทานครั้งละ 10 กรัมชงในน้ำร้อน 120 - 200 มิลลิลิตรวันละ 3 ครั้งก่อนอาหารเช้ากลางวันและเย็น"^^xsd:string ;
     :minDose "120.0"^^xsd:decimal ;
     :maxDose "200.0"^^xsd:decimal ;
@@ -9135,7 +9135,7 @@ skos:example rdf:type owl:AnnotationProperty .
     :hasFrequency :freq_3ครั้งต่อวัน ;
     :hasTiming :timing_ก่อนอาหาร .
 
-:guideline_ยาขิง  rdf:type :DosageGuideline ;
+:guideline_ยาขิง_v2  rdf:type :DosageGuideline ;
     :dosageInstruction "ป้องกันและบรรเทาอาการคลื่นไส้อาเจียนที่มีสาเหตุจากการเมารถเมาเรือรับประทานวันละ 1 – 2 กรัมก่อนเดินทาง 30 นาที – 1 ชั่วโมงหรือเมื่อมีอาการป้องกันอาการคลื่นไส้อาเจียนหลังการผ่าตัดรับประทานครั้งละ 1 กรัมก่อนการผ่าตัด 1 ชั่วโมง"^^xsd:string ;
     :minDose "1.0"^^xsd:decimal ;
     :maxDose "2.0"^^xsd:decimal ;
@@ -9758,7 +9758,7 @@ skos:example rdf:type owl:AnnotationProperty .
     :hasFrequency :freq_3ครั้งต่อวัน ;
     :hasTiming :timing_หลังอาหาร .
 
-:guideline_ยาฟ้าทะลายโจร  rdf:type :DosageGuideline ;
+:guideline_ยาฟ้าทะลายโจร_v2  rdf:type :DosageGuideline ;
     :dosageInstruction "รับประทานครั้งละ 1.5 – 3กรัมวันละ 4 ครั้งหลังอาหารและก่อนนอน"^^xsd:string ;
     :minDose "1.5"^^xsd:decimal ;
     :maxDose "3.0"^^xsd:decimal ;
@@ -9849,7 +9849,7 @@ skos:example rdf:type owl:AnnotationProperty .
     :hasFrequency :freq_2ครั้งต่อวัน ;
     :hasTiming :timing_ก่อนอาหารเช้าและเย็น .
 
-:guideline_ยาธรณีสันฑะฆาต_ยาผง  rdf:type :DosageGuideline ;
+:guideline_ยาธรณีสันฑะฆาต_ยาผง_v2  rdf:type :DosageGuideline ;
     :dosageInstruction "รับประทานครั้งละ 500 มิลลิกรัม - 1 กรัมละลายน้ำต้มสุกที่ยังอุ่นอยู่หรือผสมน้ำผึ้งปั้นเป็นลูกกลอนวันละ 1 ครั้งก่อนอาหารเช้าหรือก่อนนอน"^^xsd:string ;
     :forForm :form_ยาผง_รพ ;
     :minDose "0.5"^^xsd:decimal ;
@@ -9858,7 +9858,7 @@ skos:example rdf:type owl:AnnotationProperty .
     :hasFrequency :freq_1ครั้งต่อวัน ;
     :hasTiming :timing_ก่อนอาหารหรือก่อนนอน .
 
-:guideline_ยาธรณีสันฑะฆาต_ยาแคปซูล  rdf:type :DosageGuideline ;
+:guideline_ยาธรณีสันฑะฆาต_ยาแคปซูล_v2  rdf:type :DosageGuideline ;
     :dosageInstruction "รับประทานครั้งละ 500 มิลลิกรัม - 1 กรัมวันละ 1 ครั้งก่อนอาหารเช้าหรือก่อนนอน"^^xsd:string ;
     :forForm :form_ยาแคปซูล_รพ ;
     :minDose "0.5"^^xsd:decimal ;
@@ -9867,7 +9867,7 @@ skos:example rdf:type owl:AnnotationProperty .
     :hasFrequency :freq_1ครั้งต่อวัน ;
     :hasTiming :timing_ก่อนอาหารหรือก่อนนอน .
 
-:guideline_ยาธรณีสันฑะฆาต_ยาเม็ด  rdf:type :DosageGuideline ;
+:guideline_ยาธรณีสันฑะฆาต_ยาเม็ด_v2  rdf:type :DosageGuideline ;
     :dosageInstruction "รับประทานครั้งละ 500 มิลลิกรัม - 1 กรัมวันละ 1 ครั้งก่อนอาหารเช้าหรือก่อนนอน"^^xsd:string ;
     :forForm :form_ยาเม็ด_รพ ;
     :minDose "0.5"^^xsd:decimal ;
@@ -9876,7 +9876,7 @@ skos:example rdf:type owl:AnnotationProperty .
     :hasFrequency :freq_1ครั้งต่อวัน ;
     :hasTiming :timing_ก่อนอาหารหรือก่อนนอน .
 
-:guideline_ยาธรณีสันฑะฆาต_ยาลูกกลอน  rdf:type :DosageGuideline ;
+:guideline_ยาธรณีสันฑะฆาต_ยาลูกกลอน_v2  rdf:type :DosageGuideline ;
     :dosageInstruction "รับประทานครั้งละ 500 มิลลิกรัม - 1 กรัมวันละ 1 ครั้งก่อนอาหารเช้าหรือก่อนนอน"^^xsd:string ;
     :forForm :form_ยาลูกกลอน ;
     :minDose "0.5"^^xsd:decimal ;
@@ -9896,7 +9896,7 @@ skos:example rdf:type owl:AnnotationProperty .
     :hasFrequency :freq_2ครั้งต่อวัน ;
     :hasTiming :timing_ก่อนอาหารเช้าและเย็น .
 
-:guideline_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC  rdf:type :DosageGuideline ;
+:guideline_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_v2  rdf:type :DosageGuideline ;
     :dosageInstruction "หยดบนเยื่อบุใต้ลิ้นครั้งละ 1 หยด (THC 1 มิลลิกรัมและ CBD 1 มิลลิกรัม) ก่อนนอนหากเวลาผ่านไป 15 นาทีแล้วไม่ได้ผลอาจปรับเพิ่มขนาดยาโดยหยดเพิ่มอีก 1 หยดหากใช้มากกว่า 2 หยดต่อวันแบ่งให้ 2 เวลาเช้าและก่อนนอนโดยไม่ควรใช้เกิน 30 หยดต่อวัน (THC 30 มิลลิกรัมและ CBD 30 มิลลิกรัม)"^^xsd:string ;
     :hasTiming :timing_ก่อนนอน .
 
@@ -9983,7 +9983,7 @@ skos:example rdf:type owl:AnnotationProperty .
     :hasFrequency :freq_2ครั้งต่อวัน ;
     :hasTiming :timing_ก่อนอาหารเช้าและเย็น .
 
-:guideline_ยาเบญจกูล_ยาชง  rdf:type :DosageGuideline ;
+:guideline_ยาเบญจกูล_ยาชง_v2  rdf:type :DosageGuideline ;
     :dosageInstruction "รับประทานครั้งละ 1.5 – 2 กรัมวันละ 3 ครั้งหลังอาหารเช้ากลางวันเย็น"^^xsd:string ;
     :forForm :form_ยาชง_รพ ;
     :minDose "1.5"^^xsd:decimal ;
@@ -9992,7 +9992,7 @@ skos:example rdf:type owl:AnnotationProperty .
     :hasFrequency :freq_3ครั้งต่อวัน ;
     :hasTiming :timing_หลังอาหาร .
 
-:guideline_ยาเบญจกูล_ยาผง  rdf:type :DosageGuideline ;
+:guideline_ยาเบญจกูล_ยาผง_v2  rdf:type :DosageGuideline ;
     :dosageInstruction "รับประทานครั้งละ 800 มิลลิกรัม – 1 กรัมวันละ 3 เวลาหลังอาหารเช้ากลางวันเย็น"^^xsd:string ;
     :forForm :form_ยาผง_รพ ;
     :minDose "0.8"^^xsd:decimal ;
@@ -10001,7 +10001,7 @@ skos:example rdf:type owl:AnnotationProperty .
     :hasFrequency :freq_3ครั้งต่อวัน ;
     :hasTiming :timing_หลังอาหาร .
 
-:guideline_ยาเบญจกูล_ยาแคปซูล  rdf:type :DosageGuideline ;
+:guideline_ยาเบญจกูล_ยาแคปซูล_v2  rdf:type :DosageGuideline ;
     :dosageInstruction "รับประทานครั้งละ 800 มิลลิกรัม – 1 กรัมวันละ 3 ครั้งหลังอาหารเช้ากลางวันเย็น"^^xsd:string ;
     :forForm :form_ยาแคปซูล_รพ ;
     :minDose "0.8"^^xsd:decimal ;
@@ -10010,7 +10010,7 @@ skos:example rdf:type owl:AnnotationProperty .
     :hasFrequency :freq_3ครั้งต่อวัน ;
     :hasTiming :timing_หลังอาหาร .
 
-:guideline_ยาเบญจกูล_ยาเม็ด  rdf:type :DosageGuideline ;
+:guideline_ยาเบญจกูล_ยาเม็ด_v2  rdf:type :DosageGuideline ;
     :dosageInstruction "รับประทานครั้งละ 800 มิลลิกรัม – 1 กรัมวันละ 3 ครั้งหลังอาหารเช้ากลางวันเย็น"^^xsd:string ;
     :forForm :form_ยาเม็ด_รพ ;
     :minDose "0.8"^^xsd:decimal ;
@@ -10019,7 +10019,7 @@ skos:example rdf:type owl:AnnotationProperty .
     :hasFrequency :freq_3ครั้งต่อวัน ;
     :hasTiming :timing_หลังอาหาร .
 
-:guideline_ยาเบญจกูล_ยาลูกกลอน  rdf:type :DosageGuideline ;
+:guideline_ยาเบญจกูล_ยาลูกกลอน_v2  rdf:type :DosageGuideline ;
     :dosageInstruction "รับประทานครั้งละ 800 มิลลิกรัม – 1 กรัมวันละ 3 ครั้งหลังอาหารเช้ากลางวันเย็น"^^xsd:string ;
     :forForm :form_ยาลูกกลอน ;
     :minDose "0.8"^^xsd:decimal ;
@@ -10044,7 +10044,7 @@ skos:example rdf:type owl:AnnotationProperty .
     :hasFrequency :freq_3ครั้งต่อวัน ;
     :hasTiming :timing_ก่อนอาหาร .
 
-:guideline_ยาปลูกไฟธาตุ  rdf:type :DosageGuideline ;
+:guideline_ยาปลูกไฟธาตุ_v2  rdf:type :DosageGuideline ;
     :dosageInstruction "รับประทานครั้งละ 500 มิลลิกรัม – 1.5กรัมวันละ 3 ครั้งก่อนอาหารเช้ากลางวันเย็น"^^xsd:string ;
     :minDose "0.5"^^xsd:decimal ;
     :maxDose "1.5"^^xsd:decimal ;
@@ -10084,7 +10084,7 @@ skos:example rdf:type owl:AnnotationProperty .
 :guideline_ยาว่านหางจระเข้  rdf:type :DosageGuideline ;
     :dosageInstruction "ชนิดเจลทาบริเวณผิวหนังที่ถูกไฟไหม้น้ำร้อนลวกวันละ 3 - 4 ครั้งชนิดโลชันเตรียมสดทาบริเวณผิวหนังที่ถูกไฟไหม้น้ำร้อนลวกวันละ 3 - 4 ครั้ง"^^xsd:string .
 
-:guideline_ยาหญ้าปักกิ่ง_ยาชง  rdf:type :DosageGuideline ;
+:guideline_ยาหญ้าปักกิ่ง_ยาชง_v2  rdf:type :DosageGuideline ;
     :dosageInstruction "รับประทานครั้งละ 2 – 3 กรัมแช่น้ำร้อนประมาณ 120 – 200 มิลลิลิตรรับประทานวันละ 3 ครั้งก่อนอาหารเช้ากลางวันและเย็น"^^xsd:string ;
     :forForm :form_ยาชง_รพ ;
     :minDose "2.0"^^xsd:decimal ;
@@ -10093,7 +10093,7 @@ skos:example rdf:type owl:AnnotationProperty .
     :hasFrequency :freq_3ครั้งต่อวัน ;
     :hasTiming :timing_ก่อนอาหาร .
 
-:guideline_ยาหญ้าปักกิ่ง_ยาแคปซูล  rdf:type :DosageGuideline ;
+:guideline_ยาหญ้าปักกิ่ง_ยาแคปซูล_v2  rdf:type :DosageGuideline ;
     :dosageInstruction "รับประทานครั้งละ 400 มิลลิกรัมวันละ 3 ครั้งก่อนอาหารเช้ากลางวันและเย็น"^^xsd:string ;
     :forForm :form_ยาแคปซูล_รพ ;
     :minDose "0.4"^^xsd:decimal ;
@@ -10120,7 +10120,7 @@ skos:example rdf:type owl:AnnotationProperty .
     :dosageInstruction "ถอนพิษเบื่อเมา"^^xsd:string ;
     :forForm :form_ทั่วไป .
 
-:guideline_ยารางจืด_ยาชง  rdf:type :DosageGuideline ;
+:guideline_ยารางจืด_ยาชง_v2  rdf:type :DosageGuideline ;
     :dosageInstruction "รับประทานครั้งละ 2 - 3 กรัมแช่น้ำร้อน 120 - 200 มิลลิลิตรวันละ 3 ครั้งก่อนอาหารเช้ากลางวันและเย็นหรือเมื่อมีอาการรับประทานครั้งละ 2 - 3 กรัมแช่น้ำร้อน 120 - 200 มิลลิลิตรวันละ 3 ครั้งก่อนอาหารเช้ากลางวันและเย็นหรือเมื่อมีอาการ"^^xsd:string ;
     :forForm :form_ยาชง_รพ ;
     :minDose "2.0"^^xsd:decimal ;
@@ -10129,7 +10129,7 @@ skos:example rdf:type owl:AnnotationProperty .
     :hasFrequency :freq_3ครั้งต่อวัน ;
     :hasTiming :timing_ก่อนอาหาร .
 
-:guideline_ยารางจืด_ยาแคปซูล  rdf:type :DosageGuideline ;
+:guideline_ยารางจืด_ยาแคปซูล_v2  rdf:type :DosageGuideline ;
     :dosageInstruction "รับประทานครั้งละ 500 มิลลิกรัม - 1 กรัมวันละ 3 ครั้งก่อนอาหารบรรเทาพิษยาฆ่าแมลงหรือโลหะหนัก"^^xsd:string ;
     :forForm :form_ยาแคปซูล_รพ ;
     :minDose "0.5"^^xsd:decimal ;
@@ -10151,7 +10151,7 @@ skos:example rdf:type owl:AnnotationProperty .
     :hasUnit :unit_มิลลิลิตร ;
     :hasTiming :timing_หลังอาหาร .
 
-:guideline_ยากษัยเส้น  rdf:type :DosageGuideline ;
+:guideline_ยากษัยเส้น_v2  rdf:type :DosageGuideline ;
     :dosageInstruction "รับประทานครั้งละ 750 มิลลิกรัม – 1 กรัมวันละ 4 ครั้งก่อนอาหารเช้ากลางวันเย็นและก่อนนอน"^^xsd:string ;
     :minDose "0.75"^^xsd:decimal ;
     :maxDose "1.0"^^xsd:decimal ;
@@ -10159,7 +10159,7 @@ skos:example rdf:type owl:AnnotationProperty .
     :hasFrequency :freq_4ครั้งต่อวัน ;
     :hasTiming :timing_ก่อนอาหาร .
 
-:guideline_ยาธรณีสันฑะฆาต_ยาผง  rdf:type :DosageGuideline ;
+:guideline_ยาธรณีสันฑะฆาต_ยาผง_v3  rdf:type :DosageGuideline ;
     :dosageInstruction "รับประทานครั้งละ 500 มิลลิกรัม - 1 กรัมละลายน้ำต้มสุกที่ยังอุ่นอยู่หรือผสมน้ำผึ้งปั้นเป็นลูกกลอนวันละ 1 ครั้งก่อนอาหารเช้าหรือก่อนนอน"^^xsd:string ;
     :forForm :form_ยาผง_รพ ;
     :minDose "0.5"^^xsd:decimal ;
@@ -10168,7 +10168,7 @@ skos:example rdf:type owl:AnnotationProperty .
     :hasFrequency :freq_1ครั้งต่อวัน ;
     :hasTiming :timing_ก่อนอาหารหรือก่อนนอน .
 
-:guideline_ยาธรณีสันฑะฆาต_ยาแคปซูล  rdf:type :DosageGuideline ;
+:guideline_ยาธรณีสันฑะฆาต_ยาแคปซูล_v3  rdf:type :DosageGuideline ;
     :dosageInstruction "รับประทานครั้งละ 500 มิลลิกรัม - 1 กรัมวันละ 1 ครั้งก่อนอาหารเช้าหรือก่อนนอน"^^xsd:string ;
     :forForm :form_ยาแคปซูล_รพ ;
     :minDose "0.5"^^xsd:decimal ;
@@ -10177,7 +10177,7 @@ skos:example rdf:type owl:AnnotationProperty .
     :hasFrequency :freq_1ครั้งต่อวัน ;
     :hasTiming :timing_ก่อนอาหารหรือก่อนนอน .
 
-:guideline_ยาธรณีสันฑะฆาต_ยาเม็ด  rdf:type :DosageGuideline ;
+:guideline_ยาธรณีสันฑะฆาต_ยาเม็ด_v3  rdf:type :DosageGuideline ;
     :dosageInstruction "รับประทานครั้งละ 500 มิลลิกรัม - 1 กรัมวันละ 1 ครั้งก่อนอาหารเช้าหรือก่อนนอน"^^xsd:string ;
     :forForm :form_ยาเม็ด_รพ ;
     :minDose "0.5"^^xsd:decimal ;
@@ -10186,7 +10186,7 @@ skos:example rdf:type owl:AnnotationProperty .
     :hasFrequency :freq_1ครั้งต่อวัน ;
     :hasTiming :timing_ก่อนอาหารหรือก่อนนอน .
 
-:guideline_ยาธรณีสันฑะฆาต_ยาลูกกลอน  rdf:type :DosageGuideline ;
+:guideline_ยาธรณีสันฑะฆาต_ยาลูกกลอน_v3  rdf:type :DosageGuideline ;
     :dosageInstruction "รับประทานครั้งละ 500 มิลลิกรัม - 1 กรัมวันละ 1 ครั้งก่อนอาหารเช้าหรือก่อนนอน"^^xsd:string ;
     :forForm :form_ยาลูกกลอน ;
     :minDose "0.5"^^xsd:decimal ;
@@ -10195,7 +10195,7 @@ skos:example rdf:type owl:AnnotationProperty .
     :hasFrequency :freq_1ครั้งต่อวัน ;
     :hasTiming :timing_ก่อนอาหารหรือก่อนนอน .
 
-:guideline_ยาอัมฤตย์โอสถ  rdf:type :DosageGuideline ;
+:guideline_ยาอัมฤตย์โอสถ_v2  rdf:type :DosageGuideline ;
     :dosageInstruction "รับประทานครั้งละ 1 - 2 กรัมวันละ 2 ครั้งก่อนอาหารเช้าและเย็นน้ำกระสายยาที่ใช้ใช้น้ำสุกครึ่งแก้ว (125 ซีซี) หมายเหตุควรเริ่มให้ยาขนาดต่ำแล้วค่อยปรับขนาดขึ้น"^^xsd:string ;
     :minDose "1.0"^^xsd:decimal ;
     :maxDose "2.0"^^xsd:decimal ;
@@ -10203,7 +10203,7 @@ skos:example rdf:type owl:AnnotationProperty .
     :hasFrequency :freq_2ครั้งต่อวัน ;
     :hasTiming :timing_ก่อนอาหารเช้าและเย็น .
 
-:guideline_ยาน้ำมันกัญชาทั้งห้า_หรือ  rdf:type :DosageGuideline ;
+:guideline_ยาน้ำมันกัญชาทั้งห้า_หรือ_v2  rdf:type :DosageGuideline ;
     :dosageInstruction "หยดใต้ลิ้นเริ่มต้นครั้งละ 2 หยดวันละ 1 ครั้งก่อนนอนหรือตามแพทย์สั่งสามารถปรับขนาดยาเพิ่มได้ครั้งละ 1-2 หยดบริหารยาได้วันละ 3-4 ครั้งห่างกันทุก 6-8 ชั่วโมงโดยปรับขนาดยาเพิ่มได้ทุก 3-7 วันภายใต้คำแนะนำของแพทย์จนเห็นผลการรักษาแต่ไม่เกิดผลข้างเคียงจากการใช้ยาไม่แนะนำให้ใช้ THC เกิน 20 มิลลิกรัมต่อวัน"^^xsd:string ;
     :minDose "0.02"^^xsd:decimal ;
     :maxDose "0.02"^^xsd:decimal ;
@@ -10220,7 +10220,7 @@ skos:example rdf:type owl:AnnotationProperty .
     :dosageInstruction "มันกัญชา - หากอาการไม่ดีขึ้นจาการติดตามอาการและประเมินผลให้ปรับขนาดยาเพิ่มขึ้นครั้งละ 1-2 หยดทุก 1 สัปดาห์หรือระยะเวลาตามแพทย์แผนไทย/แพทย์แผนไทยประยุกต์/แพทย์แผนปัจจุบันพิจารณาโดยขนาดสูงสุดไม่เกิน 20 หยด/วัน - หากอาการดีขึ้นจากการติดตามอาการและประเมินผลให้ปรับขนาดยาลดลงครั้งละ 1 หยดทุก 1 สัปดาห์หรือเป็นระยะเวลาตามแพทย์แผนไทย/ แพทย์แผนไทยประยุกต์/แพทย์แผนปัจจุบันพิจารณา"^^xsd:string ;
     :forForm :form_ยาน้ำ_รพ .
 
-:guideline_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC  rdf:type :DosageGuideline ;
+:guideline_ยาน้ำมันสารสกัดกัญชาที่มี_delta-9-tetrahydrocannabinol_THC_v3  rdf:type :DosageGuideline ;
     :dosageInstruction "หยดบนเยื่อบุใต้ลิ้นครั้งละ 1 หยด (THC 1 มิลลิกรัมและ CBD 1 มิลลิกรัม) ก่อนนอนหากเวลาผ่านไป 15 นาทีแล้วไม่ได้ผลอาจปรับเพิ่มขนาดยาโดยหยดเพิ่มอีก 1 หยดหากใช้มากกว่า 2 หยดต่อวันแบ่งให้ 2 เวลาเช้าและก่อนนอนโดยไม่ควรใช้เกิน 30 หยดต่อวัน (THC 30 มิลลิกรัมและ CBD 30 มิลลิกรัม)"^^xsd:string ;
     :hasTiming :timing_ก่อนนอน .
 
@@ -10243,14 +10243,14 @@ skos:example rdf:type owl:AnnotationProperty .
     :dosageInstruction "กระสายยาที่ใช้ได้แก่น้ำมะพร้าวน้ำผึ้งรวงน้ำส้มซ่าน้ำตาลทรายกระทือสดน้ำเบญจทับทิมโดยเลือกให้เหมาะสมกับโรคหรืออาการของผู้ป่วยอาทิเช่น - กรณีที่มีอาการอ่อนเพลียไม่มีกำลังให้ใช้น้ำมะพร้าวน้ำผึ้งรวงหรือน้ำตาลทราย - กรณีที่มีเสมหะในคอให้ใช้น้ำส้มซ่า - กรณีมีอาการอาหารไม่ย่อยท้องอืดท้องเฟ้อให้ใช้น้ำกระทือสด - กรณีมีอาการท้องเสียให้ใช้น้ำเบญจทับทิมต้ม - กรณีหาน้ำกระสายยาไม่ได้ให้ใช้น้ำสุกครึ่งแก้ว (60 ซีซี) แทน"^^xsd:string ;
     :forForm :form_ยาน้ำ_รพ .
 
-:guideline_ยาฟ้าทะลายโจร  rdf:type :DosageGuideline ;
+:guideline_ยาฟ้าทะลายโจร_v3  rdf:type :DosageGuideline ;
     :dosageInstruction "รับประทานยาจากผงฟ้าทะลายโจรที่มี andrographolide 180 มิลลิกรัมต่อวันโดยแบ่งให้วันละ 3 ครั้งเป็นเวลา 5 วัน"^^xsd:string ;
     :minDose "0.18"^^xsd:decimal ;
     :maxDose "0.18"^^xsd:decimal ;
     :hasUnit :unit_กรัม ;
     :hasFrequency :freq_3ครั้งต่อวัน .
 
-:guideline_ยามหาจักรใหญ่_ยาผง_เด็ก_อายุ1-5ขวบ  rdf:type :DosageGuideline ;
+:guideline_ยามหาจักรใหญ่_ยาผง_เด็ก_อายุ1-5ขวบ_v2  rdf:type :DosageGuideline ;
     :dosageInstruction "รับประทานครั้งละ 500 มิลลิกรัม – 1.5 กรัมละลายน้ำต้มสุกที่ยังอุ่นอยู่เพิ่มและลดได้ตามส่วนวันละ 2 ครั้งก่อนอาหารเช้าและเย็น"^^xsd:string ;
     :forForm :form_ยาผง_รพ ;
     :minDose "0.5"^^xsd:decimal ;
@@ -10260,7 +10260,7 @@ skos:example rdf:type owl:AnnotationProperty .
     :hasTiming :timing_ก่อนอาหารเช้าและเย็น ;
     :hasAgeCondition :agecond_1to5 .
 
-:guideline_ยามหาจักรใหญ่_ยาเม็ด_เด็ก_อายุ1-5ขวบ  rdf:type :DosageGuideline ;
+:guideline_ยามหาจักรใหญ่_ยาเม็ด_เด็ก_อายุ1-5ขวบ_v2  rdf:type :DosageGuideline ;
     :dosageInstruction "รับประทานครั้งละ 500 มิลลิกรัม – 1.5 กรัมละลายน้ำต้มสุกที่ยังอุ่นอยู่เพิ่มและลดได้ตามส่วนวันละ 2 ครั้งก่อนอาหารเช้าและเย็น"^^xsd:string ;
     :forForm :form_ยาเม็ด_รพ ;
     :minDose "0.5"^^xsd:decimal ;
