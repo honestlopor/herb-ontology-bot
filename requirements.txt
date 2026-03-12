@@ -5,3 +5,4 @@ rdflib
 uvicorn
 streamlit
 requests
+python-dotenv

@@ -4,8 +4,12 @@ import google.generativeai as genai
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from rdflib import Graph
+from dotenv import load_dotenv
+
+load_dotenv()
 
 app = FastAPI(title="Herb Medicine Ontology Chatbot")
+
 
 # Gemini API Key
 genai.configure(api_key=os.environ["GEMINI_API_KEY"])
@@ -238,28 +242,41 @@ async def chat_with_ontology(request: ChatRequest):
         executable_sparql = clean_sparql_output(ai_response.text)
         print("Generated SPARQL:\n", executable_sparql) 
         
-
-        # Query the Graph
         results = g.query(executable_sparql)
         
-        # Format the response
         answers = []
         for row in results:
-            # Join multiple variables returned by SELECT into a single string line
             row_data = " | ".join([str(var) for var in row if var is not None])
             answers.append(row_data)
             
         if not answers:
-            return {"reply": "Sorry, I couldn't find an exact answer in the herb medicine database."}
+            return {"reply": "ขออภัยครับ ไม่พบข้อมูลที่ตรงกับคำถามในฐานข้อมูลสมุนไพร"}
             
-        for answer in answers:
-            print("SPARQL Result:", answer)
-        
         answers = list(set(answers)) 
-        formatted_reply = "Here is what I found:\n- " + "\n- ".join(answers)
+        raw_data_string = "\n".join(answers)
+        print("Raw Database Results:\n", raw_data_string)
         
-        return {"reply": formatted_reply}
+        generation_prompt = f"""
+        คุณคือผู้ช่วยแพทย์แผนไทยที่เชี่ยวชาญและเป็นมิตร
+        ผู้ใช้ถามคำถามว่า: "{user_query}"
+        
+        นี่คือข้อมูลดิบที่ค้นพบจากฐานข้อมูล Ontology ของเรา:
+        {raw_data_string}
+        
+        หน้าที่ของคุณ:
+        นำข้อมูลดิบด้านบนมาเรียบเรียงเป็นคำตอบภาษาไทยที่อ่านง่าย เป็นธรรมชาติ และตรงคำถาม
+        
+        กฎที่ต้องปฏิบัติตามอย่างเคร่งครัด:
+        1. ห้ามแต่งเติมข้อมูลทางการแพทย์ อาการ หรือสรรพคุณที่ไม่มีระบุอยู่ในข้อมูลดิบเด็ดขาด
+        2. หากข้อมูลมีหลายข้อ ให้จัดรูปแบบเป็น bullet points หรือย่อหน้าเพื่อให้อ่านง่าย
+        3. ตอบกลับด้วยข้อความที่พร้อมแสดงผลให้ผู้ใช้เลย ไม่ต้องมีคำเกริ่นนำอธิบายการทำงานของคุณ
+        """
+        
+        final_ai_response = model.generate_content(generation_prompt)
+        print("Final Formatted Response:\n", final_ai_response.text)
+        
+        return {"reply": final_ai_response.text}
 
     except Exception as e:
         print(f"Error: {e}")
-        raise HTTPException(status_code=500, detail="The system could not process this question.")
+        raise HTTPException(status_code=500, detail="ระบบไม่สามารถประมวลผลคำถามนี้ได้")
