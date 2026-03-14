@@ -1,0 +1,302 @@
+{
+  "metadata": {
+    "model": "gemini-2.5-flash",
+    "num_runs": 1,
+    "num_tests": 10,
+    "timestamp": "20260314_140446",
+    "delay_between_tests": 20
+  },
+  "overall": {
+    "precision": {
+      "mean": 0.8464,
+      "std": 0.2994
+    },
+    "recall": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "f1": {
+      "mean": 0.882,
+      "std": 0.2393
+    },
+    "syntax_pass_rate": 1.0,
+    "execution_pass_rate": 1.0,
+    "avg_latency": 3.86
+  },
+  "per_scope": {
+    "scope_1": {
+      "name": "Medicine Group",
+      "precision": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "f1": {
+        "mean": 1.0,
+        "std": 0.0
+      }
+    },
+    "scope_2": {
+      "name": "Herb Composition",
+      "precision": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "f1": {
+        "mean": 1.0,
+        "std": 0.0
+      }
+    },
+    "scope_3": {
+      "name": "Symptoms",
+      "precision": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "f1": {
+        "mean": 1.0,
+        "std": 0.0
+      }
+    },
+    "scope_4": {
+      "name": "Diseases",
+      "precision": {
+        "mean": 0.375,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "f1": {
+        "mean": 0.5455,
+        "std": 0.0
+      }
+    },
+    "scope_5": {
+      "name": "Contraindication",
+      "precision": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "f1": {
+        "mean": 1.0,
+        "std": 0.0
+      }
+    },
+    "scope_6": {
+      "name": "Caution",
+      "precision": {
+        "mean": 0.2,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "f1": {
+        "mean": 0.3333,
+        "std": 0.0
+      }
+    },
+    "scope_7": {
+      "name": "Risk Groups",
+      "precision": {
+        "mean": 0.8889,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "f1": {
+        "mean": 0.9412,
+        "std": 0.0
+      }
+    },
+    "scope_8": {
+      "name": "Dosage Form",
+      "precision": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "f1": {
+        "mean": 1.0,
+        "std": 0.0
+      }
+    },
+    "scope_9": {
+      "name": "Usage Instructions",
+      "precision": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "f1": {
+        "mean": 1.0,
+        "std": 0.0
+      }
+    },
+    "scope_10": {
+      "name": "Efficacy",
+      "precision": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "recall": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "f1": {
+        "mean": 1.0,
+        "std": 0.0
+      }
+    }
+  },
+  "raw_runs": [
+    [
+      {
+        "test": 1,
+        "scope": 1,
+        "scope_name": "Medicine Group",
+        "description": "ยาขมิ้นชัน belongs to which group?",
+        "syntax_valid": true,
+        "has_results": true,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "latency": 4.08
+      },
+      {
+        "test": 2,
+        "scope": 2,
+        "scope_name": "Herb Composition",
+        "description": "ยาขมิ้นชัน herb ingredients?",
+        "syntax_valid": true,
+        "has_results": true,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "latency": 3.9
+      },
+      {
+        "test": 3,
+        "scope": 3,
+        "scope_name": "Symptoms",
+        "description": "Symptoms หน้ามืด ตาลาย สวิงสวาย → medicine?",
+        "syntax_valid": true,
+        "has_results": true,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "latency": 3.32
+      },
+      {
+        "test": 4,
+        "scope": 4,
+        "scope_name": "Diseases",
+        "description": "ยาหอมนวโกฐ treats what diseases?",
+        "syntax_valid": true,
+        "has_results": true,
+        "precision": 0.375,
+        "recall": 1.0,
+        "f1": 0.5455,
+        "latency": 3.5
+      },
+      {
+        "test": 5,
+        "scope": 5,
+        "scope_name": "Contraindication",
+        "description": "ยาเบญจกูล contraindicated groups?",
+        "syntax_valid": true,
+        "has_results": true,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "latency": 4.53
+      },
+      {
+        "test": 6,
+        "scope": 6,
+        "scope_name": "Caution",
+        "description": "ยาขมิ้นชัน drug interaction cautions?",
+        "syntax_valid": true,
+        "has_results": true,
+        "precision": 0.2,
+        "recall": 1.0,
+        "f1": 0.3333,
+        "latency": 3.78
+      },
+      {
+        "test": 7,
+        "scope": 7,
+        "scope_name": "Risk Groups",
+        "description": "Medicines in กลุ่มยาขับลม contraindicated for pregnant?",
+        "syntax_valid": true,
+        "has_results": true,
+        "precision": 0.8889,
+        "recall": 1.0,
+        "f1": 0.9412,
+        "latency": 5.87
+      },
+      {
+        "test": 8,
+        "scope": 8,
+        "scope_name": "Dosage Form",
+        "description": "ยาหอมอินทจักร์ dosage forms?",
+        "syntax_valid": true,
+        "has_results": true,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "latency": 3.38
+      },
+      {
+        "test": 9,
+        "scope": 9,
+        "scope_name": "Usage Instructions",
+        "description": "ยาหอมเทพจิตร powder usage instructions?",
+        "syntax_valid": true,
+        "has_results": true,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "latency": 3.54
+      },
+      {
+        "test": 10,
+        "scope": 10,
+        "scope_name": "Efficacy",
+        "description": "ยาประสะจันทน์แดง efficacy?",
+        "syntax_valid": true,
+        "has_results": true,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "latency": 2.7
+      }
+    ]
+  ]
+}

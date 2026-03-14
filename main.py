@@ -4,9 +4,9 @@ import google.generativeai as genai
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from rdflib import Graph
-from dotenv import load_dotenv
+# from dotenv import load_dotenve
 
-load_dotenv()
+# load_dotenv()
 
 app = FastAPI(title="Herb Medicine Ontology Chatbot")
 
